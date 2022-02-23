@@ -10,3 +10,9 @@
     margin-top: 20px;
     text-align: center;
 }
+
+.breadcrumb{
+    margin: 20px;
+    color:#a37e2c;
+    cursor: pointer;
+}
