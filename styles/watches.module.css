@@ -1,0 +1,36 @@
+.container {
+
+}
+
+.title{
+    display: grid;
+    text-align: center;
+    border-bottom: solid 2px #006039;
+    text-align: center;
+}
+
+.title h1{
+    margin-bottom: 20px;
+}
+
+
+
+
+.productContainer h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.viewDetailsBTN{
+    border: solid 2px #a37e2c;
+    padding: 10px 30px;
+    margin: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.viewDetailsBTN:hover{
+    color: #006039;
+}

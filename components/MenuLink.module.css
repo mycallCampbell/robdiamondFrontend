@@ -1,0 +1,35 @@
+.containerFlex {
+    display: flex;
+    cursor: pointer;
+}
+
+.containerFlex div {
+    margin: 7px 5px;
+    font-size: 1.1rem;
+    color: rgb(77, 77, 77);
+}
+
+.navName:hover{
+    color: #006039;
+}
+
+@media (min-width: 768px) {
+    .arrow {
+        display: none;
+    }
+
+    .containerFlex {
+        display: grid;
+        align-items: center;
+    }
+
+    .navName{
+        text-align: center;
+        color: #000000;
+        border-radius: 2px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+}
