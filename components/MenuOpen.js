@@ -13,6 +13,9 @@ function MenuOpen({handleToggle}) {
                     <MenuLink urlLink={'/watches'} navName={'ROLEX WATCHES'} />
                 </li>
                 <li className={styles.linkCategory} onClick={handleToggle}>
+                    <MenuLink urlLink={'/watchesSold'} navName={'ROLEX SOLD'} />
+                </li>
+                <li className={styles.linkCategory} onClick={handleToggle}>
                     <MenuLink urlLink={'/blog'} navName={'BLOG'} />
                 </li>
                 <li className={styles.linkCategory} onClick={handleToggle}>

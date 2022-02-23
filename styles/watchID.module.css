@@ -16,3 +16,35 @@
     color:#a37e2c;
     cursor: pointer;
 }
+
+.imageContainer{
+    position: relative;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    cursor: pointer;
+}
+
+  .rightArrow {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.viewDetailsBTN{
+    border: solid 2px #a37e2c;
+    padding: 10px 30px;
+    margin: 10px 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.viewDetailsBTN:hover{
+    color: #006039;
+}

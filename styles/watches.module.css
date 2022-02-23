@@ -1,5 +1,5 @@
 .container {
-
+margin: 20px;
 }
 
 .title{
@@ -24,7 +24,7 @@
 .viewDetailsBTN{
     border: solid 2px #a37e2c;
     padding: 10px 30px;
-    margin: 30px;
+    margin: 10px 30px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
@@ -33,4 +33,25 @@
 
 .viewDetailsBTN:hover{
     color: #006039;
+}
+
+.reviewGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.reviewName{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.reviewDate{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.reviewDescription{
+    margin: 20px 10px 30px 10px;
 }
