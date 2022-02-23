@@ -53,7 +53,7 @@ function Footer({src, width, height}) {
                 <Image src={src} width={width} height={height} />
             </div>
             <div className={styles.containerContentEnterEmail}>
-                <h4>Enter your Email to Subscribe to our 'Mailing List'</h4>
+                <h4>Enter your Email to Subscribe to our <span>Mailing List</span></h4>
             </div>
         </div>
         
