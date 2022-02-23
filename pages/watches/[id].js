@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../../styles/watchID.module.css'
-// import Link from 'next/link'
+import Link from 'next/link'
 import Footer from '../../components/Footer'
 
 export const getStaticPaths = async () => {
@@ -38,6 +38,9 @@ export const getStaticPaths = async () => {
 function watchProductPAge({ product }) {
   return (
     <div className={styles.container}>
+        <Link href={`/${product.category}`}>
+            <div className={styles.breadcrumb}>{'<'} BACK</div>
+        </Link>
         <div>
             <Image src={`/${product.image}/${product.image}2.jpeg`} width={500} height={600} />
         </div>
