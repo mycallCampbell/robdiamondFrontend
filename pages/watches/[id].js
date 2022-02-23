@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import styles from '../../styles/watchID.module.css'
 import Link from 'next/link'
@@ -36,7 +36,7 @@ export const getStaticPaths = async () => {
   };
 
   
-  function watchProductPAge({ product }) {
+  function WatchProductPage({ product }) {
     
     const [imageNumber, setImageNumber] = useState(1);
 
@@ -83,4 +83,4 @@ export const getStaticPaths = async () => {
   )
 }
 
-export default watchProductPAge
+export default WatchProductPage
