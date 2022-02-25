@@ -38,7 +38,7 @@
 .viewDetailsBTN{
     border: solid 2px #a37e2c;
     padding: 10px 30px;
-    margin: 10px 30px;
+    margin: 14çpx 30px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
@@ -47,4 +47,19 @@
 
 .viewDetailsBTN:hover{
     color: #006039;
+}
+
+.specContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.specLabel{
+    font-size: 1.1rem;
+}
+
+.specValue{
+    font-size: 1.1rem;
+    font-weight: 700;
 }

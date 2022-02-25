@@ -70,12 +70,33 @@ export const getStaticPaths = async () => {
         <div className={styles.title}>
         <h2>{product.name}</h2>
         </div>
-        <div className={styles.description}>
-            {product.description}
+        <div className={styles.specContainer}>
+          <div className={styles.specLabel}>
+            <div>Model</div>
+            <div>Ref</div>
+            <div>Year</div>
+            <div>Box</div>
+            <div>Papers</div>
+            <div>Condition</div>
+
+          </div>
+          <div className={styles.specValue}>
+            <div>{product.model}</div>
+            <div>{product.ref}</div>
+            <div>{product.year}</div>
+            <div>{product.box}</div>
+            <div>{product.papers}</div>
+            <div>{product.condition}</div>
+
+          </div>
         </div>
         <div className={styles.viewDetailsBTN}>
             <h4><a href='tel:07976753254'>CALL FOR DETAILS</a></h4>
         </div>
+        <div className={styles.description}>
+            {product.description}
+        </div>
+       
       <Footer src={'/rolexFooter.jpg'} width={1704} height={700} />
 
     </div>
