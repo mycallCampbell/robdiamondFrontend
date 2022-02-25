@@ -70,6 +70,17 @@
   flex-wrap: wrap;
   max-width: 800px;
 }
+ 
+
+.heroImage{
+  z-index: 0;
+  height: 300px;
+}
+
+.heroContent{
+  /* position: relative; */
+  z-index: 1;
+}
 
 
 
@@ -90,12 +101,17 @@
   text-align: center;
 }
 
-.card:hover,
 .card:focus,
 .card:active {
   color: #006039;
   border-color: #a37e2c;
 }
+
+.card:hover{
+  color: #fff;
+  background-color: #006039;
+}
+
 
 .card h2 {
   margin: 0 0 1rem 0;
@@ -112,6 +128,7 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+
 
 @media (max-width: 600px) {
   .grid {

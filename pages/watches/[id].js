@@ -74,9 +74,9 @@ export const getStaticPaths = async () => {
             {product.description}
         </div>
         <div className={styles.viewDetailsBTN}>
-            <h4><a href='tel:07895609010'>CALL FOR DETAILS</a></h4>
+            <h4><a href='tel:07976753254'>CALL FOR DETAILS</a></h4>
         </div>
-      <Footer src={'/rolexFooter.jpg'} width={1704} height={667} />
+      <Footer src={'/rolexFooter.jpg'} width={1704} height={700} />
 
     </div>
     

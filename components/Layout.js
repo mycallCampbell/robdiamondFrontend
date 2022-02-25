@@ -36,11 +36,14 @@ function Layout({children}) {
         </div>
         </>
         : <>
-             <div className={styles.logo}>
+             <div className={styles.logoOpen}>
                 <h2><span>ROB</span> DIAMOND</h2>
             </div>
             <div className={styles.containerHeader2}>
             <MenuOpen handleToggle={handleToggle}/>
+            </div>
+            <div className={styles.bagIcon}>
+                <Image src={'/logo.png'} width={50} height={50}/>
             </div>
             <div className={styles.closeMenu} onClick={handleToggle}>
                 <h4>Close Menu</h4>

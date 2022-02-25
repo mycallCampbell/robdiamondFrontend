@@ -148,7 +148,6 @@ function Contact() {
           </div>
         )}
       </form>
-      {/* <Footer src={imageFooter} width={500} height={300} /> */}
       <Footer src={'/contactFooter.jpg'} width={612} height={368} />
 
     </section>

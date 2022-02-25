@@ -40,7 +40,7 @@ function watches({ products }) {
         </div>
         
       ))}
-      <Footer src={'/rolexFooter.jpg'} width={1704} height={667} />
+      <Footer src={'/rolexFooter.jpg'} width={1704} height={700} />
 
     </div>
   )

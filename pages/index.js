@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Footer from '../components/Footer'
+import heroImage from '../public/rolexHero.jpg'
 
 export default function Home() {
   return (
@@ -16,8 +17,17 @@ export default function Home() {
       <main className={styles.main}>
         
         {/* HERO */}
-        <div>
-          <Image src={'/rolexHero.jpg'} width={1140} height={525} />
+        <div className={styles.hero}>
+          
+            <Image 
+            className={styles.heroImage} 
+            src={heroImage} 
+            objectFit="cover"
+            objectPosition="center"
+            layout="intrinsic" 
+            />
+            {/* <div className={styles.heroContent}>BEATY IN MOTION</div>s */}
+    
         </div>
 
         <div className={styles.grid}>
@@ -44,7 +54,7 @@ export default function Home() {
         </div>
       </main>
 
-      <Footer src={'/rolexFooter.jpg'} width={1704} height={667} />
+      <Footer src={'/rolexFooter.jpg'} width={1704} height={700} />
     </div>
   )
 }

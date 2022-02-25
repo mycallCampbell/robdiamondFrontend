@@ -21,6 +21,17 @@
     cursor: pointer;
 }
 
+.logoOpen {
+    margin-top: 20px;
+    text-align: center;
+    color: #006039;
+    cursor: pointer;
+}
+
+.logoOpen span{
+    color: #a37e2c;
+}
+
 .logo span{
     color: #a37e2c;
 }

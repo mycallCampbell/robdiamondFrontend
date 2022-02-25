@@ -1,12 +1,19 @@
 .containerFlex {
     display: flex;
     cursor: pointer;
+    border-bottom: solid 1px darkgray;
+    width: 90vw;
+    justify-content: space-between;
 }
 
 .containerFlex div {
-    margin: 7px 5px;
+    margin: 7px 0;
     font-size: 1.1rem;
     color: rgb(77, 77, 77);
+}
+
+.navName{
+    margin-right: 10px;
 }
 
 .navName:hover{
