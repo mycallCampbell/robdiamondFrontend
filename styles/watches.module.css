@@ -14,11 +14,14 @@ margin: 20px;
 }
 
 
-
+.productContainer{
+    border: solid 1px #006039;
+    margin-top: 20px;
+}
 
 .productContainer h2{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .viewDetailsBTN{
