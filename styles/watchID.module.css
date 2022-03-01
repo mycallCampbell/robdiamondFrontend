@@ -2,12 +2,9 @@
     
 }
 
-.description{
-    margin: 15px;
-}
 
 .title{
-    margin-top: 20px;
+    margin: 20px 20px;
     text-align: center;
 }
 
@@ -50,16 +47,45 @@
 }
 
 .specContainer{
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    padding: 20px;
     display: flex;
     justify-content: space-around;
 }
 
 .specLabel{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    line-height: 01.5rem;
+}
+
+.specLabelinBetween{
+    padding: 5px;
+}
+
+.specValueContainer{
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 01.5rem;
 }
 
 .specValue{
+    background: rgb(230, 230, 230);
+    padding: 5px 10px;
+}
+
+.specValueinBetween{
+    padding: 5px;
+}
+
+.descriptionSmallContainer{
+    text-align: center;
+    margin: 15px 15px 0 15px ;
+    padding: 10px;
     font-size: 1.1rem;
     font-weight: 700;
+}
+
+.description{
+    margin: 15px;
+    padding: 10px;
 }

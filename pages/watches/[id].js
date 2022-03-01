@@ -58,6 +58,9 @@ export const getStaticPaths = async () => {
         <Link href={`/${product.category}`}>
             <div className={styles.breadcrumb}>{'<'} BACK</div>
         </Link>
+        <div className={styles.title}>
+        <h2>{product.name}</h2>
+        </div>
         <div className={styles.imageContainer}>
             <Image src={`/${product.image}/${product.image}${imageNumber}.jpeg`} width={500} height={600} />
             <div className={styles.rightArrow} onClick={handleNextSlide}>
@@ -67,26 +70,47 @@ export const getStaticPaths = async () => {
               <Image src={`/leftArrow.svg`} width={50} height={50} />
             </div>
         </div>
-        <div className={styles.title}>
-        <h2>{product.name}</h2>
+        
+        <div className={styles.descriptionSmallContainer}>
+          <p>{product.descriptionSmall}</p>
         </div>
         <div className={styles.specContainer}>
           <div className={styles.specLabel}>
-            <div>Model</div>
-            <div>Ref</div>
-            <div>Year</div>
-            <div>Box</div>
-            <div>Papers</div>
-            <div>Condition</div>
+            <div className={styles.specLabelinBetween}>Model</div>
+            <div className={styles.specLabelinBetween}>Ref</div>
+            <div className={styles.specLabelinBetween}>Year</div>
+            <div className={styles.specLabelinBetween}>Box</div>
+            <div className={styles.specLabelinBetween}>Papers</div>
+            <div className={styles.specLabelinBetween}>Condition</div>
+            <div className={styles.specLabelinBetween}>Available</div>
+            <div className={styles.specLabelinBetween}>Movement</div>
+            <div className={styles.specLabelinBetween}>Case Material</div>
+            <div className={styles.specLabelinBetween}>Braclet Material</div>
+            <div className={styles.specLabelinBetween}>Case Size</div>
+            <div className={styles.specLabelinBetween}>Dial</div>
+            <div className={styles.specLabelinBetween}>Address</div>
+            <div className={styles.specLabelinBetween}>Walkings</div>
+            <div className={styles.specLabelinBetween}>Appointment</div>
+
 
           </div>
-          <div className={styles.specValue}>
-            <div>{product.model}</div>
-            <div>{product.ref}</div>
-            <div>{product.year}</div>
-            <div>{product.box}</div>
-            <div>{product.papers}</div>
-            <div>{product.condition}</div>
+          <div className={styles.specValueContainer}>
+            <div className={styles.specValue}>{product.model}</div>
+            <div className={styles.specValueinBetween}>{product.ref}</div>
+            <div className={styles.specValue}>{product.year}</div>
+            <div className={styles.specValueinBetween}>{product.box}</div>
+            <div className={styles.specValue}>{product.papers}</div>
+            <div className={styles.specValueinBetween}>{product.condition}</div>
+            <div className={styles.specValue}>{product.availble}</div>
+            <div className={styles.specValueinBetween}>{product.movement}</div>
+            <div className={styles.specValue}>{product.caseMaterial}</div>
+            <div className={styles.specValueinBetween}>{product.braceletMaterial}</div>
+            <div className={styles.specValue}>{product.caseSize}</div>
+            <div className={styles.specValueinBetween}>{product.dial}</div>
+            <div className={styles.specValue}>{product.address}</div>
+            <div className={styles.specValueinBetween}>{product.walkings}</div>
+            <div className={styles.specValue}>{product.appointment}</div>
+
 
           </div>
         </div>
