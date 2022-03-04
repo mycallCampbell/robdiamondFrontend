@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>ROB DIAMOND</title>
         <meta name="description" content="Rolex Specialists" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
