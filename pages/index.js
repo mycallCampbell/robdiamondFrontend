@@ -11,6 +11,7 @@ export default function Home() {
       <Head>
         <title>ROB DIAMOND</title>
         <meta name="description" content="Rolex Specialists" />
+        <meta property='og:image' content="favicon.png" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
