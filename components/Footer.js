@@ -5,7 +5,7 @@ import FooterLink  from './FooterLink';
 
 
 const URL = ""
-const locationAddress = "This is a placeHolder address"
+const locationAddress = "32 Hatton Garden, London EC1N 8DH"
 const socialURL1 = ""
 const socialURl2 = ""
 
