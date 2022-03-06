@@ -12,6 +12,7 @@ export default function Home() {
         <title>ROB DIAMOND</title>
         <meta name="description" content="Rolex Specialists" />
         <meta property='og:image' content="favicon.png" />
+        <meta name="facebook-domain-verification" content="anh6svr8eyppmiyhj82z4tp7nqbxqa" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
