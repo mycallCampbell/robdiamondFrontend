@@ -7,7 +7,7 @@ import { ProductPageContext } from "../productPageContext";
 import styles from '../styles/cart.module.css'
 
 
-function cart() {
+function Cart() {
 
   const [cart, setCart] = useContext(ProductPageContext);
   const itemAmount = cart.length;
@@ -87,4 +87,4 @@ function cart() {
   )
 }
 
-export default cart
+export default Cart
