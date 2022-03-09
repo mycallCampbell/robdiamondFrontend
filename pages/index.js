@@ -28,7 +28,7 @@ export default function Home() {
             objectPosition="center"
             layout="intrinsic" 
             />
-            {/* <div className={styles.heroContent}>BEATY IN MOTION</div>s */}
+            {/* <div className={styles.heroContent}>BEAUTY IN MOTION</div>s */}
     
         </div>
 

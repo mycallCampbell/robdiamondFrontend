@@ -1,0 +1,91 @@
+.container{
+    margin: 10px;
+}
+
+.breadcrumb{
+    margin: 20px;
+    color:#a37e2c;
+    cursor: pointer;
+}
+
+.itemsReserved{
+    margin: 20px;
+    text-align: center;
+}
+
+.itemsAmount{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.checkoutBtn {
+    background: #006039;
+    text-align: center;
+    color: #fff;
+    padding: 12px;
+    min-width: 150px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+
+.checkoutBtn:hover{
+    color: #fff;
+    background:#a37e2c;
+}
+
+  .gridContainer{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-content: center;
+      border: solid 2px #a37e2c;
+      margin: 10px 0;
+  }
+
+  .imageContainer{
+      margin: 10px;
+  }
+
+  .contentContainer{
+      margin: 10px;
+  }
+
+  .watchTitle{ 
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+  }
+
+  .flexContentContainer{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-content: space-between;
+  }
+
+  .price span {
+      font-weight: 500;
+      margin: 5px;
+  }
+
+  .ref span{
+      font-weight: 500;
+      margin: 5px;
+  }
+
+  .year span{
+    font-weight: 500;
+    margin: 5px;
+}
+
+.deliveryInfo{
+    margin: 10px 0 0 0;
+    font-size: 0.9rem;
+}
+
+.remove{
+    margin: 20px 0 0 0;
+    text-align: end;
+}

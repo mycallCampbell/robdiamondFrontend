@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import Image from 'next/image'
 import styles from '../../styles/watchID.module.css'
 import Link from 'next/link'
 import Footer from '../../components/Footer'
+
+import { ProductPageContext } from "../../productPageContext";
+
 
 export const getStaticPaths = async () => {
     const res = await fetch(
@@ -37,8 +40,37 @@ export const getStaticPaths = async () => {
 
   
   function WatchProductPage({ product }) {
-    
+
     const [imageNumber, setImageNumber] = useState(1);
+    const [added, setAdded] = useState(false);
+    const [checkout, setCheckout] = useState(false);
+    const [cartStorage, setCartStorage] = useState(() => {
+      let storage;
+  
+      if (typeof window !== "undefined") {
+        storage = localStorage.getItem("cartStorage");
+      }
+      return storage ? JSON.parse(storage) : [];
+    });
+
+    const [cart, setCart] = useContext(ProductPageContext);
+
+    useEffect(() => {
+      if (cartStorage.length > 0) {
+        setCheckout(true);
+      }
+      localStorage.setItem("cartStorage", JSON.stringify(cartStorage));
+      const storageLocal = JSON.parse(localStorage.getItem("cartStorage"));
+      setCart(storageLocal);
+    }, [cartStorage]);
+
+
+    const addToCart = () => {
+      setCartStorage((cartStorage) => [...cartStorage, product]);
+      setAdded(true);
+      setTimeout(() => setAdded(false), 5000);
+    }
+
 
     const handleNextSlide = () => {
       if(product.imageAmount > imageNumber){
@@ -114,11 +146,26 @@ export const getStaticPaths = async () => {
 
           </div>
         </div>
-        <div className={styles.viewDetailsBTN}>
-            <h4><a href='tel:07976753254'>CALL FOR DETAILS</a></h4>
+        <div className={styles.addToBasketBtn} onClick={addToCart}>
+          <a>ADD TO BASKET</a>
         </div>
+        {added && (
+        <div className={styles.addSuccessMessage}>
+          Your Item has been added to the basket
+        </div>
+        )}
+        <Link href="/cart">
+        <div className={checkout ? styles.checkoutBtn : styles.displayNone}>
+          <a>CHECKOUT</a>
+        </div>
+        </Link>
+        
         <div className={styles.description}>
             {product.description}
+        </div>
+
+        <div className={styles.viewDetailsBTN}>
+            <h4><a href='tel:07976753254'>CALL FOR DETAILS</a></h4>
         </div>
        
       <Footer src={'/rolexFooter.jpg'} width={1704} height={700} />

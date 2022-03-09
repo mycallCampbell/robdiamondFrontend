@@ -38,6 +38,7 @@
 
 .bagIcon {
     text-align: center;
+    cursor: pointer;
 }
 
 .closeMenu{
@@ -51,6 +52,11 @@
 
 .tablet {
     display: none;
+}
+
+.cartNumber{
+    display: inline;
+    font-size: 1.4rem;
 }
 
 
