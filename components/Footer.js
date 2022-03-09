@@ -87,7 +87,7 @@ function Footer({src, width, height}) {
             {/* Footer Links */}
             <div className={styles.containerFooterLinks}>
                 <FooterLink urlLink={'/contact'} pageName={'Contact'} />
-                <FooterLink urlLink={'/'} pageName={'Terms & Conditions'} />
+                <FooterLink urlLink={'/terms'} pageName={'Terms & Conditions'} />
                 <FooterLink urlLink={'/'} pageName={'Reviews'} />
                 <FooterLink urlLink={'/'} pageName={'Privacy Policy'} />
             </div>

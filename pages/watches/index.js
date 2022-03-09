@@ -29,14 +29,14 @@ function watches({ products }) {
 
         <div className={styles.productContainer} key={product._id}>
           <h2>{product.name}</h2>
-          <Link href={`/watches/${product._id}`}>
+            <div>
+              <Image src={`/${product.image}/${product.image}1.jpeg`} width={500} height={600} />
+            </div>
+            <Link href={`/watches/${product._id}`}>
             <div className={styles.viewDetailsBTN}>
             <h4>VIEW DETAILS</h4>
             </div>
           </Link>
-            <div>
-              <Image src={`/${product.image}/${product.image}1.jpeg`} width={500} height={600} />
-            </div>
         </div>
         
       ))}
