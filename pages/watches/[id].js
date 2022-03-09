@@ -154,7 +154,7 @@ export const getStaticPaths = async () => {
           Your Item has been added to the basket
         </div>
         )}
-        <Link href="/Cart">
+        <Link href="/cart">
         <div className={checkout ? styles.checkoutBtn : styles.displayNone}>
           <a>CHECKOUT</a>
         </div>

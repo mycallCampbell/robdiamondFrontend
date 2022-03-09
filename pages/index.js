@@ -36,7 +36,7 @@ export default function Home() {
           <Link href={'/watches'}>
             <div className={styles.card}>
               <h2>ROLEX</h2>
-              <p>Find The Perfect Rolex For YOU</p>
+              <p>Find The Perfect Rolex For You</p>
             </div> 
           </Link>
 
