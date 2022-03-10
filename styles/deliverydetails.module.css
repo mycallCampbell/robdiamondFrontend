@@ -68,7 +68,7 @@
 
 .input input:focus {
   outline: none;
-  border-color: pink;
+  border-color: #006039;
 }
 .button {
   text-align: center;

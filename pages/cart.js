@@ -1,5 +1,7 @@
 
 import React, { useState, useContext, useEffect } from "react";
+import Meta from "../components/Meta";
+
 import Link from "next/link";
 import Image from 'next/image';
 import Footer from "../components/Footer";
@@ -25,6 +27,11 @@ function Cart() {
 
   return (
     <div className={styles.container}>
+      <Meta 
+      title={"Cart"}
+      keywords={"Cart Items"}
+      description={"The cart page for ROB DIAMOND"}
+    />
         <div className={styles.itemsAmount}>
         {itemAmount > 1
           ? `You Have ${itemAmount} items in Your Cart`
@@ -65,18 +72,17 @@ function Cart() {
         </div>
 
         {cart.length !== 0 ? (
-          <div className={styles.container}>
             <Link href="/deliverydetails">
               <div className={styles.checkoutBtn}>
                 <a>CHECKOUT</a>
               </div>
             </Link>
-          </div>
+
         ) : (
             // Need to display Order Summary
             <>
               <Link href="/">
-                <div className={styles.button}>
+                <div className={styles.checkoutBtn}>
                   <a>SHOP ROBDIAMOND</a>
                 </div>
               </Link>

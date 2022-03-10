@@ -5,7 +5,7 @@ import styles from "../styles/deliverydetails.module.css";
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
 import CardSection from "../components/CardSection";
 import { ProductPageContext } from "../productPageContext";
-// import Meta from "../components/Meta";
+import Meta from "../components/Meta";
 
 function Deliverydetails() {
   const [cart, setCart] = useContext(ProductPageContext);
@@ -220,7 +220,11 @@ function Deliverydetails() {
 
   return (
     <>
-    {/* <Meta /> */}
+    <Meta 
+      title={"Details"}
+      keywords={"Order Details"}
+      description={"The details page for ROB DIAMOND"}
+    />
       {!orderConfirmation && (
         <>
           <div className={styles.checkoutHeader}>Checkout</div>

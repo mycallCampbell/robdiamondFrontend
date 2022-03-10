@@ -71,18 +71,12 @@ function Footer({src, width, height}) {
                 <div className={styles.inputSubscribe} onClick={handleSubmit}>Submit</div>
             </div>
         </div>
-        
 
-        {/* Social Links */}
-        <div className={styles.containerTablet}>
-            <div className={styles.containerSocialThumbNail}>
-                {/* <div>
-                    <a href={socialURL1}><Image src={'/instagramFooter.png'} width={60} height={60} /></a>
-                </div>
-                <div>
-                    <a href={socialURl2}><Image src={'/etsyFooter.jpg'} width={110} height={60} /></a>
-                </div> */}
-            </div>
+        <div className={styles.socialInsta}>  
+          <a href="https://www.instagram.com/robdiamond.co.uk/">
+            <Image src={'/instagramFooter.png'} width={60} height={60} /> 
+          </a>
+        </div>
                 
             {/* Footer Links */}
             <div className={styles.containerFooterLinks}>
@@ -91,7 +85,6 @@ function Footer({src, width, height}) {
                 <FooterLink urlLink={'/'} pageName={'Reviews'} />
                 <FooterLink urlLink={'/'} pageName={'Privacy Policy'} />
             </div>
-        </div>
         
 
         {/* Location */}

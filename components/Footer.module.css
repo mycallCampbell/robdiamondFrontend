@@ -72,6 +72,12 @@
     margin: 10px 0;
 }
 
+.socialInsta{
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 @media (min-width: 768px) {
     .containerTablet{
         display: flex;
