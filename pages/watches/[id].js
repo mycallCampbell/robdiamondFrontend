@@ -3,6 +3,12 @@ import Image from 'next/image'
 import styles from '../../styles/watchID.module.css'
 import Link from 'next/link'
 import Footer from '../../components/Footer'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+
+
 
 import { ProductPageContext } from "../../productPageContext";
 
@@ -65,6 +71,9 @@ export const getStaticPaths = async () => {
     }, [cartStorage]);
 
 
+    const productArr = Array.from(product.imageAmount);
+
+
     const addToCart = () => {
       setCartStorage((cartStorage) => [...cartStorage, product]);
       setAdded(true);
@@ -79,11 +88,11 @@ export const getStaticPaths = async () => {
       }
     }
 
-    const handlePreviousSlide = () => {
-      if(imageNumber !== 1){
-        setImageNumber(imageNumber - 1);
-      }
-    }
+    // const handlePreviousSlide = () => {
+    //   if(imageNumber !== 1){
+    //     setImageNumber(imageNumber - 1);
+    //   }
+    // }
     
     return (
     <div className={styles.container}>
@@ -93,7 +102,7 @@ export const getStaticPaths = async () => {
         <div className={styles.title}>
         <h2>{product.name}</h2>
         </div>
-        <div className={styles.imageContainer}>
+        {/* <div className={styles.imageContainer}>
             <Image src={`/${product.image}/${product.image}${imageNumber}.jpeg`} width={500} height={600} />
             <div className={styles.rightArrow} onClick={handleNextSlide}>
               <Image src={`/rightArrow.svg`} width={50} height={50} />
@@ -101,7 +110,18 @@ export const getStaticPaths = async () => {
             <div className={styles.leftArrow} onClick={handlePreviousSlide}>
               <Image src={`/leftArrow.svg`} width={50} height={50} />
             </div>
-        </div>
+        </div> */}
+
+          <Swiper pagination={true} modules={[Pagination]} className={styles.swiper}>
+            <div className={styles.swiperWrapper}>
+              {productArr.map((item, index) => (
+                <SwiperSlide className={styles.swiperSlide} key={index}>
+                  <Image src={`/${product.image}/${product.image}${index + 1}.jpeg`} width={500} height={600} />
+                </SwiperSlide> 
+              ))
+            }
+            </div>
+          </Swiper>
         
         <div className={styles.descriptionSmallContainer}>
           <p>{product.descriptionSmall}</p>

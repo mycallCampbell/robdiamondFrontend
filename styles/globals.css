@@ -28,3 +28,20 @@ h1, h2, h3, h4, h5, h6{
 ul{
   padding: 0;
 }
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 0.9rem !important;
+  height: 0.9rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4d4d4d !important;
+}
+
+.swiper-pagination{
+  position: absolute;
+  bottom: 0 !important;
+/* min-height: 100px !important; */
+background: #ffffff;
+}
