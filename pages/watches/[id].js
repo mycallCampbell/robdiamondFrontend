@@ -126,6 +126,7 @@ export const getStaticPaths = async () => {
         <div className={styles.descriptionSmallContainer}>
           <p>{product.descriptionSmall}</p>
         </div>
+        <div className={styles.price}>PRICE: £{product.price}</div>
         <div className={styles.specContainer}>
           <div className={styles.specLabel}>
             <div className={styles.specLabelinBetween}>Model</div>

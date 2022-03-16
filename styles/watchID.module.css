@@ -158,3 +158,9 @@
     -webkit-align-items: center;
     align-items: center;
   }
+
+  .price {
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.2rem;
+  }
