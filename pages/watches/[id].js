@@ -102,15 +102,6 @@ export const getStaticPaths = async () => {
         <div className={styles.title}>
         <h2>{product.name}</h2>
         </div>
-        {/* <div className={styles.imageContainer}>
-            <Image src={`/${product.image}/${product.image}${imageNumber}.jpeg`} width={500} height={600} />
-            <div className={styles.rightArrow} onClick={handleNextSlide}>
-              <Image src={`/rightArrow.svg`} width={50} height={50} />
-            </div>
-            <div className={styles.leftArrow} onClick={handlePreviousSlide}>
-              <Image src={`/leftArrow.svg`} width={50} height={50} />
-            </div>
-        </div> */}
 
           <Swiper pagination={true} modules={[Pagination]} className={styles.swiper}>
             <div className={styles.swiperWrapper}>
