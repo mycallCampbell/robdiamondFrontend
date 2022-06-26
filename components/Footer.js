@@ -73,7 +73,7 @@ function Footer({src, width, height}) {
         </div>
 
         <div className={styles.socialInsta}>  
-          <a href="https://www.instagram.com/robdiamond.co.uk/">
+          <a href="https://www.instagram.com/robdiamond_official/">
             <Image src={'/instagramFooter.png'} width={60} height={60} /> 
           </a>
         </div>
