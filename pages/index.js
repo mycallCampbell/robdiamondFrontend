@@ -40,13 +40,6 @@ export default function Home() {
             </div> 
           </Link>
 
-          <Link href={'/blog'}>
-            <div className={styles.card}>
-              <h2>BLOG</h2>
-              <p>Catch Up on all the Latest Updates</p>
-            </div> 
-          </Link>
-
           <Link href={'/contact'}>
             <div className={styles.card}>
               <h2>CONTACT</h2>
