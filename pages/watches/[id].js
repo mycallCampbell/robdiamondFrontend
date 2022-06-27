@@ -158,7 +158,7 @@ export const getStaticPaths = async () => {
 
           </div>
         </div>
-        <div className={styles.addToBasketBtn} onClick={addToCart}>
+        {/* <div className={styles.addToBasketBtn} onClick={addToCart}>
           <a>ADD TO BASKET</a>
         </div>
         {added && (
@@ -170,7 +170,7 @@ export const getStaticPaths = async () => {
         <div className={checkout ? styles.checkoutBtn : styles.displayNone}>
           <a>CHECKOUT</a>
         </div>
-        </Link>
+        </Link> */}
         
         <div className={styles.description}>
             {product.description}
