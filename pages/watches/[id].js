@@ -103,7 +103,7 @@ export const getStaticPaths = async () => {
         <h2>{product.name}</h2>
         </div>
 
-          <Swiper pagination={true} modules={[Pagination]} className={styles.swiper}>
+          {/* <Swiper pagination={true} modules={[Pagination]} className={styles.swiper}>
             <div className={styles.swiperWrapper}>
               {productArr.map((item, index) => (
                 <SwiperSlide className={styles.swiperSlide} key={index}>
@@ -112,7 +112,45 @@ export const getStaticPaths = async () => {
               ))
             }
             </div>
-          </Swiper>
+          </Swiper> */}
+
+<div className={styles.imageContainer}>
+        <Swiper
+          pagination={true}
+          modules={[Pagination]}
+          className={styles.swiper}
+        >
+          <div className={styles.swiperWrapper}>
+            {productArr.map((item, index) => (
+              <SwiperSlide className={styles.swiperSlide} key={index}>
+                {index === 0 ? (
+                  <div className={styles.videoGrid}>
+                    <video 
+                      loop
+                      width={360}
+                      height={636}
+                      playsInline
+                      autoPlay
+                      muted
+                    >
+                      <source
+                        src={`/${product.image}/${product.image}1.mp4`}
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                ) : (
+                  <Image
+                      src={`/${product.image}/${product.image}${index}.jpeg`}
+                      width={600}
+                      height={800}
+                  />
+                )}
+              </SwiperSlide>
+            ))}
+          </div>
+        </Swiper>
+      </div>
         
         <div className={styles.descriptionSmallContainer}>
           <p>{product.descriptionSmall}</p>
