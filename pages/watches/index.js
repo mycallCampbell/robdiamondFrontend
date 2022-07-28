@@ -30,7 +30,7 @@ function watches({ products }) {
         <div className={styles.productContainer} key={product._id}>
           <h2>{product.name}</h2>
             <div>
-              <Image src={`/${product.image}/${product.image}1.jpeg`} width={500} height={600} />
+              <Image src={`/${product.image}/${product.image}1.jpeg`} width={768} height={1024} />
             </div>
             <Link href={`/watches/${product._id}`}>
             <div className={styles.viewDetailsBTN}>

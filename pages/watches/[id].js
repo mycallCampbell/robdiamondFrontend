@@ -142,8 +142,8 @@ export const getStaticPaths = async () => {
                 ) : (
                   <Image
                       src={`/${product.image}/${product.image}${index}.jpeg`}
-                      width={600}
-                      height={800}
+                      width={768}
+                      height={1024}
                   />
                 )}
               </SwiperSlide>
