@@ -16,7 +16,7 @@ function landingHulk() {
         <div className={styles.heroBtn}>
              <a>CALL FOR ADVICE</a>
         </div>
-        <div className={styles.intro}>Discontinued in 2017, the <span>'Money Green'</span> Rolex Submariner Hulk is one of the most sought after wrist watches of our time. Whenever Rolex discontinue a model from their custom collection we immediately see the creation of an investment piece. Both in terms of finance and allure!</div>
+        <div className={styles.intro}>Discontinued in 2017, the <span>&apos;Money Green&apos;</span> Rolex Submariner Hulk is one of the most sought after wrist watches of our time. Whenever Rolex discontinue a model from their custom collection we immediately see the creation of an investment piece. Both in terms of finance and allure!</div>
     <Image src={theHulk} width={1200} height={1200} />
     <div className={styles.title}>Inside the mind of Rolex</div>
     
