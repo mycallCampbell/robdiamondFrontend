@@ -12,7 +12,7 @@ function landingHulk() {
     <Image src={hulk} width={1200} height={1200} />
     <div className={styles.container}>
         <div className={styles.title}>The Rolex Submariner 116610LV</div>
-        <div className={styles.subTitle}>AKA "THE HULK"</div>
+        <div className={styles.subTitle}>AKA &quot;THE HULK"</div>
         <div className={styles.heroBtn}>
              <a>CALL FOR ADVICE</a>
         </div>
