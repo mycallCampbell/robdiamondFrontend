@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import heroImage from "../public/heroImageCrop.jpeg";
 import numeralMarkers from "../public/numeralMarkersImage.jpeg";
 import rolexBox from "../public/rolexBoxBG.jpeg";
@@ -25,6 +26,12 @@ const product2 = ["clasp1", "clasp2"];
 function landingHulk() {
   return (
     <>
+      <Head>
+        <title>ROB DIAMOND</title>
+        <meta name="description" content="DATEJUST 41" />
+        <meta property="og:image" content="favicon.png" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Image src={heroImage} width={819} height={793} />
       <div className={styles.container}>
         <div className={styles.title}>DATEJUST 41 </div>
