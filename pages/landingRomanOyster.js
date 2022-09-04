@@ -133,9 +133,10 @@ function landingHulk() {
           </Swiper>
         </div>
         <div className={styles.intro}>
-          RobDiamond is one of London's leading watch traders and is situated in
-          Hatton, London. Viewings are recommended by appointment, although
-          please feel welcome to pop in and browse our sought after collection.
+          RobDiamond is one of London&apos;s leading watch traders and is
+          situated in Hatton, London. Viewings are recommended by appointment,
+          although please feel welcome to pop in and browse our sought after
+          collection.
         </div>
         <div className={styles.heroBtn}>
           <Link
