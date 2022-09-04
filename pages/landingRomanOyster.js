@@ -36,7 +36,7 @@ function landingHulk() {
 
         <div className={styles.heroBtn}>
           <Link
-            href={"https://wa.me/447841347339?text=Welcome%20to%20RobDiamond"}
+            href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
           >
             WHATSAPP
           </Link>
