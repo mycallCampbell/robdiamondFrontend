@@ -1,0 +1,65 @@
+.container {
+    /* margin: 18px; */
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.ref {
+    text-align: center;
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+}
+
+.tag {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 10px 25px 25px 25px;
+}
+
+.numeralMarkerImage {
+  padding: 15px 0;
+}
+
+.rolexBox {
+  padding: 15px 0;
+}
+
+.heroBtn {
+    margin: 20px 40px;
+    padding: 10px 60px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 2px;
+    background: #b87674;
+    border: 2px solid #dda5a4;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .intro {
+    color: rgb(106, 106, 106);
+    padding: 20px;
+  }
+  
+  .intro span {
+    color: green;
+    font-weight: 700;
+  }
+
+  .imageContainer{
+    position: relative;
+}
