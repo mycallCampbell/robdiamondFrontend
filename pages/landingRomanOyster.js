@@ -31,9 +31,16 @@ function landingHulk() {
         <div className={styles.subTitle}>Wimbledon Oyster </div>
         <div className={styles.ref}>REF: 126331</div>
         <div className={styles.heroBtn}>
-          <a href="tel:07976753254">AVAILABLE NOW</a>
+          <a href="tel:07976753254">CALL NOW</a>
         </div>
 
+        <div className={styles.heroBtn}>
+          <Link
+            href={"https://wa.me/447841347339?text=Welcome%20to%20RobDiamond"}
+          >
+            WHATSAPP
+          </Link>
+        </div>
         <div className={styles.tag}>
           This Oyster Perpetual Datejust 41 in Oystersteel and Everose gold
           features a slate dial and an Oyster bracelet.
