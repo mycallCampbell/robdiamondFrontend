@@ -65,7 +65,7 @@ function landingHulk() {
         <div className={styles.intro}>
           One of the most sought after Rolex models on the market. 18k EverRose
           Gold, Fluted Bezel in keeping with the original design and a beautiful
-          slate dial with the very unique Rolex
+          slate dial with the very unique Rolex{" "}
           <span>&apos;Money Green&apos;</span>, illuminescent Roman Numeral
           numeber markers.
         </div>
@@ -79,7 +79,7 @@ function landingHulk() {
           Oyster and combining them with just the right amount of up-to-date
           features to show off their craftsmanship as one of the leading watch
           makers in the world. <span>&apos;Money Green&apos;</span> Roman
-          Numeral Number Markers.... Only Rolex can pull this off
+          Numeral Number Markers.... Only Rolex can pull this off!
         </div>
         <div className={styles.rolexBox}>
           <Image src={rolexBox} width={819} height={845} />
