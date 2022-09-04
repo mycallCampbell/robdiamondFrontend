@@ -13,6 +13,12 @@
   font-size: 1.5rem;
 }
 
+.location {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 20px;
+}
+
 .ref {
     text-align: center;
 }

@@ -73,15 +73,19 @@ function landingHulk() {
             </div>
           </Swiper>
         </div>
+        <div className={styles.location}>
+          Situated in the Iconic Hatton Garden, London
+        </div>
         <div className={styles.heroBtn}>
           <a href="tel:07976753254">CONTACT FOR DETAILS</a>
         </div>
+
         <div className={styles.intro}>
-          One of the most sought after Rolex models on the market. 18k EverRose
-          Gold, Fluted Bezel in keeping with the original design and a beautiful
-          slate dial with the very unique Rolex{" "}
-          <span>&apos;Money Green&apos;</span>, illuminescent Roman Numeral
-          numeber markers.
+          One of the most sought after Rolex models on the market. This 2022
+          DATEJUST 41 comes with an 18k EverRose Gold, Fluted Bezel in keeping
+          with the original design and a beautiful slate dial with the very
+          unique Rolex <span>&apos;Money Green&apos;</span>, illuminescent Roman
+          Numeral numeber markers.
         </div>
         <div className={styles.numeralMarkerImage}>
           <Image src={numeralMarkers} width={819} height={1024} />
@@ -127,6 +131,18 @@ function landingHulk() {
               ))}
             </div>
           </Swiper>
+        </div>
+        <div className={styles.intro}>
+          RobDiamond is one of London's leading watch traders and is situated in
+          Hatton, London. Viewings are recommended by appointment, although
+          please feel welcome to pop in and browse our sought after collection.
+        </div>
+        <div className={styles.heroBtn}>
+          <Link
+            href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
+          >
+            WHATSAPP
+          </Link>
         </div>
       </div>
       <Footer src={"/rolexFooter.jpg"} width={1704} height={700} />
