@@ -23,7 +23,7 @@ const product = [
 
 const product2 = ["clasp1", "clasp2"];
 
-function landingHulk() {
+function landingRomanJubilee() {
   return (
     <>
       <Head>
@@ -85,7 +85,7 @@ function landingHulk() {
           DATEJUST 41 comes with an 18k EverRose Gold, Fluted Bezel in keeping
           with the original design and a beautiful slate dial with the very
           unique Rolex <span>&apos;Money Green&apos;</span>, illuminescent Roman
-          Numeral Number Markers.
+          Numeral numeber markers.
         </div>
         <div className={styles.numeralMarkerImage}>
           <Image src={numeralMarkers} width={819} height={1024} />
@@ -151,4 +151,4 @@ function landingHulk() {
   );
 }
 
-export default landingHulk;
+export default landingRomanJubilee;
