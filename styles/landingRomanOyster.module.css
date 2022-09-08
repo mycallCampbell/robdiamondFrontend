@@ -69,3 +69,10 @@
   .imageContainer{
     position: relative;
 }
+
+.crypto {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}

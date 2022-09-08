@@ -205,6 +205,13 @@ function WatchProductPage({ product }) {
           <a href="tel:07976753254">CALL FOR DETAILS</a>
         </h4>
       </div>
+      <div className={styles.viewDetailsBTN}>
+        <Link
+          href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
+        >
+          <h4>WHATSAPP</h4>
+        </Link>
+      </div>
 
       <Footer src={"/rolexFooter.jpg"} width={1704} height={700} />
     </div>

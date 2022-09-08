@@ -76,6 +76,7 @@ function landingHulk() {
         <div className={styles.location}>
           Situated in the Iconic Hatton Garden, London
         </div>
+        <div className={styles.crypto}>WE ACCEPT CRYPTO</div>
         <div className={styles.heroBtn}>
           <a href="tel:07976753254">CONTACT FOR DETAILS</a>
         </div>
