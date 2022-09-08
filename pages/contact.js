@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
+import Link from "next/link";
 // import Meta from '../components/Meta';
 
 import styles from "../styles/contact.module.css";
-
 
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -52,24 +52,34 @@ function Contact() {
     //     "Content-Type": "application/json",
     //   },
     // });
-  //   const data = await res.json();
-  //   if (data === "Success") {
-  //     // set the input field to empty 
-  //     setFirstName("");
-  //     setSureName("");
-  //     setEmail("");
-  //     setPhone("");
-  //     setMessage("");
-  //     setMessageSuccess(true);
-  //   }
-  // };
-  }
+    //   const data = await res.json();
+    //   if (data === "Success") {
+    //     // set the input field to empty
+    //     setFirstName("");
+    //     setSureName("");
+    //     setEmail("");
+    //     setPhone("");
+    //     setMessage("");
+    //     setMessageSuccess(true);
+    //   }
+    // };
+  };
 
   return (
     <section className={styles.container}>
       {/* <Meta /> */}
       <div className={styles.titleMain}>
         <h1>ROB DIAMOND CONTACT</h1>
+      </div>
+      <div className={styles.heroBtn}>
+        <a href="tel:07976753254">CALL NOW</a>
+      </div>
+      <div className={styles.heroBtn}>
+        <Link
+          href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
+        >
+          WHATSAPP
+        </Link>
       </div>
       <div className={styles.contactInfo}>
         <p>
@@ -78,7 +88,6 @@ function Contact() {
           team.
         </p>
         <br />
-        
       </div>
       <form>
         <div className={styles.form}>
@@ -148,8 +157,7 @@ function Contact() {
           </div>
         )}
       </form>
-      <Footer src={'/contactFooter.jpg'} width={612} height={368} />
-
+      <Footer src={"/contactFooter.jpg"} width={612} height={368} />
     </section>
   );
 }

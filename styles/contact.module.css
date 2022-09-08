@@ -66,4 +66,17 @@
     padding: 10px;
     margin: 20px 20px;
   }
+
+  .heroBtn {
+    margin: 20px 40px;
+    padding: 10px 60px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 2px;
+    background: #b87674;
+    border: 2px solid #dda5a4;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
   
