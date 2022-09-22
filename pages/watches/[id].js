@@ -93,17 +93,6 @@ function WatchProductPage({ product }) {
         <h2>{product.name}</h2>
       </div>
 
-      {/* <Swiper pagination={true} modules={[Pagination]} className={styles.swiper}>
-            <div className={styles.swiperWrapper}>
-              {productArr.map((item, index) => (
-                <SwiperSlide className={styles.swiperSlide} key={index}>
-                  <Image src={`/${product.image}/${product.image}${index + 1}.jpeg`} width={500} height={600} />
-                </SwiperSlide> 
-              ))
-            }
-            </div>
-          </Swiper> */}
-
       <div className={styles.imageContainer}>
         <Swiper
           pagination={true}

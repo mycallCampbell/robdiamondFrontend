@@ -1,0 +1,16 @@
+.parentContainer {
+  max-width: 1700px;
+  margin: auto;
+}
+
+.itemImageContainer {
+  justify-self: center;
+  align-self: center;
+}
+
+@media (min-width: 450px) {
+  .itemImageContainer {
+    justify-self: end;
+    align-self: center;
+  }
+}

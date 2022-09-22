@@ -1,4 +1,13 @@
+/* color for 'Rob' on the title: #a37e2c */
+
 .container {
+}
+
+.bannerBottom {
+  min-height: 100px;
+  width: 100vw;
+  background: #a37e2c;
+  padding-top: 13px;
 }
 
 .main {
@@ -8,6 +17,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.bluezyTitle {
+  text-align: center;
+  /* margin: 20px 0; */
+}
+
+.bluezyTitle h2 {
+  margin-top: 150px;
+}
+
+.tagline h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  padding-top: 30px;
+}
+
+.tagline {
+  min-height: 100px;
+  min-width: 100vw;
+  background: rgb(41, 41, 41);
+}
+
+.contentBluezy {
+  padding: 20px;
 }
 
 .footer {
@@ -82,7 +117,12 @@
   z-index: 1;
 }
 
-
+.middleCard {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 20px;
+}
+  
 
 .card {
   margin: 1rem;
@@ -122,6 +162,7 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+  text-align: center;
 }
 
 .logo {
@@ -129,10 +170,76 @@
   margin-left: 0.5rem;
 }
 
+.viewDetailsBTN{
+  border: solid 2px #a37e2c;
+  border-radius: 15px;
+  padding: 10px 30px;
+  margin: 14px 60px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  background:#006039;
+  color: #fff;
+}
 
-@media (max-width: 600px) {
+.viewDetailsBTN:hover{
+  color: #fff;
+}
+
+
+@media (min-width: 768px) {
   .grid {
-    width: 100%;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    max-width: 1100px;
   }
+
+  .card {
+    min-height: 200px;
+  }
+
+  .middleCard {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+    
+    .imageBanner {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+    }
+
+    .bluezyTitle {
+      text-align: center;
+      margin: 20px;
+    }
+    
+    .contentBluezy {
+      margin: 20px;
+    }
+    
+    .blueRolexImage {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .imageBeauty {
+      margin: 50px;
+    
+    }
+
+    .imageGrid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-items: center;
+    }
+
+    .viewDetailsBTN {
+      margin: 0 300px;
+    }
+
+    .bannerBottom {
+padding: 25px;
+margin-bottom: 50px;
+    }
 }

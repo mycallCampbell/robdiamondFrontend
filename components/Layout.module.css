@@ -1,80 +1,103 @@
-.containerHeader1 {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 0;
+.displayNone {
+  display: none;
 }
 
-.containerHeader2{
-    display: grid;
-    justify-content: start;
+.menuItem {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px lightslategray;
+  width: 100vw;
 }
 
-.burgerIcon {
-    text-align: center;
+.robDiamondTitle{
+  text-align: center;
 }
 
-.logo {
-    text-align: center;
-    color: #006039;
-    cursor: pointer;
+.displayTitle{
+  margin: 20px 0;
+  cursor: pointer;
 }
 
-.logoOpen {
-    margin-top: 20px;
-    text-align: center;
-    color: #006039;
-    cursor: pointer;
+.arrow {
+  font-size: 1.5rem;
+}
+.closeMenu {
+  margin: 10px 0 20px 0;
+  text-align: center;
+  font-weight: 700;
 }
 
-.logoOpen span{
-    color: #a37e2c;
+
+.layoutContainer{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
 }
 
-.logo span{
-    color: #a37e2c;
+.logoContainer {
+  text-align: center;
+  max-height: 220px;
+  cursor: pointer;
+  margin: 20px;
 }
 
-.bagIcon {
-    text-align: center;
-    cursor: pointer;
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1.2fr 5fr 1.2fr;
+  align-items: center;
+  justify-content: center;
 }
 
-.closeMenu{
-    text-align: center;
-    cursor: pointer;
+.cartIcon {
+margin: 20px;
 }
 
-.none {
-    display: none;
+.navgrid {
+  display: none;
 }
 
-.tablet {
-    display: none;
+.underline{
+  border-top: 4px solid #006039;
 }
 
-.cartNumber{
-    display: inline;
-    font-size: 1.4rem;
+.rob {
+  color: #a37e2c
+}
+.diamond {
+  color: #006039
 }
 
+.hamburgerIcon {
+  margin-left: 10px;
+  list-style: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
 
 @media (min-width: 768px) {
-    .burgerIcon {
-        display: none;
-    }
+.navgrid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 
-    .containerHeader1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-        margin-top: 15px;
-    }
+}
+.menu {
+  display: none;
+ }
 
-    .tablet {
-        display: block;
-    }
-
+ .gridContainer {
+ display: grid;
+ grid-template-columns: 100%;
+}
+.cartIcon {
+  display: block;
+  text-align: center;
+}
 }

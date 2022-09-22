@@ -1,0 +1,49 @@
+.menuContainer {
+  /* min-height: 400px; */
+  /* min-width: 400px; */
+  max-width: 400px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.menu {
+  color: red;
+}
+
+.hamburgerIcon {
+  margin-left: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menuItem {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px lightslategray;
+  max-width: 90%;
+}
+
+.menuTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+}
+.closeMenu {
+  margin: 10px 0 20px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
