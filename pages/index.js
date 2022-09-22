@@ -35,8 +35,8 @@ export default function Home() {
 
           <div className={styles.middleCard}>
             <h4>
-              Rob Diamond is one of London's Leading Rolex dealers located in
-              Hatton Garden.
+              Rob Diamond is one of London&apos;s Leading Rolex dealers located
+              in Hatton Garden.
             </h4>
           </div>
 
