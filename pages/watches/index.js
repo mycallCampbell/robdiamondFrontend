@@ -23,7 +23,11 @@ function watches({ products }) {
         <h1>ROLEX</h1>
       </div>
       {products.map((product) => (
-        <div className={styles.productContainer} key={product._id}>
+        <div
+          className={styles.productContainer}
+          key={product._id}
+          id={product.image}
+        >
           <h2>{product.name}</h2>
           <div>
             <Image

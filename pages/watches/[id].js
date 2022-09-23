@@ -86,7 +86,7 @@ function WatchProductPage({ product }) {
 
   return (
     <div className={styles.container}>
-      <Link href={`/${product.category}`}>
+      <Link href={`/${product.category}#${product.image}`}>
         <div className={styles.breadcrumb}>{"<"} BACK</div>
       </Link>
       <div className={styles.title}>
