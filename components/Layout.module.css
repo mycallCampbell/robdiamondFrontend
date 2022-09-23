@@ -2,6 +2,11 @@
   display: none;
 }
 
+.container {
+  position: relative;
+  top: 37px;
+}
+
 .menuItem {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -35,6 +40,13 @@
 .layoutContainer{
   display: grid;
   grid-template-columns: 20% 60% 20%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  border-bottom: 4px solid #006039;
+
 }
 
 .logoContainer {
@@ -59,9 +71,6 @@ margin: 20px;
   display: none;
 }
 
-.underline{
-  border-top: 4px solid #006039;
-}
 
 .rob {
   color: #a37e2c
@@ -82,15 +91,16 @@ margin: 20px;
 }
 
 @media (min-width: 768px) {
-.navgrid {
+
+  .navgrid {
   display: grid;
   justify-content: center;
   align-items: center;
-
+  margin-top: 40px;
 }
-.menu {
+  .menu {
   display: none;
- }
+}
 
  .gridContainer {
  display: grid;

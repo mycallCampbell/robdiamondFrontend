@@ -21,7 +21,7 @@ export default function Home() {
 
       <main className={styles.main}>
         {/* HERO for desktop and ipad*/}
-        <div>
+        <div className={styles.heroImage}>
           <Image src={"/rolexIpadBG.webp"} width={1246} height={460} />
         </div>
 
@@ -55,10 +55,10 @@ export default function Home() {
         </div>
         <div className={styles.imageGrid}>
           <div className={styles.imageBeauty}>
-            <Image src={"/beautyInMotion.jpeg"} width={450} height={400} />
+            <Image src={"/beautyInMotion.jpeg"} width={450} height={450} />
           </div>
-          <div className={styles.imageBeauty}>
-            <Image src={"/rolexBoxBG.jpeg"} width={450} height={400} />
+          <div className={styles.imageBeautyWimbledon}>
+            <Image src={"/rolexBoxBG.jpeg"} width={450} height={450} />
           </div>
         </div>
         <div className={styles.bannerBottom}>
