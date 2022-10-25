@@ -22,7 +22,7 @@ export default function Home() {
       <main className={styles.main}>
         {/* HERO for desktop and ipad*/}
         <div className={styles.heroImage}>
-          <Image src={"/rolexIpadBG.webp"} width={1246} height={460} />
+          <Image src={"/hero-image-rolex-mc.jpeg"} width={1920} height={750} />
         </div>
 
         <div className={styles.grid}>
