@@ -32,8 +32,8 @@ function watches({ products }) {
           <div>
             <Image
               src={`/${product.image}/${product.image}1.jpeg`}
-              width={768}
-              height={1024}
+              width={1127}
+              height={1659}
             />
           </div>
           <Link href={`/watches/${[product._id]}`}>

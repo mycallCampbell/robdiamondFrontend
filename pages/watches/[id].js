@@ -102,29 +102,11 @@ function WatchProductPage({ product }) {
           <div className={styles.swiperWrapper}>
             {productArr.map((item, index) => (
               <SwiperSlide className={styles.swiperSlide} key={index}>
-                {index === 0 ? (
-                  <div className={styles.videoGrid}>
-                    <video
-                      loop
-                      width={360}
-                      height={636}
-                      playsInline
-                      autoPlay
-                      muted
-                    >
-                      <source
-                        src={`/${product.image}/${product.image}1.mp4`}
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                ) : (
-                  <Image
-                    src={`/${product.image}/${product.image}${index}.jpeg`}
-                    width={768}
-                    height={1024}
-                  />
-                )}
+                <Image
+                  src={`/${product.image}/${product.image}${index + 1}.jpeg`}
+                  width={1127}
+                  height={1659}
+                />
               </SwiperSlide>
             ))}
           </div>
