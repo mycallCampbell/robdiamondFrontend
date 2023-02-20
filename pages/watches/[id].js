@@ -105,9 +105,9 @@ function WatchProductPage({ product }) {
                 <Image
                   src={`/${product.ref}${product.image}/${product.ref}${
                     product.image
-                  }${index + 1}.jpeg`}
-                  width={1024}
-                  height={683}
+                  }${index + 1}.jpg`}
+                  width={1680}
+                  height={1120}
                 />
               </SwiperSlide>
             ))}
