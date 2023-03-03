@@ -30,21 +30,23 @@ ul{
 }
 
 .swiper-pagination-bullet {
-  display: inline-block;
-  width: 0.5rem !important;
-  height: 0.5rem !important;
+  /* display: inline-block; */
+  /* width: 0.5rem !important;
+  height: 0.5rem !important; */
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #4d4d4d !important;
+  background-color: #2c2c2c !important;
 }
 
 .swiper-pagination{
-  position: absolute;
+  /* position: absolute;
   bottom: 0 !important;
-  background: #ffffff;
+  background: #ffffff; */
+  
 }
 
 .swiper-pagination-horizontal {
-  padding-top: 20px;
+  /* padding-top: 20px; */
+
 }
