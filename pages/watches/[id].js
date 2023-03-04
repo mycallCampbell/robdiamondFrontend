@@ -105,7 +105,7 @@ function WatchProductPage({ product }) {
                 <Image
                   src={`/${product.ref}${product.image}/${product.ref}${
                     product.image
-                  }${index + 1}.jpg`}
+                  }${index + 1}.JPG`}
                   width={1680}
                   height={1120}
                 />
