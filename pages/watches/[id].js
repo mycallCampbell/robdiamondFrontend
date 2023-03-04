@@ -133,9 +133,6 @@ function WatchProductPage({ product }) {
           <div className={styles.specLabelinBetween}>Braclet Material</div>
           <div className={styles.specLabelinBetween}>Case Size</div>
           <div className={styles.specLabelinBetween}>Dial</div>
-          <div className={styles.specLabelinBetween}>Address</div>
-          <div className={styles.specLabelinBetween}>Walkings</div>
-          <div className={styles.specLabelinBetween}>Appointment</div>
         </div>
         <div className={styles.specValueContainer}>
           <div className={styles.specValue}>{product.model}</div>
