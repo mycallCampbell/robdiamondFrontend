@@ -2,7 +2,41 @@
 
 .container {
 }
+.heroBtn {
+  margin: 20px 40px;
+  padding: 10px 60px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 2px;
+  background: #b87674;
+  border: 2px solid #dda5a4;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
 
+.collectionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.collectionTitle {
+  font-size: 1.4rem;
+  margin: 15px;
+}
+.grid1 {
+  height: 180px;
+  width: 180px;
+  border: 1px solid grey;
+  margin: 10px;
+}
+
+.grid2 {
+  height: 180px;
+  width: 180px;
+  border: 1px solid grey;
+  margin: 10px;
+}
 .bannerBottom {
   min-height: 100px;
   width: 100vw;
@@ -60,7 +94,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #2e2e2e;
   text-decoration: none;
 }
 
@@ -109,10 +143,11 @@
   z-index: 1;
 }
 
-.middleCard {
+.caption {
   text-align: center;
-  font-size: 1.3rem;
-  margin: 20px;
+  font-size: 1.5rem;
+  margin: 40px 20px 20px 20px;
+  color: #2e2e2e;
 }
   
 
@@ -171,7 +206,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
-  background:#006039;
+  background:#00ddec;
   color: #fff;
 }
 

@@ -22,30 +22,34 @@ export default function Home() {
       <main className={styles.main}>
         {/* HERO for desktop and ipad*/}
         <div className={styles.heroImage}>
-          <Image src={"/hero-mobile.jpeg"} width={1920} height={992} />
+          <Image src={"/hero_image_rolex1.jpeg"} width={1387} height={1893} />
+        </div>
+
+        <div className={styles.caption}>
+          <h4>Ready for Your Perfect Rolex</h4>
         </div>
 
         <div className={styles.grid}>
-          <Link href={"/watches"}>
-            <div className={styles.card}>
-              <h2>ROLEX</h2>
-              <p>Find The Perfect Rolex For You</p>
-            </div>
-          </Link>
-
-          <div className={styles.middleCard}>
-            <h4>
-              Rob Diamond is one of London&apos;s Leading Rolex dealers located
-              in Hatton Garden.
-            </h4>
+          <div className={styles.heroBtn}>
+            <Link
+              href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
+            >
+              WHATSAPP ROB DIRECT
+            </Link>
           </div>
 
-          <Link href={"/contact"}>
+          <div className={styles.collectionTitle}>COLLECTIONS</div>
+
+          {/* <Link href={"/contact"}>
             <div className={styles.card}>
               <h2>CONTACT</h2>
               <p>Call, WhatsApp or Email RobDiamond</p>
             </div>
-          </Link>
+          </Link> */}
+          <div className={styles.collectionGrid}>
+            <div className={styles.grid1}></div>
+            <div className={styles.grid2}></div>
+          </div>
         </div>
       </main>
 

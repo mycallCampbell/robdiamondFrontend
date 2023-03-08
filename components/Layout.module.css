@@ -45,7 +45,7 @@
   width: 100%;
   background: #fff;
   z-index: 1000;
-  border-bottom: 4px solid #006039;
+  border-bottom: 4px solid #4d748a;
 
 }
 
@@ -73,10 +73,10 @@ margin: 20px;
 
 
 .rob {
-  color: #a37e2c
+  color: #2e2e2e
 }
 .diamond {
-  color: #006039
+  color: #2e2e2e
 }
 
 .hamburgerIcon {
