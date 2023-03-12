@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/blingToBulliion.module.css";
 import blingToBullion1 from "../public/blingToBullion1.jpg";
@@ -10,6 +11,13 @@ import Footer from "../components/Footer";
 function blingToBullion() {
   return (
     <>
+      <Head>
+        <title>ROB DIAMOND</title>
+        <meta name="description" content="Bling To Bullion" />
+        <meta property="og:image" content="favicon.png" />
+
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Image src={"/hero_blingToBullion.jpeg"} width={1024} height={683} />
       <div className={styles.container}>
         <div className={styles.title}>Bling To Bullion</div>
