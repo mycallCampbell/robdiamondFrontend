@@ -29,7 +29,7 @@ function Menu() {
                 <Link href={"/watches"}>
                   <div className={styles.menuItem}>
                     <div>
-                      <h3>WATCHES</h3>
+                      <h3>ROLEX</h3>
                     </div>
                     <div className={styles.arrow}>{">"}</div>
                   </div>

@@ -7,15 +7,13 @@
   top: 37px;
 }
 
-.menuItem {
+.menuGrid {
   display: grid;
-  grid-template-columns: 5fr 2fr;
-  align-items: center;
-  margin-bottom: 15px;
-  margin-left: 10px;
-  padding-bottom: 10px;
+  grid-template-columns: 70% 30%;
   border-bottom: solid 1px lightslategray;
-  width: 100vw;
+}
+.menuItem1 {
+  padding: 10px;
 }
 
 .robDiamondTitle{
@@ -45,7 +43,7 @@
   width: 100%;
   background: #fff;
   z-index: 1000;
-  border-bottom: 4px solid #4d748a;
+  border-bottom: 4px solid #91c0dc;
 
 }
 

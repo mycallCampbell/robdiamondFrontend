@@ -11,7 +11,7 @@ function CartIcon() {
       <>
         <Link href={"/cart"}>
           <div className={styles.cartItem}>
-            <Image src="/logo.png" width={33} height={33} />
+            <Image src="/phone_icon.png" width={32} height={32} />
             {/* <div className={styles.cartNumber}>
               {cart && cart.length > 0 ? cart.length : ""}
             </div> */}

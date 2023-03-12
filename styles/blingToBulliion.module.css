@@ -1,0 +1,46 @@
+.container {
+    margin: 18px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+}
+
+.heroBtn {
+    margin: 20px;
+    padding: 10px 80px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 2px;
+    background: #91c0dc;
+    border: 2px solid #91c0dc;
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  .intro {
+    color: rgb(106, 106, 106);
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .intro span {
+    font-weight: 700;
+  }
+
+  .imageContainer{
+    position: relative;
+}
+
+.boldText {
+    font-weight: 700;
+}

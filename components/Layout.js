@@ -47,9 +47,20 @@ function Layout({ children }) {
                   <ul>
                     <li>
                       <Link href={"/watches"}>
-                        <div className={styles.menuItem}>
-                          <div>
-                            <h3>WATCHES</h3>
+                        <div className={styles.menuGrid}>
+                          <div className={styles.menuItem1}>
+                            <h3>ROLEX</h3>
+                          </div>
+                          <div className={styles.arrow}>{">"}</div>
+                        </div>
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link href={"/watches"}>
+                        <div className={styles.menuGrid}>
+                          <div className={styles.menuItem1}>
+                            <h3>BLOG</h3>
                           </div>
                           <div className={styles.arrow}>{">"}</div>
                         </div>

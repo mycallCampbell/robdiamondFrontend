@@ -26,7 +26,8 @@ export default function Home() {
         </div>
 
         <div className={styles.caption}>
-          <h4>Ready for Your Perfect Rolex</h4>
+          <h4>Ready for Your Perfect</h4>
+          <h2>ROLEX</h2>
         </div>
 
         <div className={styles.grid}>
@@ -38,16 +39,15 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className={styles.collectionTitle}>COLLECTIONS</div>
+          <div className={styles.collectionTitle}>LATEST BLOG</div>
 
-          {/* <Link href={"/contact"}>
-            <div className={styles.card}>
-              <h2>CONTACT</h2>
-              <p>Call, WhatsApp or Email RobDiamond</p>
-            </div>
-          </Link> */}
           <div className={styles.collectionGrid}>
-            <div className={styles.grid1}></div>
+            <Link href={"/blingToBullion"}>
+              <div className={styles.grid1}>
+                <Image src={"/latest_blog.PNG"} width={200} height={240} />
+              </div>
+            </Link>
+
             <div className={styles.grid2}></div>
           </div>
         </div>
