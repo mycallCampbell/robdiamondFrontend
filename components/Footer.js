@@ -35,13 +35,7 @@ function Footer({ src, width, height }) {
     <section className={styles.containerFooter}>
       <div>
         {/* <div className={styles.line}></div> */}
-        <div className={styles.content}>
-          <h2>Stay Updated!</h2>
-          <p>
-            Join Our Mailing List and be the first to hear about our new
-            designs.
-          </p>
-        </div>
+        <div className={styles.content}></div>
       </div>
       <div className={styles.artWork}>
         <Image src={src} width={width} height={height} />

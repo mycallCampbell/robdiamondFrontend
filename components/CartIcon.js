@@ -9,12 +9,11 @@ function CartIcon() {
   return (
     <div className={styles.cartIconContainer}>
       <>
-        <Link href={"/cart"}>
+        <Link
+          href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
+        >
           <div className={styles.cartItem}>
             <Image src="/phone_icon.png" width={32} height={32} />
-            {/* <div className={styles.cartNumber}>
-              {cart && cart.length > 0 ? cart.length : ""}
-            </div> */}
           </div>
         </Link>
       </>

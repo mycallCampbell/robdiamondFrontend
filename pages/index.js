@@ -76,7 +76,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer src={"/rolexFooter.jpg"} width={1704} height={700} />
+      <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
     </div>
   );
 }

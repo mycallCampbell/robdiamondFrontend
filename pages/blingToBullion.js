@@ -4,8 +4,6 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/blingToBulliion.module.css";
 import blingToBullion1 from "../public/blingToBullion1.jpg";
-import "swiper/css";
-import "swiper/css/pagination";
 import Footer from "../components/Footer";
 
 function blingToBullion() {
@@ -116,7 +114,7 @@ function blingToBullion() {
           </span>
         </div>
       </div>
-      <Footer src={"/rolexFooter.jpg"} width={1704} height={700} />
+      <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
     </>
   );
 }
