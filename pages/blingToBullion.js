@@ -52,7 +52,7 @@ function blingToBullion() {
           long-term growth. Additionally, gold prices can be volatile, with
           sudden fluctuations in price that can be difficult to predict.
         </div>
-        <Image src={"/hulk.JPG"} width={600} height={600} />
+        <Image src={"/hulk.jpg"} width={600} height={600} />
 
         <div className={styles.intro}>
           <span className={styles.boldText}>Investing In Rolex Watches</span>{" "}
