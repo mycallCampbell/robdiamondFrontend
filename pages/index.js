@@ -17,6 +17,8 @@ export default function Home() {
           name="facebook-domain-verification"
           content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
         />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
+
         <link rel="icon" href="/favicon.png" />
       </Head>
 
