@@ -119,8 +119,44 @@ function WatchProductPage({ product }) {
         <p>{product.descriptionSmall}</p>
       </div>
       <div className={styles.price}>PRICE: £{product.price}</div>
+
+      <div className={styles.space}></div>
+
+      {/* SPECIFICATION */}
       <div className={styles.specContainer}>
-        <div className={styles.specLabel}>
+        <div className={styles.label}>Model</div>
+        <div className={styles.labelDescription}>{product.model}</div>
+
+        <div className={styles.label}>Reference</div>
+        <div className={styles.labelDescription}>{product.ref}</div>
+
+        <div className={styles.label}>Year</div>
+        <div className={styles.labelDescription}>{product.year}</div>
+
+        <div className={styles.label}>Box</div>
+        <div className={styles.labelDescription}>{product.box}</div>
+
+        <div className={styles.label}>Papers</div>
+        <div className={styles.labelDescription}>{product.papers}</div>
+
+        <div className={styles.label}>Available</div>
+        <div className={styles.labelDescription}>{product.availble}</div>
+
+        <div className={styles.label}>Case Material</div>
+        <div className={styles.labelDescription}>{product.caseMaterial}</div>
+
+        <div className={styles.label}>Bracelet Material</div>
+        <div className={styles.labelDescription}>
+          {product.braceletMaterial}
+        </div>
+
+        <div className={styles.label}>Case Size</div>
+        <div className={styles.labelDescription}>{product.caseSize}</div>
+
+        <div className={styles.label}>Dial</div>
+        <div className={styles.labelDescription}>{product.dial}</div>
+
+        {/* <div className={styles.specLabel}>
           <div className={styles.specLabelinBetween}>Model</div>
           <div className={styles.specLabelinBetween}>Ref</div>
           <div className={styles.specLabelinBetween}>Year</div>
@@ -131,8 +167,8 @@ function WatchProductPage({ product }) {
           <div className={styles.specLabelinBetween}>Braclet Material</div>
           <div className={styles.specLabelinBetween}>Case Size</div>
           <div className={styles.specLabelinBetween}>Dial</div>
-        </div>
-        <div className={styles.specValueContainer}>
+        </div> */}
+        {/* <div className={styles.specValueContainer}>
           <div className={styles.specValue}>{product.model}</div>
           <div className={styles.specValueinBetween}>{product.ref}</div>
           <div className={styles.specValue}>{product.year}</div>
@@ -145,7 +181,7 @@ function WatchProductPage({ product }) {
           </div>
           <div className={styles.specValue}>{product.caseSize}</div>
           <div className={styles.specValueinBetween}>{product.dial}</div>
-        </div>
+        </div> */}
       </div>
 
       <div className={styles.description}>{product.description}</div>

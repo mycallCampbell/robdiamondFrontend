@@ -45,7 +45,7 @@ export default function Home() {
         <p className={styles.collectionTitle}>COLLECTION</p>
 
         <div className={styles.collectionGrid}>
-          <Link href={"/#"}>
+          <Link href={"/watches/35"}>
             <div className={styles.grid}>
               <Image
                 src={"/126231wimbledon/126231wimbledon1.JPG"}
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/#"}>
+          <Link href={"/watches/31"}>
             <div className={styles.grid}>
               <Image
                 src={"/126711CHNRrootbeer/126711CHNRrootbeer1.JPG"}
@@ -73,7 +73,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/#"}>
+          <Link href={"/watches/34"}>
             <div className={styles.grid}>
               <Image
                 src={"/116506platona/116506platona1.JPG"}
@@ -87,7 +87,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/#"}>
+          <Link href={"/watches/28"}>
             <div className={styles.grid}>
               <Image
                 src={"/116611LVhulk/116611LVhulk1.JPG"}

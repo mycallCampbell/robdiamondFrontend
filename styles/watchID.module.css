@@ -52,19 +52,12 @@ justify-content: center;
 
 .specContainer{
     /* margin-top: 20px; */
-    padding: 20px;
+    /* padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; */
 }
 
-.specLabel{
-    font-size: 0.9rem;
-    line-height: 01.5rem;
-}
 
-.specLabelinBetween{
-    padding: 5px;
-}
 
 .specValueContainer{
     font-size: 0.9rem;
@@ -141,4 +134,22 @@ justify-content: center;
       text-align: center;
       font-weight: 500;
       font-size: 1.2rem;
+  }
+
+  .label {
+    color: #212121;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+
+  .labelDescription {
+    color: #5b5b5b;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin: 3px 0 20px 20px;
+  }
+
+  .space {
+    margin: 30px;
   }

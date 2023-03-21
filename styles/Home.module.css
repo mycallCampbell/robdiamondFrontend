@@ -31,6 +31,7 @@
   -webkit-filter: brightness(100%);
   margin: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .grid:hover {
@@ -228,6 +229,7 @@
     display: grid;
     grid-template-columns: 25% 50% 25%;
     max-width: 1100px;
+    cursor: pointer;
   }
 
   .card {
