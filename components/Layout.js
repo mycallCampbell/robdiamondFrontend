@@ -35,10 +35,10 @@ function Layout({ children }) {
                 className={styles.menuContainer}
               >
                 <div className={styles.robDiamondTitle}>
-                  <Link href="/">
+                  <Link href="/#">
                     <h3>
-                      <span className={styles.rob}>ROB </span>
-                      <span className={styles.diamond}>DIAMOND</span>
+                      <span className={styles.robOpen}>ROB </span>
+                      <span className={styles.diamondOpen}>DIAMOND</span>
                     </h3>
                   </Link>
                 </div>
@@ -49,31 +49,20 @@ function Layout({ children }) {
                       <Link href={"/watches"}>
                         <div className={styles.menuGrid}>
                           <div className={styles.menuItem1}>
-                            <h3>ROLEX</h3>
+                            <p>ROLEX</p>
                           </div>
-                          <div className={styles.arrow}>{">"}</div>
-                        </div>
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link href={"/watches"}>
-                        <div className={styles.menuGrid}>
-                          <div className={styles.menuItem1}>
-                            <h3>BLOG</h3>
-                          </div>
-                          <div className={styles.arrow}>{">"}</div>
+                          <div className={styles.menuItem2}>{">"}</div>
                         </div>
                       </Link>
                     </li>
 
                     <li>
                       <Link href={"/contact"}>
-                        <div className={styles.menuItem}>
-                          <div>
-                            <h3>CONTACT</h3>
+                        <div className={styles.menuGrid}>
+                          <div className={styles.menuItem1}>
+                            <p>CONTACT</p>
                           </div>
-                          <div className={styles.arrow}>{">"}</div>
+                          <div className={styles.menuItem2}>{">"}</div>
                         </div>
                       </Link>
                     </li>
@@ -81,7 +70,7 @@ function Layout({ children }) {
                 </nav>
 
                 <div className={styles.closeMenu}>
-                  <p>Close Menu</p>
+                  <p>CLOSE MENU</p>
                 </div>
               </div>
             )}
