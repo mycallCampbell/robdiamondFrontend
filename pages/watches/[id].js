@@ -126,9 +126,7 @@ function WatchProductPage({ product }) {
           <div className={styles.specLabelinBetween}>Year</div>
           <div className={styles.specLabelinBetween}>Box</div>
           <div className={styles.specLabelinBetween}>Papers</div>
-          <div className={styles.specLabelinBetween}>Condition</div>
           <div className={styles.specLabelinBetween}>Available</div>
-          <div className={styles.specLabelinBetween}>Movement</div>
           <div className={styles.specLabelinBetween}>Case Material</div>
           <div className={styles.specLabelinBetween}>Braclet Material</div>
           <div className={styles.specLabelinBetween}>Case Size</div>
@@ -140,33 +138,15 @@ function WatchProductPage({ product }) {
           <div className={styles.specValue}>{product.year}</div>
           <div className={styles.specValueinBetween}>{product.box}</div>
           <div className={styles.specValue}>{product.papers}</div>
-          <div className={styles.specValueinBetween}>{product.condition}</div>
           <div className={styles.specValue}>{product.availble}</div>
-          <div className={styles.specValueinBetween}>{product.movement}</div>
           <div className={styles.specValue}>{product.caseMaterial}</div>
           <div className={styles.specValueinBetween}>
             {product.braceletMaterial}
           </div>
           <div className={styles.specValue}>{product.caseSize}</div>
           <div className={styles.specValueinBetween}>{product.dial}</div>
-          <div className={styles.specValue}>{product.address}</div>
-          <div className={styles.specValueinBetween}>{product.walkings}</div>
-          <div className={styles.specValue}>{product.appointment}</div>
         </div>
       </div>
-      {/* <div className={styles.addToBasketBtn} onClick={addToCart}>
-          <a>ADD TO BASKET</a>
-        </div>
-        {added && (
-        <div className={styles.addSuccessMessage}>
-          Your Item has been added to the basket
-        </div>
-        )}
-        <Link href="/cart">
-        <div className={checkout ? styles.checkoutBtn : styles.displayNone}>
-          <a>CHECKOUT</a>
-        </div>
-        </Link> */}
 
       <div className={styles.description}>{product.description}</div>
 
@@ -183,7 +163,7 @@ function WatchProductPage({ product }) {
         </Link>
       </div>
 
-      <Footer src={"/rolexFooter.jpg"} width={1704} height={700} />
+      <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
     </div>
   );
 }

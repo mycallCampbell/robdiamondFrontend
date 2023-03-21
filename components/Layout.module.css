@@ -68,13 +68,18 @@ margin: 20px;
 .navgrid {
   display: none;
 }
-
+ .title {
+  font-weight: 500;
+  margin-top: 5px;
+ }
 
 .rob {
-  color: #2e2e2e
+  color: #2e2e2e;
+  letter-spacing: 3px;
 }
 .diamond {
-  color: #2e2e2e
+  color: #2e2e2e;
+  letter-spacing: 3px;
 }
 
 .hamburgerIcon {

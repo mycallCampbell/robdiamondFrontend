@@ -92,10 +92,10 @@ function Layout({ children }) {
           >
             <div>
               <Link href="/">
-                <h2>
+                <h3 className={styles.title}>
                   <span className={styles.rob}>ROB </span>
                   <span className={styles.diamond}>DIAMOND</span>
-                </h2>
+                </h3>
               </Link>
             </div>
           </section>

@@ -5,13 +5,33 @@
 .title {
     text-align: center;
     font-size: 1.5rem;
+    font-family: inherit !important;
     padding: 15px;
 }
 
 .subTitle {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     color: rgb(51, 51, 51);
+}
+
+.subHeader {
+  margin: 0 20px;
+  color: rgb(106, 106, 106);
+}
+
+.inception {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: rgb(106, 106, 106);
+}
+
+.minutes {
+  margin: 10px;
+  padding: 10px 0;
+  color: rgb(106, 106, 106);
 }
 
 .heroBtn {
@@ -27,13 +47,14 @@
     cursor: pointer;
   }
 
-  .intro {
+  .paragraph {
     color: rgb(106, 106, 106);
-    padding: 10px;
-    margin: 10px;
+    padding: 0 10px 10px 10px;
+    margin: 0 10px 10px 10px;
+    
   }
   
-  .intro span {
+  .paragraph span {
     font-weight: 700;
   }
 
@@ -44,3 +65,7 @@
 .boldText {
     font-weight: 700;
 }
+
+
+
+

@@ -22,11 +22,11 @@ export default function Home() {
       <main className={styles.main}>
         {/* HERO for desktop and ipad*/}
         <div className={styles.heroImage}>
-          <Image src={"/hero_image_rolex1.jpeg"} width={1387} height={1893} />
+          <Image src={"/hero_blingToBullion.jpeg"} width={1024} height={683} />
         </div>
 
         <div className={styles.caption}>
-          <h4>Ready for Your Perfect</h4>
+          <p className={styles.readyFor}>Ready for Your Perfect</p>
           <h2>ROLEX</h2>
         </div>
 
@@ -39,42 +39,67 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className={styles.collectionTitle}>LATEST BLOG</div>
+          <p className={styles.collectionTitle}>COLLECTION</p>
 
           <div className={styles.collectionGrid}>
-            <Link href={"/blingToBullion"}>
-              <div className={styles.grid1}>
-                <Image src={"/latest_blog.PNG"} width={200} height={240} />
+            <Link href={"/#"}>
+              <div className={styles.grid}>
+                <Image
+                  src={"/126231wimbledon/126231wimbledon1.JPG"}
+                  width={840}
+                  height={560}
+                />
+                <div className={styles.gridContent}>
+                  <p className={styles.gridTitleRolex}>ROLEX</p>
+                  <p>DATEJUST</p>
+                </div>
               </div>
             </Link>
 
-            <div className={styles.grid2}></div>
-          </div>
-        </div>
-      </main>
+            <Link href={"/#"}>
+              <div className={styles.grid}>
+                <Image
+                  src={"/126711CHNRrootbeer/126711CHNRrootbeer1.JPG"}
+                  width={840}
+                  height={560}
+                />
+                <div className={styles.gridContent}>
+                  <p className={styles.gridTitleRolex}>ROLEX</p>
+                  <p>GMT MASTER II</p>
+                </div>
+              </div>
+            </Link>
 
-      <section className={styles.section3}>
-        <div className={styles.tagline}>
-          <h1>Beauty In Motion</h1>
-        </div>
-        <div className={styles.imageGrid}>
-          <div className={styles.imageBeauty}>
-            <Image src={"/beautyInMotion.jpeg"} width={450} height={450} />
-          </div>
-          <div className={styles.imageBeautyWimbledon}>
-            <Image src={"/rolexBoxBG.jpeg"} width={450} height={450} />
-          </div>
-        </div>
-        <div className={styles.bannerBottom}>
-          <div className={styles.viewDetailsBTN}>
-            <Link
-              href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
-            >
-              <h4>WHATSAPP</h4>
+            <Link href={"/#"}>
+              <div className={styles.grid}>
+                <Image
+                  src={"/116506platona/116506platona1.JPG"}
+                  width={840}
+                  height={560}
+                />
+                <div className={styles.gridContent}>
+                  <p className={styles.gridTitleRolex}>ROLEX</p>
+                  <p>DAYTONA</p>
+                </div>
+              </div>
+            </Link>
+
+            <Link href={"/#"}>
+              <div className={styles.grid}>
+                <Image
+                  src={"/116611LVhulk/116611LVhulk1.JPG"}
+                  width={840}
+                  height={560}
+                />
+                <div className={styles.gridContent}>
+                  <p className={styles.gridTitleRolex}>ROLEX</p>
+                  <p>SUBMARINER</p>
+                </div>
+              </div>
             </Link>
           </div>
         </div>
-      </section>
+      </main>
 
       <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
     </div>

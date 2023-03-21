@@ -18,10 +18,10 @@ function blingToBullion() {
       </Head>
       <Image src={"/hero_blingToBullion.jpeg"} width={1024} height={683} />
       <div className={styles.container}>
-        <div className={styles.title}>Bling To Bullion</div>
-        <div className={styles.subTitle}>
+        <p className={styles.title}>Bling To Bullion</p>
+        <p className={styles.subTitle}>
           Should You Invest in a Rolex Watch or Buy Gold?
-        </div>
+        </p>
         <div className={styles.heroBtn}>
           <a>CALL FOR ADVICE</a>
         </div>

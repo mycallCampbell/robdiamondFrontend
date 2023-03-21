@@ -1,7 +1,5 @@
 /* color for 'Rob' on the title: #a37e2c */
 
-.container {
-}
 .heroBtn {
   margin: 20px;
   padding: 10px 80px;
@@ -15,6 +13,11 @@
   cursor: pointer;
 }
 
+.readyFor {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
 .collectionGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -24,17 +27,21 @@
   font-size: 1.4rem;
   margin: 15px;
 }
-.grid1 {
-  border: 1px solid #91c0dc;
+.grid {
+  /* border: 1px solid #91c0dc; */
   margin: 10px;
+  text-align: center;
 }
 
-.grid2 {
-  height: 180px;
-  width: 180px;
-  border: 1px solid grey;
-  margin: 10px;
+.gridContent {
+  margin: 5px;
 }
+
+.gridTitleRolex {
+  font-size: 0.8rem;
+  margin: 2px;
+}
+
 .bannerBottom {
   min-height: 100px;
   width: 100vw;
@@ -48,31 +55,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.bluezyTitle {
-  text-align: center;
-}
-
-.bluezyTitle h2 {
-  margin-top: 150px;
-}
-
-.tagline h1 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 2rem;
-  padding-top: 30px;
-}
-
-.tagline {
-  min-height: 100px;
-  min-width: 100vw;
-  background: rgb(41, 41, 41);
-}
-
-.contentBluezy {
-  padding: 20px;
 }
 
 .footer {
@@ -119,22 +101,8 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
+
  
 
 .heroContent{

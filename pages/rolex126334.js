@@ -23,53 +23,35 @@ function rolex126334() {
         <div className={styles.heroBtn}>
           <a>CALL FOR ADVICE</a>
         </div>
-        <h5 className={styles.intro}>2 Minute Read Time</h5>
-        <div className={styles.intro}>
-          The Rolex 126334 is a timeless classic that has stood the test of
-          time. When purchasing a Rolex, it is important to take note of the
-          white tag that comes with it. The tag serves as proof of purchase and
-          authenticity, and it is highly recommended that you keep it in a safe
-          place. The glass on the Rolex 126334 is made from synthetic sapphire,
-          a highly scratch-resistant material that is incredibly durable. The
-          cyclops lens, located over the date window, magnifies the date by 2.5
-          times, making it easier to read. The cyclops lens is also made from
-          synthetic sapphire and is attached to the glass with a special
-          adhesive. If it becomes damaged, it can be replaced by a qualified
-          watchmaker.
+        <h5 className={styles.minutes}>2 Minute Read Time</h5>
+        <div className={styles.paragraph}>
+          <span className={styles.inception}>
+            Discover the Timeless Elegance
+          </span>{" "}
+          of the Rolex 126334 Blue Dial: A Meticulously Crafted Luxury Watch
+          That Exudes Discover the Timeless Elegance of the Rolex 126334 Blue
+          Dial Looking for a watch that exudes luxury and sophistication? Look
+          no further than the Rolex 126334. Crafted with precision and care,
+          every detail of the Rolex 126334 has been meticulously designed to
+          deliver a watch that is both beautiful and durable.
         </div>
-        <div className={styles.intro}>
-          The fluted bezel is made of 18k white gold and is highly polished,
-          adding to the watch's luxurious appearance. Rolex has been using the
-          fluted bezel since the 1930s, and it has become a signature feature of
-          the brand. The reference number located between the glass and the dial
-          is unique to each watch and serves as a way to identify the model and
-          year of production. If your watch is ever lost or stolen, providing
-          the reference number to the authorities can aid in the recovery of
-          your watch. The baton-style hour markers on the dial of the Rolex
-          126334 are highly legible and are coated with luminescent material,
-          allowing for easy reading in low light conditions.
+        <h5 className={styles.subHeader}>Glass</h5>
+        <div className={styles.paragraph}>
+          The synthetic sapphire glass is highly scratch-resistant, ensuring
+          that your watch stays looking like new for years to come. In the
+          unlikely event that the glass is damaged, it can be replaced.
         </div>
         <Image src={"/blueDial/126334Rolex4.JPG"} width={1024} height={683} />
-
-        <div className={styles.intro}>
-          The dial of the Rolex 126334 is available in a stunning blue color
-          that adds a unique and elegant touch to the watch. The stainless steel
-          case measures 41mm in diameter and is fitted with lugs that are also
-          made from stainless steel. The jubilee bracelet is made from highly
-          polished stainless steel and features a comfortable and secure clasp
-          that snaps closed with a satisfying click. If you need additional
-          links to adjust the bracelet size, RobDiamond can supply and fit them
-          for you. The clasp is incredibly durable and should not need to be
-          replaced. If you ever need to have your watch polished, it can be done
-          by a qualified watchmaker, and it will come back looking like new.
+        <h5 className={styles.subHeader}>Cyclops</h5>
+        <div className={styles.paragraph}>
+          The cyclops lens magnifies the date by 2.5 times, making it easy to
+          read at a glance. This lens can also be replaced if necessary.
         </div>
 
-        <div className={styles.intro}>
-          The Rolex warranty covers the watch for five years from the date of
-          purchase. If you purchase a preowned model that is less than five
-          years old, the warranty will still be valid. If you have any issues
-          with your watch, you can take it to an authorized Rolex dealer or
-          service center for repairs.
+        <h5 className={styles.intro}>Serial Number</h5>
+        <div className={styles.paragraph}>
+          The unique reference number is placed in between the glass and the
+          dial, and it can be helpful in the event of loss or theft.
         </div>
         <div className={styles.heroBtn}>
           <Link
@@ -78,7 +60,7 @@ function rolex126334() {
             WHATSAPP ROB DIRECT
           </Link>
         </div>
-        <div className={styles.intro}>
+        <div className={styles.paragraph}>
           The box and card that come with the Rolex 126334 are important for
           maintaining the watch's value and authenticity. The white swing tag
           serves as proof that the watch has not been worn and is brand new.

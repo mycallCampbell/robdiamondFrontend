@@ -73,14 +73,12 @@ justify-content: center;
 }
 
 .specValue{
-    background: rgb(230, 230, 230);
     padding: 5px 10px;
 }
 
 .specValueinBetween{
     padding: 5px;
 }
-
 .descriptionSmallContainer{
     text-align: center;
     margin: 15px 15px 0 15px ;
