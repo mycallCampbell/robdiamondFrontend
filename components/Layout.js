@@ -4,7 +4,6 @@ import Link from "next/link";
 import CartIcon from "./CartIcon";
 import Menu from "./Menu";
 
-import logoImage from "../public/logo.png";
 import styles from "./Layout.module.css";
 import Navgrid from "./Navgrid";
 

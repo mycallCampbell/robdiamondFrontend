@@ -103,7 +103,7 @@ function WatchProductPage({ product }) {
             {productArr.map((item, index) => (
               <SwiperSlide className={styles.swiperSlide} key={index}>
                 <Image
-                  src={`/${product.ref}${product.image}/${product.ref}${
+                  src={`/watches/${product.ref}${product.image}/${product.ref}${
                     product.image
                   }${index + 1}.JPG`}
                   width={1680}

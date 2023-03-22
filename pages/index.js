@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Footer from "../components/Footer";
-import heroImage from "../public/rolexHero.jpg";
 
 export default function Home() {
   return (
