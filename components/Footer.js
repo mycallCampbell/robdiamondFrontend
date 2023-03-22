@@ -96,9 +96,10 @@ function Footer({ src, width, height }) {
             </div>
           </Link>
         </div>
-        <div className={styles.location}>LOCATION </div>
-        <div className={styles.location}>Hatton Garden, London EC1N</div>
-        <div className={styles.location}>United Kingdom</div>
+        <div className={styles.locationTitle}>LOCATION </div>
+        <div className={styles.locationAddress}>Hatton Garden, London EC1N</div>
+        <div className={styles.locationUnited}>United Kingdom</div>
+        <div className={styles.space}></div>
       </div>
     </section>
   );
