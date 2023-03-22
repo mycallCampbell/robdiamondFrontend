@@ -31,7 +31,7 @@ function watches({ products }) {
           <h2>{product.name}</h2>
           <div>
             <Image
-              src={`/${product.ref}${product.image}/${product.ref}${product.image}1.JPG`}
+              src={`/watches/${product.ref}${product.image}/${product.ref}${product.image}1.JPG`}
               width={1680}
               height={1120}
             />
