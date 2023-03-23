@@ -47,7 +47,7 @@ export default function Home() {
           <Link href={"/watches/35"}>
             <div className={styles.grid}>
               <Image
-                src={"/126231wimbledon/126231wimbledon1.JPG"}
+                src={`/wathes/datejust126231/126231datejust1.JPG`}
                 width={840}
                 height={560}
               />
