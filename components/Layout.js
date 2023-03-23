@@ -56,6 +56,17 @@ function Layout({ children }) {
                     </li>
 
                     <li>
+                      <Link href={"/blogs"}>
+                        <div className={styles.menuGrid}>
+                          <div className={styles.menuItem1}>
+                            <p>BLOG</p>
+                          </div>
+                          <div className={styles.menuItem2}>{">"}</div>
+                        </div>
+                      </Link>
+                    </li>
+
+                    <li>
                       <Link href={"/contact"}>
                         <div className={styles.menuGrid}>
                           <div className={styles.menuItem1}>

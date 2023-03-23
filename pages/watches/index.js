@@ -20,7 +20,7 @@ function watches({ products }) {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>ROLEX</h1>
+        <h1>ROLEXS</h1>
       </div>
       {products.map((product) => (
         <div
@@ -31,7 +31,7 @@ function watches({ products }) {
           <h2>{product.name}</h2>
           <div>
             <Image
-              src={`/watches/${product.ref}${product.image}/${product.ref}${product.image}1.JPG`}
+              src={`/watches/${product.model}${product.ref}/${product.ref}${product.model}1.JPG`}
               width={1680}
               height={1120}
             />

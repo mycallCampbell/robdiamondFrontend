@@ -24,7 +24,7 @@ export default function Home() {
       <main className={styles.main}>
         {/* HERO SECTION*/}
         <div className={styles.heroImage}>
-          <Image src={"/hero_blingToBullion.jpeg"} width={1024} height={683} />
+          <Image src={"/blingToBullion.jpeg"} width={1024} height={683} />
         </div>
 
         <div className={styles.caption}>

@@ -26,19 +26,20 @@ text-align: center;
 }
 
 .viewDetailsBTN{
-    border: solid 2px #a37e2c;
+    border: solid 2px #91c0dc;
+    border-radius: 2px;
     padding: 10px 30px;
     margin: 10px 30px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
-    color: #006039;
+    color: #000000;
 }
 
 .viewDetailsBTN:hover{
     color: #fff;
-    background-color: #006039;
+    background-color: #91c0dc;
 }
 
 .reviewGrid{
