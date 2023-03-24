@@ -20,7 +20,7 @@ function watches({ products }) {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>ROLEXS</h1>
+        <h1>ROLEX</h1>
       </div>
       {products.map((product) => (
         <div

@@ -47,7 +47,7 @@ export default function Home() {
           <Link href={"/watches/35"}>
             <div className={styles.grid}>
               <Image
-                src={`/wathes/datejust126231/126231datejust1.JPG`}
+                src={`/watches/datejust126231/126231datejust1.JPG`}
                 width={840}
                 height={560}
               />
@@ -61,7 +61,7 @@ export default function Home() {
           <Link href={"/watches/31"}>
             <div className={styles.grid}>
               <Image
-                src={"/126711CHNRrootbeer/126711CHNRrootbeer1.JPG"}
+                src={`/watches/GMT-MasterII126711CHNR/126711CHNRGMT-MasterII1.JPG`}
                 width={840}
                 height={560}
               />
@@ -75,7 +75,7 @@ export default function Home() {
           <Link href={"/watches/34"}>
             <div className={styles.grid}>
               <Image
-                src={"/116506platona/116506platona1.JPG"}
+                src={`/watches/daytona116506/116506daytona1.JPG`}
                 width={840}
                 height={560}
               />
@@ -89,7 +89,7 @@ export default function Home() {
           <Link href={"/watches/28"}>
             <div className={styles.grid}>
               <Image
-                src={"/116611LVhulk/116611LVhulk1.JPG"}
+                src={"/watches/submariner116611LV/116611LVsubmariner1.JPG"}
                 width={840}
                 height={560}
               />

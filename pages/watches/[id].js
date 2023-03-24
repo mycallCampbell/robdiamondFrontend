@@ -103,7 +103,9 @@ function WatchProductPage({ product }) {
             {productArr.map((item, index) => (
               <SwiperSlide className={styles.swiperSlide} key={index}>
                 <Image
-                  src={`/watches/${product.model}${product.ref}/${product.ref}${product.model}{index + 1}.JPG`}
+                  src={`/watches/${product.model}${product.ref}/${product.ref}${
+                    product.model
+                  }${index + 1}.JPG`}
                   width={1680}
                   height={1120}
                 />
@@ -121,6 +123,7 @@ function WatchProductPage({ product }) {
       <div className={styles.space}></div>
 
       {/* SPECIFICATION */}
+
       <div className={styles.specContainer}>
         <div className={styles.label}>Model</div>
         <div className={styles.labelDescription}>{product.model}</div>
@@ -153,33 +156,6 @@ function WatchProductPage({ product }) {
 
         <div className={styles.label}>Dial</div>
         <div className={styles.labelDescription}>{product.dial}</div>
-
-        {/* <div className={styles.specLabel}>
-          <div className={styles.specLabelinBetween}>Model</div>
-          <div className={styles.specLabelinBetween}>Ref</div>
-          <div className={styles.specLabelinBetween}>Year</div>
-          <div className={styles.specLabelinBetween}>Box</div>
-          <div className={styles.specLabelinBetween}>Papers</div>
-          <div className={styles.specLabelinBetween}>Available</div>
-          <div className={styles.specLabelinBetween}>Case Material</div>
-          <div className={styles.specLabelinBetween}>Braclet Material</div>
-          <div className={styles.specLabelinBetween}>Case Size</div>
-          <div className={styles.specLabelinBetween}>Dial</div>
-        </div> */}
-        {/* <div className={styles.specValueContainer}>
-          <div className={styles.specValue}>{product.model}</div>
-          <div className={styles.specValueinBetween}>{product.ref}</div>
-          <div className={styles.specValue}>{product.year}</div>
-          <div className={styles.specValueinBetween}>{product.box}</div>
-          <div className={styles.specValue}>{product.papers}</div>
-          <div className={styles.specValue}>{product.availble}</div>
-          <div className={styles.specValue}>{product.caseMaterial}</div>
-          <div className={styles.specValueinBetween}>
-            {product.braceletMaterial}
-          </div>
-          <div className={styles.specValue}>{product.caseSize}</div>
-          <div className={styles.specValueinBetween}>{product.dial}</div>
-        </div> */}
       </div>
 
       <div className={styles.description}>{product.description}</div>
