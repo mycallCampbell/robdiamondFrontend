@@ -134,11 +134,8 @@ function WatchProductPage({ product }) {
         <div className={styles.label}>Year</div>
         <div className={styles.labelDescription}>{product.year}</div>
 
-        <div className={styles.label}>Box</div>
-        <div className={styles.labelDescription}>{product.box}</div>
-
-        <div className={styles.label}>Papers</div>
-        <div className={styles.labelDescription}>{product.papers}</div>
+        <div className={styles.label}>Box and Papers</div>
+        <div className={styles.labelDescription}>{product.boxAndPapers}</div>
 
         <div className={styles.label}>Available</div>
         <div className={styles.labelDescription}>{product.availble}</div>
