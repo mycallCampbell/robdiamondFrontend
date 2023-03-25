@@ -4,6 +4,18 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Footer from "../components/Footer";
 
+// export const getStaticProps = async () => {
+//   const data = await fetch("https://www.robdiamond-be.co.uk/api/blogs");
+//   const blogs = await data.json();
+
+//   return {
+//     props: {
+//       blogs: blogs,
+//     },
+//     revalidate: 60,
+//   };
+// };
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -32,16 +44,17 @@ export default function Home() {
           <h2>ROLEX</h2>
         </div>
 
+        {/* CTA */}
         <div className={styles.heroBtn}>
           <Link
             href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
           >
-            WHATSAPP ROB DIRECT
+            WHATSAPP
           </Link>
         </div>
 
-        {/* COLLECTIONS SECTION */}
-        <p className={styles.collectionTitle}>COLLECTION</p>
+        {/* CATEGORIES SECTION */}
+        <p className={styles.collectionTitle}>CATEGORIES</p>
 
         <div className={styles.collectionGrid}>
           <Link href={"/watches/35"}>
@@ -140,6 +153,14 @@ export default function Home() {
             width={3360}
             height={2240}
           />
+        </div>
+        <p className={styles.blogCaption}>
+          Should You Invest In a Rolex Watch or Buy Gold
+        </p>
+
+        {/* CTA  */}
+        <div className={styles.heroBtn}>
+          <Link href={"/blogs"}>READ MORE</Link>
         </div>
       </main>
 
