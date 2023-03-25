@@ -151,8 +151,8 @@ function WatchProductPage({ product }) {
           {product.braceletMaterial}
         </div>
 
-        <div className={styles.label}>Case Size</div>
-        <div className={styles.labelDescription}>{product.caseSize}</div>
+        <div className={styles.label}>Model Case</div>
+        <div className={styles.labelDescription}>{product.modelCase}</div>
 
         <div className={styles.label}>Dial</div>
         <div className={styles.labelDescription}>{product.dial}</div>
