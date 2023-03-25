@@ -28,7 +28,7 @@ function watches({ products }) {
           key={product._id}
           id={product.image}
         >
-          <h2>{product.name}</h2>
+          <h2 className={styles.productTitle}>{product.title}</h2>
           <div>
             <Image
               src={`/watches/${product.model}${product.ref}/${product.ref}${product.model}1.JPG`}
