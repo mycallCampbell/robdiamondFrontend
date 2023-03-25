@@ -22,7 +22,7 @@ function datejust({ products }) {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>DATEJUST</h1>
+        <h1 className={styles.headerTitle}>DATEJUST</h1>
       </div>
       {products.map((product) => (
         <div

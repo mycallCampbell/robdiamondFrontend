@@ -6,12 +6,21 @@ text-align: center;
 .title{
     display: grid;
     text-align: center;
-    border-bottom: solid 2px #006039;
+    /* border-bottom: solid 2px #006039; */
     text-align: center;
 }
 
 .title h1{
     margin-bottom: 20px;
+}
+
+.headerTitle {
+  margin-top: 20px;
+  color: #2e2e2e;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .productTitle {
@@ -25,7 +34,7 @@ text-align: center;
 
 .productContainer{
     border: solid 1px #afaeae;
-    margin-top: 40px;
+    margin: 20px auto 40px auto;
 }
 
 .productContainer h2{

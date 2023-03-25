@@ -139,12 +139,13 @@ justify-content: center;
   .label {
     color: #212121;
     letter-spacing: 3px;
+    text-transform: uppercase;
     font-weight: 500;
     margin-left: 20px;
   }
 
   .labelDescription {
-    color: #5b5b5b;
+    color: #777777;
     letter-spacing: 3px;
     font-weight: 500;
     margin: 3px 0 20px 20px;
