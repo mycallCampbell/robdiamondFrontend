@@ -151,7 +151,7 @@ function WatchProductPage({ product }) {
           {product.braceletMaterial}
         </div>
 
-        <div className={styles.label}>Model Case</div>
+        <div className={styles.label}>MODEL CASE</div>
         <div className={styles.labelDescription}>{product.modelCase}</div>
 
         <div className={styles.label}>Dial</div>
