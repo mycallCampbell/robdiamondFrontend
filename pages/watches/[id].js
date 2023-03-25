@@ -134,6 +134,9 @@ function WatchProductPage({ product }) {
         <div className={styles.label}>Year</div>
         <div className={styles.labelDescription}>{product.year}</div>
 
+        <div className={styles.label}>Warranty</div>
+        <div className={styles.labelDescription}>{product.warranty}</div>
+
         <div className={styles.label}>Box and Papers</div>
         <div className={styles.labelDescription}>{product.boxAndPapers}</div>
 
