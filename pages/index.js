@@ -99,6 +99,34 @@ export default function Home() {
               </div>
             </div>
           </Link>
+
+          <Link href={"/watches/35"}>
+            <div className={styles.grid}>
+              <Image
+                src={`/watches/skyDweller326933/326933skyDweller1.JPG`}
+                width={840}
+                height={560}
+              />
+              <div className={styles.gridContent}>
+                <p className={styles.gridTitleRolex}>ROLEX</p>
+                <p>SKYDWELLER</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link href={"/watches/35"}>
+            <div className={styles.grid}>
+              <Image
+                src={`/watches/daydate126334/126334daydate1.JPG`}
+                width={840}
+                height={560}
+              />
+              <div className={styles.gridContent}>
+                <p className={styles.gridTitleRolex}>ROLEX</p>
+                <p>DAYDATE</p>
+              </div>
+            </div>
+          </Link>
         </div>
 
         <div className={styles.space}></div>
