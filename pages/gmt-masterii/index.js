@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 
 export const getStaticProps = async () => {
   const data = await fetch(
-    "https://www.robdiamond-be.co.uk/api/watchesModelDateJust"
+    "https://www.robdiamond-be.co.uk/api/watchesModelGMT-MasterII"
   );
   const products = await data.json();
 
@@ -18,11 +18,11 @@ export const getStaticProps = async () => {
   };
 };
 
-function datejust({ products }) {
+function gmtMasterII({ products }) {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>DATEJUST</h1>
+        <h1>GMT-MASTER II</h1>
       </div>
       {products.map((product) => (
         <div
@@ -55,4 +55,4 @@ function datejust({ products }) {
   );
 }
 
-export default datejust;
+export default gmtMasterII;

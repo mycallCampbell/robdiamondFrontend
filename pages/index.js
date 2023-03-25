@@ -57,7 +57,7 @@ export default function Home() {
         <p className={styles.collectionTitle}>CATEGORIES</p>
 
         <div className={styles.collectionGrid}>
-          <Link href={"/watches/35"}>
+          <Link href={"/datejust"}>
             <div className={styles.grid}>
               <Image
                 src={`/watches/datejust126231/126231datejust1.JPG`}
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/watches/31"}>
+          <Link href={"/gmt-masterii"}>
             <div className={styles.grid}>
               <Image
                 src={`/watches/GMT-MasterII126711CHNR/126711CHNRGMT-MasterII1.JPG`}
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/watches/34"}>
+          <Link href={"/daytona"}>
             <div className={styles.grid}>
               <Image
                 src={`/watches/daytona116506/116506daytona1.JPG`}
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/watches/28"}>
+          <Link href={"/submariner"}>
             <div className={styles.grid}>
               <Image
                 src={"/watches/submariner116611LV/116611LVsubmariner1.JPG"}
@@ -113,7 +113,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/watches/35"}>
+          <Link href={"/skydweller"}>
             <div className={styles.grid}>
               <Image
                 src={`/watches/skyDweller326933/326933skyDweller1.JPG`}
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/watches/35"}>
+          <Link href={"/daydate"}>
             <div className={styles.grid}>
               <Image
                 src={`/watches/daydate126334/126334daydate1.JPG`}
