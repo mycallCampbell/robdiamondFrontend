@@ -68,8 +68,8 @@ function Contact() {
   return (
     <section className={styles.container}>
       {/* <Meta /> */}
-      <div className={styles.titleMain}>
-        <h1>ROB DIAMOND CONTACT</h1>
+      <div>
+        <h1 className={styles.headerTitle}>ROB DIAMOND CONTACT</h1>
       </div>
       <div className={styles.heroBtn}>
         <a href="tel:07976753254">CALL NOW</a>
@@ -157,7 +157,7 @@ function Contact() {
           </div>
         )}
       </form>
-      <Footer src={"/contactFooter.jpg"} width={612} height={368} />
+      <Footer src={"/cFooter.JPG"} width={3360} height={2240} />
     </section>
   );
 }
