@@ -5,7 +5,7 @@
   } */
   
   .headerTitle {
-    margin: 20px;
+    margin: 40px;
     color: #2e2e2e;
     letter-spacing: 3px;
     font-weight: 500;
@@ -57,11 +57,18 @@
     padding: 10px;
     margin: 20px 20px;
     cursor: pointer;
+    -webkit-filter: brightness(100%);
+
   }
   
   .submit:hover {
-    border: solid 2px rgb(201, 191, 191);
     cursor: pointer;
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
   }
   
   .messageSuccess {
@@ -83,5 +90,15 @@
     font-weight: 700;
     font-size: 0.9rem;
     cursor: pointer;
+   -webkit-filter: brightness(100%);
+  }
+
+  .heroBtn:hover{
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
   }
   
