@@ -54,6 +54,7 @@ export default function Home() {
         </div>
 
         {/* CATEGORIES SECTION */}
+
         <p className={styles.collectionTitle}>CATEGORIES</p>
 
         <div className={styles.collectionGrid}>
@@ -130,7 +131,7 @@ export default function Home() {
           <Link href={"/daydate"}>
             <div className={styles.grid}>
               <Image
-                src={`/watches/daydate126334/126334daydate1.JPG`}
+                src={`/watches/daydate228349RBR/228349RBRdaydate1.JPG`}
                 width={840}
                 height={560}
               />
