@@ -22,7 +22,7 @@ function skydweller({ products }) {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h1>SkyDweller</h1>
+        <h1>Sky-Dweller</h1>
       </div>
       {products.map((product) => (
         <div
