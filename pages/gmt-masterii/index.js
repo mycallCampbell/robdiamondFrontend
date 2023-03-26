@@ -25,7 +25,7 @@ function gmtMasterII({ products }) {
         <div className={styles.backButton}>{"<"} BACK</div>
       </Link>
       <div className={styles.title}>
-        <h1>GMT-MASTER II</h1>
+        <h1 className={styles.headerTitle}>GMT-MASTER II</h1>
       </div>
       {products.map((product) => (
         <div

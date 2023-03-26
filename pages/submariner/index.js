@@ -25,7 +25,7 @@ function submariner({ products }) {
         <div className={styles.backButton}>{"<"} BACK</div>
       </Link>
       <div className={styles.title}>
-        <h1>SUBMARINER</h1>
+        <h1 className={styles.headerTitle}>SUBMARINER</h1>
       </div>
       {products.map((product) => (
         <div

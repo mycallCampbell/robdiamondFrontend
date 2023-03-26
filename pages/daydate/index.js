@@ -25,7 +25,7 @@ function daydate({ products }) {
         <div className={styles.backButton}>{"<"} BACK</div>
       </Link>
       <div className={styles.title}>
-        <h1>DAYDATE</h1>
+        <h1 className={styles.headerTitle}>DAYDATE</h1>
       </div>
       {products.map((product) => (
         <div
