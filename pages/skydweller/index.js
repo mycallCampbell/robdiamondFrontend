@@ -21,8 +21,11 @@ export const getStaticProps = async () => {
 function skydweller({ products }) {
   return (
     <div className={styles.container}>
+      <Link href={`/#`}>
+        <div className={styles.backButton}>{"<"} BACK</div>
+      </Link>
       <div className={styles.title}>
-        <h1>Sky-Dweller</h1>
+        <h1 className={styles.headerTitle}>Sky-Dweller</h1>
       </div>
       {products.map((product) => (
         <div

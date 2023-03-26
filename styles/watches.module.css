@@ -3,6 +3,13 @@ margin: 20px;
 text-align: center;
 }
 
+.backButton {
+    margin: 20px 10px;
+    color:#a37e2c;
+    cursor: pointer;
+    text-align: left;
+}
+
 .title{
     display: grid;
     text-align: center;

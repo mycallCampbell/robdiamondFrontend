@@ -21,6 +21,9 @@ export const getStaticProps = async () => {
 function submariner({ products }) {
   return (
     <div className={styles.container}>
+      <Link href={`/#`}>
+        <div className={styles.backButton}>{"<"} BACK</div>
+      </Link>
       <div className={styles.title}>
         <h1>SUBMARINER</h1>
       </div>

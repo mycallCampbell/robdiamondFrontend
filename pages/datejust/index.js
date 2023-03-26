@@ -21,6 +21,9 @@ export const getStaticProps = async () => {
 function datejust({ products }) {
   return (
     <div className={styles.container}>
+      <Link href={`/#`}>
+        <div className={styles.backButton}>{"<"} BACK</div>
+      </Link>
       <div className={styles.title}>
         <h1 className={styles.headerTitle}>DATEJUST</h1>
       </div>

@@ -21,6 +21,9 @@ export const getStaticProps = async () => {
 function daytona({ products }) {
   return (
     <div className={styles.container}>
+      <Link href={`/#`}>
+        <div className={styles.backButton}>{"<"} BACK</div>
+      </Link>
       <div className={styles.title}>
         <h1>DAYTONA</h1>
       </div>
