@@ -117,7 +117,7 @@ export default function Home() {
           <Link href={"/skydweller"}>
             <div className={styles.grid}>
               <Image
-                src={`/watches/skyDweller326933/326933skyDweller1.JPG`}
+                src={`/watches/skydweller326933/326933skydweller1.JPG`}
                 width={840}
                 height={560}
               />
