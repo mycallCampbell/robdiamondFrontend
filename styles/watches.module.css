@@ -15,10 +15,7 @@ text-align: center;
     justify-content: space-between;
     /* border-bottom: solid 2px #006039; */
     
-.underNav {
-    /* display: flex;
-    justify-content: space-around; */
-}
+
 
 .title h1{
     margin-bottom: 20px;
@@ -73,6 +70,14 @@ text-align: center;
     letter-spacing: 3px;
     text-align: center;
     cursor: pointer;
+}
+
+.viewDetailsBTN h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2e2e2e;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 .viewDetailsBTN:hover{

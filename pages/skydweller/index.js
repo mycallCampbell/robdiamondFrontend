@@ -35,32 +35,32 @@ function skydweller({ products }) {
 
         <link rel="icon" href="/favicon.png" />
       </Head>
+
       <div>
-        <div className={styles.underNav}>
-          <Link href={`/#`}>
-            <div className={styles.backButton}>{"<"} BACK</div>
-          </Link>
-          <h1 className={styles.headerTitle}>Sky-Dweller</h1>
-        </div>
-
-        <div>
-          <Image
-            src={"/categoryBanner/SkyDwellerBanner.JPG"}
-            width={2181}
-            height={591}
-          />
-        </div>
-        <p className={styles.catDescription}>
-          The Sky-Dweller is considered one of Rolex's most complex watches,
-          with a combination of an annual calendar, a dual time zone display,
-          and a 24-hour display.
-        </p>
-
-        {/* CTA  */}
-        <div className={styles.viewDetailsBTN}>
-          <a href="tel:07976753254">CALL NOW</a>
-        </div>
+        <Link href={`/#`}>
+          <div className={styles.backButton}>{"<"} BACK</div>
+        </Link>
+        <h1 className={styles.headerTitle}>Sky-Dweller</h1>
       </div>
+
+      <div>
+        <Image
+          src={"/categoryBanner/SkyDwellerCatBanner.JPG"}
+          width={2181}
+          height={591}
+        />
+      </div>
+      <p className={styles.catDescription}>
+        The Sky-Dweller is considered one of Rolex's most complex watches, with
+        a combination of an annual calendar, a dual time zone display, and a
+        24-hour display.
+      </p>
+
+      {/* CTA  */}
+      <div className={styles.viewDetailsBTN}>
+        <a href="tel:07976753254">CALL NOW</a>
+      </div>
+
       {products.map((product) => (
         <div
           className={styles.productContainer}
