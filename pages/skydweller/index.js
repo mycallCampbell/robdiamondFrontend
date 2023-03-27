@@ -26,14 +26,14 @@ function skydweller({ products }) {
       <Head>
         <title>ROB DIAMOND</title>
         <meta name="description" content="Rolex Sky-Dweller" />
-        <meta property="og:image" content="favicon.png" />
+        <meta property="og:image" content="rob_diamond_logo.png" />
         <meta
           name="facebook-domain-verification"
           content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
         />
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/rob_diamond_logo.png" />
       </Head>
 
       <div>
