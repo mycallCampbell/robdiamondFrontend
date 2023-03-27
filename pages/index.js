@@ -23,14 +23,14 @@ export default function Home() {
       <Head>
         <title>ROB DIAMOND</title>
         <meta name="description" content="Rolex Specialists" />
-        <meta property="og:image" content="favicon.png" />
+        <meta property="og:image" content="faviconRob.ico" />
         <meta
           name="facebook-domain-verification"
           content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
         />
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/faviconRob.ico" />
       </Head>
 
       <main className={styles.main}>
