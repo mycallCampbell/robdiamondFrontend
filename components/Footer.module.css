@@ -34,7 +34,7 @@
    .menuItem {
     display: grid;
     grid-template-columns: 5fr 2fr;
-    align-items: center;
+    align-items: start;
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 10px;
