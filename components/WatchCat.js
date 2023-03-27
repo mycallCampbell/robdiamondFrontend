@@ -10,18 +10,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useState, useEffect } from "react";
 
-// export const getStaticProps = async () => {
-//   const data = await fetch("https://www.robdiamond-be.co.uk/api/watches");
-//   const products = await data.json();
-
-//   return {
-//     props: {
-//       products: products,
-//     },
-//     revalidate: 60,
-//   };
-// };
-
 function WatchCat({ products }) {
   const [data, setDate] = useState([]);
 
@@ -30,8 +18,8 @@ function WatchCat({ products }) {
   };
 
   capitaliseFirstLetter(products);
-  console.log(products);
 
+  //  CLIENT SIDE FETCH
   useEffect(() => {
     async function fetchData() {
       try {
@@ -72,8 +60,6 @@ function WatchCat({ products }) {
           </div>
         </Swiper>
       </div>
-
-      <Footer src={"/rolexFooter.jpg"} width={1704} height={700} />
     </div>
   );
 }

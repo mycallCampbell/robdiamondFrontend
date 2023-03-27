@@ -174,7 +174,7 @@ function WatchProductPage({ product }) {
         </Link>
       </div>
       <WatchCat products={product.model} />
-      <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
+      <Footer src={"/rolexGoldFooter.JPG"} width={3360} height={2240} />
     </div>
   );
 }
