@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/watches.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import Footer from "../../components/Footer";
 
 export const getStaticProps = async () => {
