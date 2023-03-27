@@ -105,3 +105,8 @@ text-align: center;
 .reviewDescription{
     margin: 20px 10px 30px 10px;
 }
+
+.featuredGrid {
+    display: grid;
+    grid-template-columns: 50 50;
+}
