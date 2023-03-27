@@ -44,7 +44,7 @@ function daytona({ products }) {
       </div>
       <div>
         <Image
-          src={"/categoryBanner/DaytonaCatBanner.JPG"}
+          src={"/categoryBanner/daytonaCatBanner.JPG"}
           width={2181}
           height={591}
         />
