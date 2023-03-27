@@ -1,5 +1,5 @@
 .container {
-margin: 20px;
+/* margin: 20px; */
 text-align: center;
 }
 
@@ -10,11 +10,14 @@ text-align: center;
     text-align: left;
 }
 
-.title{
-    display: grid;
-    text-align: center;
+/* .title{
+    display: flex;
+    justify-content: space-between;
     /* border-bottom: solid 2px #006039; */
-    text-align: center;
+    
+.underNav {
+    /* display: flex;
+    justify-content: space-around; */
 }
 
 .title h1{
@@ -22,11 +25,21 @@ text-align: center;
 }
 
 .headerTitle {
-  margin-top: 20px;
+  margin: 20px auto;
   color: #2e2e2e;
   letter-spacing: 3px;
   font-weight: 500;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.catDescription {
+    line-height: 1.6;
+  padding: 20px;
+  color: #2e2e2e;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 0.9rem;
   text-align: center;
 }
 
