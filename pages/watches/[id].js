@@ -91,7 +91,7 @@ function WatchProductPage({ product }) {
         <div className={styles.breadcrumb}>{"<"} BACK</div>
       </Link>
       <div className={styles.title}>
-        <h2>{product.name}</h2>
+        <h2>{product.title}</h2>
       </div>
 
       <div className={styles.imageContainer}>
@@ -119,7 +119,7 @@ function WatchProductPage({ product }) {
       <div className={styles.descriptionSmallContainer}>
         <p>{product.descriptionSmall}</p>
       </div>
-      <div className={styles.price}>PRICE: £{product.price}</div>
+      <div className={styles.price}>PRICE: £{product.price1}</div>
 
       <div className={styles.space}></div>
 
@@ -133,7 +133,7 @@ function WatchProductPage({ product }) {
         <div className={styles.labelDescription}>{product.ref}</div>
 
         <div className={styles.label}>Year</div>
-        <div className={styles.labelDescription}>{product.year}</div>
+        <div className={styles.labelDescription}>{product.year1}</div>
 
         <div className={styles.label}>Warranty</div>
         <div className={styles.labelDescription}>{product.warranty}</div>
