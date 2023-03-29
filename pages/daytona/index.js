@@ -68,10 +68,10 @@ function daytona({ products }) {
           key={product._id}
           id={product.image}
         >
-          <h2>{product.title}</h2>
+          <h2 className={styles.productTitle}>{product.title}</h2>
           <div>
             <Image
-              src={`/watches/${product.model}${product.ref}/${product.ref}${product.model}1.JPG`}
+              src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
               width={1680}
               height={1120}
             />

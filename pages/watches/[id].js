@@ -104,9 +104,11 @@ function WatchProductPage({ product }) {
             {productArr.map((item, index) => (
               <SwiperSlide className={styles.swiperSlide} key={index}>
                 <Image
-                  src={`/watches/${product.model}${product.ref}/${product.ref}${
-                    product.model
-                  }${index + 1}.JPG`}
+                  src={`/watches/${product.model}${product.ref}${
+                    product.strap
+                  }${product.dial}/${product.ref}${product.model}${
+                    index + 1
+                  }.JPG`}
                   width={1680}
                   height={1120}
                 />
@@ -151,9 +153,6 @@ function WatchProductPage({ product }) {
         <div className={styles.labelDescription}>
           {product.braceletMaterial}
         </div>
-
-        <div className={styles.label}>MODEL CASE</div>
-        <div className={styles.labelDescription}>{product.modelCase}</div>
 
         <div className={styles.label}>Dial</div>
         <div className={styles.labelDescription}>{product.dial}</div>
