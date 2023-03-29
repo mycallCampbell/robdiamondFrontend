@@ -42,7 +42,7 @@ function daydate({ products }) {
         <Image
           src={"/categoryBanner/daydateCatBanner.JPG"}
           width={2181}
-          height={591}
+          height={590}
         />
       </div>
 

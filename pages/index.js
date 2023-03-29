@@ -61,7 +61,7 @@ export default function Home() {
           <Link href={"/datejust"}>
             <div className={styles.grid}>
               <Image
-                src={`/watches/datejust126231/126231datejust1.JPG`}
+                src={`/watches/datejust126231jubileewimbledon/126231datejust1.JPG`}
                 width={840}
                 height={560}
               />
@@ -75,7 +75,7 @@ export default function Home() {
           <Link href={"/gmt-masterii"}>
             <div className={styles.grid}>
               <Image
-                src={`/watches/GMT-MasterII126711CHNR/126711CHNRGMT-MasterII1.JPG`}
+                src={`/watches/GMT-MasterII126711CHNRoysterblack/126711CHNRGMT-MasterII1.JPG`}
                 width={840}
                 height={560}
               />
@@ -89,7 +89,7 @@ export default function Home() {
           <Link href={"/daytona"}>
             <div className={styles.grid}>
               <Image
-                src={`/watches/daytona116506/116506daytona1.JPG`}
+                src={`/watches/daytona116506oysterplatona/116506daytona1.JPG`}
                 width={840}
                 height={560}
               />
@@ -103,7 +103,9 @@ export default function Home() {
           <Link href={"/submariner"}>
             <div className={styles.grid}>
               <Image
-                src={"/watches/submariner116611LV/116611LVsubmariner1.JPG"}
+                src={
+                  "/watches/submariner116611LVoystergreen/116611LVsubmariner1.JPG"
+                }
                 width={840}
                 height={560}
               />
@@ -117,7 +119,7 @@ export default function Home() {
           <Link href={"/skydweller"}>
             <div className={styles.grid}>
               <Image
-                src={`/watches/skydweller326933/326933skydweller1.JPG`}
+                src={`/watches/skydweller326933oysterchampagne/326933skydweller1.JPG`}
                 width={840}
                 height={560}
               />
@@ -131,7 +133,7 @@ export default function Home() {
           <Link href={"/daydate"}>
             <div className={styles.grid}>
               <Image
-                src={`/watches/daydate228349RBR/228349RBRdaydate1.JPG`}
+                src={`/watches/daydate228349RBRpresidentialolive/228349RBRdaydate1.JPG`}
                 width={840}
                 height={560}
               />
