@@ -37,9 +37,22 @@ function submariner({ products }) {
       <Link href={`/#`}>
         <div className={styles.backButton}>{"<"} BACK</div>
       </Link>
-      <div className={styles.title}>
-        <h1 className={styles.headerTitle}>SUBMARINER</h1>
+      <div>
+        <Image
+          src={"/categoryBanner/submarinerCatBanner.JPG"}
+          width={2181}
+          height={591}
+        />
       </div>
+
+      <h1 className={styles.headerTitle}>SUBMARINER</h1>
+
+      <p className={styles.catDescription}>
+        Discover the iconic Rolex Submariner, the quintessential dive watch
+        designed for adventurers. Available only in Oyster Steel bracelet, this
+        watch is a timeless masterpiece. Highly popular among watch enthusiasts
+        and collectors, the Submariner is a symbol of style and precision.
+      </p>
       {products.map((product) => (
         <div
           className={styles.productContainer}

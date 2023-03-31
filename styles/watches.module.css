@@ -22,7 +22,7 @@ text-align: center;
 }
 
 .headerTitle {
-  margin: 20px auto;
+  margin: 20px auto 5px auto;
   color: #2e2e2e;
   letter-spacing: 3px;
   font-weight: 500;

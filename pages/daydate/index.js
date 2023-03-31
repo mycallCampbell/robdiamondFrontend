@@ -42,13 +42,19 @@ function daydate({ products }) {
         <Image
           src={"/categoryBanner/daydateCatBanner.JPG"}
           width={2181}
-          height={590}
+          height={591}
         />
       </div>
 
-      <div className={styles.title}>
-        <h1 className={styles.headerTitle}>DAYDATE</h1>
-      </div>
+      <h1 className={styles.headerTitle}>DAYDATE</h1>
+
+      <p className={styles.catDescription}>
+        The Rolex Day-Date, the ultimate luxury watch. Available with Oyster and
+        Jubilee bracelets, this watch exudes sophistication and prestige. Highly
+        sought-after by watch enthusiasts and collectors, the Day-Date is a true
+        icon of the Rolex brand.
+      </p>
+
       {products.map((product) => (
         <div
           className={styles.productContainer}

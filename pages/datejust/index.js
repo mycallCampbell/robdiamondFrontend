@@ -40,15 +40,21 @@ function datejust({ products }) {
 
       <div>
         <Image
-          src={"/categoryBanner/daydateCatBanner.JPG"}
+          src={"/categoryBanner/datejustCatBanner.JPG"}
           width={2181}
           height={591}
         />
       </div>
 
-      <div className={styles.title}>
-        <h1 className={styles.headerTitle}>DATEJUST</h1>
-      </div>
+      <h1 className={styles.headerTitle}>DATEJUST</h1>
+
+      <p className={styles.catDescription}>
+        The Rolex Datejust 41mm, a timeless classic that blends elegance with
+        functionality. An exceptional watch that never goes out of style.
+        Available with both Oyster and Jubilee bracelets and renowned for its
+        popularity among watch enthusiasts and collectors.
+      </p>
+
       {products.map((product) => (
         <div
           className={styles.productContainer}

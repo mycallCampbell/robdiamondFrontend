@@ -37,9 +37,23 @@ function gmtMasterII({ products }) {
       <Link href={`/#`}>
         <div className={styles.backButton}>{"<"} BACK</div>
       </Link>
-      <div className={styles.title}>
-        <h1 className={styles.headerTitle}>GMT-MASTER II</h1>
+
+      <div>
+        <Image
+          src={"/categoryBanner/gmtMasterIICatBanner.JPG"}
+          width={2181}
+          height={591}
+        />
       </div>
+
+      <h1 className={styles.headerTitle}>GMT-MASTER II</h1>
+
+      <p className={styles.catDescription}>
+        The Rolex GMT-Master II 42mm. With Oyster and Jubilee bracelets
+        available, this watch is a perfect blend of luxury and functionality.
+        Highly sought-after by watch enthusiasts and collectors, the GMT-Master
+        II 42mm is a true icon of the Rolex brand.
+      </p>
       {products.map((product) => (
         <div
           className={styles.productContainer}
@@ -54,6 +68,7 @@ function gmtMasterII({ products }) {
               height={1120}
             />
           </div>
+
           <Link href={`/watches/${[product._id]}`}>
             <div className={styles.viewDetailsBTN}>
               <h4>VIEW DETAILS</h4>

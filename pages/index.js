@@ -81,7 +81,7 @@ export default function Home() {
               />
               <div className={styles.gridContent}>
                 <p className={styles.gridTitleRolex}>ROLEX</p>
-                <p>GMT MASTER II</p>
+                <p>GMT-MASTER II</p>
               </div>
             </div>
           </Link>

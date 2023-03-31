@@ -40,7 +40,6 @@ function skydweller({ products }) {
         <Link href={`/#`}>
           <div className={styles.backButton}>{"<"} BACK</div>
         </Link>
-        <h1 className={styles.headerTitle}>Sky-Dweller</h1>
       </div>
 
       <div>
@@ -50,6 +49,8 @@ function skydweller({ products }) {
           height={591}
         />
       </div>
+      <h1 className={styles.headerTitle}>SKY-DWELLER</h1>
+
       <p className={styles.catDescription}>
         The Sky-Dweller is considered one of Rolex's most complex watches, with
         a combination of an annual calendar, a dual time zone display, and a

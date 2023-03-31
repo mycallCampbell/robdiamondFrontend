@@ -39,7 +39,6 @@ function daytona({ products }) {
           <Link href={`/#`}>
             <div className={styles.backButton}>{"<"} BACK</div>
           </Link>
-          <h1 className={styles.headerTitle}>Daytona</h1>
         </div>
       </div>
       <div>
@@ -49,6 +48,8 @@ function daytona({ products }) {
           height={591}
         />
       </div>
+      <h1 className={styles.headerTitle}>DAYTONA</h1>
+
       <p className={styles.catDescription}>
         Rolex Daytona is a line of luxury watches produced by Rolex, a Swiss
         watch manufacturer. It was first introduced in 1963 and was designed
