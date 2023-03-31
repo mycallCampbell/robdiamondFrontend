@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-export default function betfair() {
+export default function Betfair() {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
