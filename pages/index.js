@@ -72,7 +72,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href={"/gmt-masterii"}>
+          <Link href={"/GMT-MasterII"}>
             <div className={styles.grid}>
               <Image
                 src={`/watches/GMT-MasterII126711CHNRoysterblack/126711CHNRGMT-MasterII1.JPG`}
