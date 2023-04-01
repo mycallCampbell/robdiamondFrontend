@@ -19,7 +19,7 @@ export const getStaticProps = async () => {
   };
 };
 
-function gmtMasterII({ products }) {
+function GMTMasterII({ products }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -86,4 +86,4 @@ function gmtMasterII({ products }) {
   );
 }
 
-export default gmtMasterII;
+export default GMTMasterII;
