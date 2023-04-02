@@ -158,7 +158,8 @@ function WatchProductPage({ product }) {
         <div className={styles.labelDescription}>{product.dial}</div>
       </div>
 
-      <div className={styles.description}>{product.description}</div>
+      <div className={styles.label}>Description</div>
+      <div className={styles.productDescription}>{product.description}</div>
 
       <div className={styles.viewDetailsBTN}>
         <h4>
