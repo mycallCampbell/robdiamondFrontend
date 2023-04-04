@@ -10,7 +10,17 @@ function Navgrid() {
           <Link href={"/watches"}>
             <div className={styles.menuItem}>
               <div>
-                <h4>WATCHES</h4>
+                <h5>WATCHES</h5>
+              </div>
+            </div>
+          </Link>
+        </li>
+
+        <li>
+          <Link href={"/blogs"}>
+            <div className={styles.menuItem}>
+              <div>
+                <h5>BLOGS</h5>
               </div>
             </div>
           </Link>
@@ -20,7 +30,7 @@ function Navgrid() {
           <Link href={"/contact"}>
             <div className={styles.menuItem}>
               <div>
-                <h4>CONTACT</h4>
+                <h5>CONTACT</h5>
               </div>
             </div>
           </Link>

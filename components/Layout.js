@@ -2,7 +2,6 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import CartIcon from "./CartIcon";
-import Menu from "./Menu";
 
 import styles from "./Layout.module.css";
 import Navgrid from "./Navgrid";
