@@ -21,17 +21,20 @@ function Layout({ children }) {
           <section>
             {!open ? (
               <div>
-                <li
-                  className={styles.hamburgerIcon}
-                  onClick={(e) => handleOpen(e)}
-                >
-                  <Image src="/hamburger.png" width={25} height={25} />
-                </li>
+                <Link href={"#menuContainer"}>
+                  <li
+                    className={styles.hamburgerIcon}
+                    onClick={(e) => handleOpen(e)}
+                  >
+                    <Image src="/hamburger.png" width={25} height={25} />
+                  </li>
+                </Link>
               </div>
             ) : (
               <div
                 onClick={(e) => handleOpen(e)}
                 className={styles.menuContainer}
+                id="menuContainer"
               >
                 <div className={styles.robDiamondTitle}>
                   <Link href="/#">

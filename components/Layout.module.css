@@ -7,6 +7,10 @@
   top: 37px;
 }
 
+.menuContainer{
+margin-top: 10px;
+}
+
 .menuGrid {
   display: flex;
   justify-content: space-between;
@@ -23,8 +27,7 @@
 }
 
 .robDiamondTitle{
-  text-align: center;
-  margin: -25px auto 10px auto;
+  text-align: center;  
 }
 
 .robOpen {
