@@ -1,36 +1,70 @@
-import React from "react";
+import styles from "./Search.module.css";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import React, { useState } from "react";
+import axios from "axios";
+export const getStaticProps = async () => {
+  const data = await fetch("https://www.robdiamond-be.co.uk/api/watches");
+  const products = await data.json();
 
-export default function Search() {
-  const [query, setQuery] = useState("");
+  return {
+    props: {
+      products: products,
+    },
+    revalidate: 60,
+  };
+};
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    async function fetchData() {
-      try {
-        const response = await axios.get(
-          `https://www.robdiamond-be.co.uk/api/search`
-        );
-        setDate(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    }
+export default function Search({ products }) {
+  const [nickName, setNickName] = useState("");
+  const router = useRouter();
 
-    fetchData();
+  const handleChange = (e) => {
+    const target = e.target.value.toLowerCase();
+    setNickName(target);
   };
 
-  const handleChange = (event) => {
-    setQuery(event.target.value);
+  async function getProducts() {
+    try {
+      const response = await axios.get(
+        "https://www.robdiamond-be.co.uk/api/watches"
+      );
+      console.log(response.data);
+      const data = response.data;
+      data.map(
+        (item) =>
+          item.description1 == nickName
+            ? router.push(`/watches/${[item._id]}`)
+            : console.log("no")
+        // (item) => nickName === item.description1 ?? <>{console.log()}</>
+      );
+    } catch {
+      console.error(error);
+    }
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getProducts();
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={query} onChange={handleChange} />
-        <button type="submit">Search</button>
-      </form>
+    <div className={styles.searchContainer}>
+      <input
+        className={styles.input}
+        name="email"
+        type="text"
+        placeholder="Search Rolex NickName Here.... i.e. Batman"
+        value={nickName}
+        onChange={(e) => handleChange(e)}
+      />
+      <div
+        className={styles.find}
+        onClick={(e) => {
+          handleSubmit(e);
+        }}
+      >
+        Find
+      </div>
     </div>
   );
 }
