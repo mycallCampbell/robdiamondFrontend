@@ -53,7 +53,7 @@ export default function Search({ products }) {
         className={styles.input}
         name="email"
         type="text"
-        placeholder="Search Rolex NickName Here.... i.e. Batman"
+        placeholder="Search Rolex NickName Here.... i.e Batman"
         value={nickName}
         onChange={(e) => handleChange(e)}
       />
