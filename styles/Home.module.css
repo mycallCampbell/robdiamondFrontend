@@ -1,6 +1,8 @@
 /* color for 'Rob' on the title: #a37e2c */
+
+/* BTN */
 .heroBtn {
-  margin: 20px;
+  margin: 10px auto 20px auto;
   padding: 10px 80px;
   text-align: center;
   color: #ffffff;
@@ -12,6 +14,21 @@
   cursor: pointer;
 }
 
+.readMoreBTN {
+  margin: 10px 0;
+  padding: 10px 80px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 2px;
+  background: #91c0dc;
+  border: 2px solid #91c0dc;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.heroImageDesktop{
+  display: none;
+}
 .readyFor {
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -53,8 +70,12 @@
 }
 
 /* BLOG SECTION */
+
+.blogContent{
+  display: none;
+}
 .blog {
-  margin: 10px;
+  margin: 30px;
   color: #2e2e2e;
   letter-spacing: 3px;
   font-weight: 500;
@@ -73,7 +94,7 @@
 }
 
 .blog p {
-  margin: -40px auto;
+  margin: 20px auto;
   z-index: 100;
 }
 
@@ -82,11 +103,11 @@
   z-index: -1000;
 }
 
-.blogCaption {
+.blogCaption p {
   letter-spacing: 3px;
   font-weight: 500;
   text-align: center;
-  margin: 10px; 
+  margin: 20px 10px 0 10px; 
 }
 
 .bannerBottom {
@@ -229,16 +250,72 @@
 @media (min-width: 768px) {
 
   .heroImage{
-    position: relative;
-    top: -40px;
+    display: none;
+  }
+
+  .heroImageDesktop{
+    display: block;
+  }
+
+  .collectionTitle{
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+
+  .collectionGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
   }
   .grid {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    max-width: 1100px;
+    margin: 30px 40px;
     cursor: pointer;
   }
 
+  .gridContent{
+    font-size: 1rem;
+  }
+
+  .blogContainer{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 20px;
+  }
+
+  .blogContent{
+    display: block; 
+  }
+
+  .blogContent p{
+    font-size: 1rem !important;
+    color: #2e2e2e;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 20px;
+ 
+  }
+
+  .blogContainer p{
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+
+  .blog p{
+    margin-top: -40px;
+    z-index: 100;
+  }
+
+  .blogCaption{
+    display: none;
+  }
+
+  .theLatest{
+    display: none;
+  }
+  .theLatestDesktop{
+    display: block;
+  }
   .card {
     min-height: 200px;
   }
@@ -267,8 +344,6 @@
       margin-top: 20px;
     }
   
-
-
     .imageGrid {
       display: grid;
       grid-template-columns: 50% 50%;
