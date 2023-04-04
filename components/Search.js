@@ -32,7 +32,7 @@ export default function Search({ products }) {
       const data = response.data;
       data.map(
         (item) =>
-          item.nickname == nickName
+          item.nickName == nickName
             ? router.push(`/watches/${[item._id]}`)
             : console.log("no")
         // (item) => nickName === item.description1 ?? <>{console.log()}</>
