@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/watchID.module.css";
 import Link from "next/link";
 import Footer from "../../components/Footer";
-import WatchCat from "../../components/WatchCat";
+// import WatchCat from "../../components/WatchCat";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
@@ -173,7 +173,7 @@ function WatchProductPage({ product }) {
           <h4>WHATSAPP</h4>
         </Link>
       </div>
-      <WatchCat products={product.model} />
+      {/* <WatchCat products={product.model} /> */}
       <Footer src={"/rolexGoldFooter.JPG"} width={3360} height={2240} />
     </div>
   );
