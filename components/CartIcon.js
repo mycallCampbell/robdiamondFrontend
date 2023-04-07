@@ -1,5 +1,3 @@
-// import { useContext } from "react";
-// import { ProductPageContext } from "../productPageContext";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./CartIcon.module.css";

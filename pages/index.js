@@ -24,7 +24,7 @@ export default function Home() {
       {/*  META DATA */}
       <Head>
         <title>ROB DIAMOND</title>
-        <meta name="description" content="Rolex Specialists" />
+        <meta name="description" content="Rolex Specialistss" />
         <meta property="og:image" content="faviconRob.ico" />
         <meta
           name="facebook-domain-verification"
