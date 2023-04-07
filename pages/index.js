@@ -41,7 +41,7 @@ export default function Home() {
           <Image src={"/hero_daytona.JPG"} width={3360} height={2240} />
         </div>
         <div className={styles.heroImageDesktop}>
-          <Image src={"/hero_daytona_desktop.PNG"} width={3354} height={1479} />
+          <Image src={"/hero_daytona_desktop.png"} width={3354} height={1479} />
         </div>
 
         <div className={styles.caption}>
