@@ -26,11 +26,7 @@ function blogs({ blogs }) {
         return (
           <div className={styles.container} key={blog._id}>
             <div className={styles.image}>
-              <Image
-                src={`/blogs${imageExtension}`}
-                width={1024}
-                height={683}
-              />
+              <Image src={`/#}`} width={1024} height={683} />
             </div>
             <div className={styles.subTitle1}>{blog.subTitle1}</div>
             <Link href={`/blogs/${blog._id}`}>
