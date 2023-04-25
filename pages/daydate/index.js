@@ -47,40 +47,49 @@ function daydate({ products }) {
       </div>
 
       <h1 className={styles.headerTitle}>DAYDATE</h1>
+      <div className={styles.contentTopContainer}>
+        <p className={styles.catDescription}>
+          The Rolex Day-Date, the ultimate luxury watch. Available with Oyster
+          and Jubilee bracelets, this watch exudes sophistication and prestige.
+          Highly sought-after by watch enthusiasts and collectors, the Day-Date
+          is a true icon of the Rolex brand.
+        </p>
 
-      <p className={styles.catDescription}>
-        The Rolex Day-Date, the ultimate luxury watch. Available with Oyster and
-        Jubilee bracelets, this watch exudes sophistication and prestige. Highly
-        sought-after by watch enthusiasts and collectors, the Day-Date is a true
-        icon of the Rolex brand.
-      </p>
-
-      {products.map((product) => (
-        <div
-          className={styles.productContainer}
-          key={product._id}
-          id={product.image}
-        >
-          <h2 className={styles.productTitle}>{product.title}</h2>
-          <div>
-            <Image
-              src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
-              width={1680}
-              height={1120}
-            />
-          </div>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW DETAILS</h4>
-            </div>
-          </Link>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW BLOG</h4>
-            </div>
-          </Link>
+        {/* CTA  */}
+        <div className={styles.viewDetailsBTNHeader}>
+          <a href="tel:07976753254">CALL NOW</a>
         </div>
-      ))}
+      </div>
+
+      {/* MAIN */}
+      <main className={styles.mainContainer}>
+        {products.map((product) => (
+          <div
+            className={styles.productContainer}
+            key={product._id}
+            id={product.image}
+          >
+            <h2 className={styles.productTitle}>{product.title}</h2>
+            <div>
+              <Image
+                src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
+                width={1680}
+                height={1120}
+              />
+            </div>
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW DETAILS</h4>
+              </div>
+            </Link>
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW BLOG</h4>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </main>
       <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
     </div>
   );

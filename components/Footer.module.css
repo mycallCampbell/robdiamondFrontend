@@ -29,7 +29,7 @@
     cursor: pointer;
 } 
 
-  .menuItem {
+.menuItem {
   display: grid;
   grid-template-columns: 5fr 2fr;
   align-items: start;
@@ -69,17 +69,21 @@
 }
 
 .socials {
-    display: flex;
-    cursor: pointer;
-    margin: 25px;
-    justify-content: center;
-    align-self: center;
+  display: flex;
+  cursor: pointer;
+  margin: 25px;
+  justify-content: center;
+  align-self: center;
 }
 
 .mailingList {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.subscribeContainer {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {

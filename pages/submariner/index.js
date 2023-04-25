@@ -47,38 +47,49 @@ function submariner({ products }) {
 
       <h1 className={styles.headerTitle}>SUBMARINER</h1>
 
-      <p className={styles.catDescription}>
-        Discover the iconic Rolex Submariner, the quintessential dive watch
-        designed for adventurers. Available only in Oyster Steel bracelet, this
-        watch is a timeless masterpiece. Highly popular among watch enthusiasts
-        and collectors, the Submariner is a symbol of style and precision.
-      </p>
-      {products.map((product) => (
-        <div
-          className={styles.productContainer}
-          key={product._id}
-          id={product.image}
-        >
-          <h2 className={styles.productTitle}>{product.title}</h2>
-          <div>
-            <Image
-              src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
-              width={1680}
-              height={1120}
-            />
-          </div>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW DETAILS</h4>
-            </div>
-          </Link>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW BLOG</h4>
-            </div>
-          </Link>
+      <div className={styles.contentTopContainer}>
+        <p className={styles.catDescription}>
+          Discover the iconic Rolex Submariner, the quintessential dive watch
+          designed for adventurers. Available only in Oyster Steel bracelet,
+          this watch is a timeless masterpiece. Highly popular among watch
+          enthusiasts and collectors, the Submariner is a symbol of style and
+          precision.
+        </p>
+        {/* CTA  */}
+        <div className={styles.viewDetailsBTNHeader}>
+          <a href="tel:07976753254">CALL NOW</a>
         </div>
-      ))}
+      </div>
+
+      {/* MAIN */}
+      <main className={styles.mainContainer}>
+        {products.map((product) => (
+          <div
+            className={styles.productContainer}
+            key={product._id}
+            id={product.image}
+          >
+            <h2 className={styles.productTitle}>{product.title}</h2>
+            <div>
+              <Image
+                src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
+                width={1680}
+                height={1120}
+              />
+            </div>
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW DETAILS</h4>
+              </div>
+            </Link>
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW BLOG</h4>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </main>
       <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
     </div>
   );

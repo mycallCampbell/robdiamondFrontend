@@ -40,8 +40,10 @@ export default function Home() {
         <div className={styles.heroImage}>
           <Image src={"/hero_daytona.JPG"} width={3360} height={2240} />
         </div>
+
+        {/* DESKTOP */}
         <div className={styles.heroImageDesktop}>
-          <Image src={"/hero_daytona_desktop.png"} width={3354} height={1479} />
+          <Image src={"/hero_daytona_desktop.png"} width={3348} height={1017} />
         </div>
 
         <div className={styles.caption}>
@@ -62,7 +64,7 @@ export default function Home() {
 
         <p className={styles.collectionTitle}>CATEGORIES</p>
 
-        <div className={styles.collectionGrid}>
+        <div className={styles.gridContainer}>
           <Link href={"/datejust"}>
             <div className={styles.grid}>
               <Image
@@ -170,18 +172,16 @@ export default function Home() {
             </div>
           </div>
 
+          {/* DESKTOP ONLY */}
           <div className={styles.blogContent}>
-            <p className={styles.theLatestDesktop}>THE LATEST BLOGS</p>
-
-            <p>
+            <div className={styles.theLatestTitle}>THE LATEST BLOGS</div>
+            <div className={styles.blogLatestConten}>
               Looking for the latest and most informative blogs on Rolex? Look
-              no further! We are thrilled to announce the release of our newest
-              blogs, packed with fresh and exciting content about the
-              world-renowned luxury watch brand. Our team of expert writers have
-              worked tirelessly to deliver the latest news, trends, and insights
-              on all things Rolex. Whether you're a seasoned collector or a
-              casual admirer, our newest blogs are sure to captivate and engage.
-            </p>
+              no further! Our team of expert writers have worked tirelessly to
+              deliver the latest news, trends, and insights on all things Rolex.
+              Whether you're a seasoned collector or a casual admirer, our
+              newest blogs are sure to captivate and engage.
+            </div>
           </div>
         </div>
       </main>

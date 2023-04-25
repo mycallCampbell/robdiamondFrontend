@@ -3,26 +3,24 @@
       display: flex;
       list-style-type: none;
       justify-content: center;
+      margin: 20px auto 0 auto;
     }
 
     .navbar ul li {
-        margin: 10px 10px;
+        margin: 10px 10px 0 10px;
         font-size: 1.1rem;
         color: #2e2e2e;
         letter-spacing: 3px;
         font-weight: 300;
         text-align: center;
-
     }
    
     .navbar ul li:hover {
-        margin: 10px 10px;
+        margin: 10px 10px 0 10px;
         font-size: 1.1rem;
         cursor: pointer;
         border-bottom: 1px solid #2e2e2e;
         padding: 10px 0;
         transition: all 0.7s ease 0s;
-        
-
     }
   }

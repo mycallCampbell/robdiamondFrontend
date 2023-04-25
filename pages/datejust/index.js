@@ -34,10 +34,12 @@ function datejust({ products }) {
 
         <link rel="icon" href="/rob_diamond_logo.png" />
       </Head>
+
       <Link href={`/#`}>
         <div className={styles.backButton}>{"<"} BACK</div>
       </Link>
 
+      {/* BANNER */}
       <div>
         <Image
           src={"/categoryBanner/datejustCatBanner.JPG"}
@@ -48,12 +50,20 @@ function datejust({ products }) {
 
       <h1 className={styles.headerTitle}>DATEJUST</h1>
 
-      <p className={styles.catDescription}>
-        The Rolex Datejust 41mm, a timeless classic that blends elegance with
-        functionality. An exceptional watch that never goes out of style.
-        Available with both Oyster and Jubilee bracelets and renowned for its
-        popularity among watch enthusiasts and collectors.
-      </p>
+      <div className={styles.contentTopContainer}>
+        <p className={styles.catDescription}>
+          The Rolex Datejust 41mm, a timeless classic that blends elegance with
+          functionality. An exceptional watch that never goes out of style.
+          Available with both Oyster and Jubilee bracelets and renowned for its
+          popularity among watch enthusiasts and collectors.
+        </p>
+        {/* CTA  */}
+        <div className={styles.viewDetailsBTNHeader}>
+          <a href="tel:07976753254">CALL NOW</a>
+        </div>
+      </div>
+
+      {/* MAIN  */}
       <main className={styles.mainContainer}>
         {products.map((product) => (
           <div

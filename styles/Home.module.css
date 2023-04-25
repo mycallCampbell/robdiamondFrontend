@@ -34,7 +34,7 @@
   text-transform: uppercase;
 }
 
-.collectionGrid {
+.gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -249,6 +249,7 @@
 
 @media (min-width: 768px) {
 
+
   .heroImage{
     display: none;
   }
@@ -262,14 +263,16 @@
     margin-top: 50px;
   }
 
-  .collectionGrid{
+  .gridContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
+    grid-template-columns: 33% 33% 33%;
+    margin: 0 20px;
   }
   .grid {
     margin: 30px 40px;
     cursor: pointer;
+    border: solid 1px #afaeae;
+
   }
 
   .gridContent{
@@ -278,22 +281,14 @@
 
   .blogContainer{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 65% 35%;
+    align-items: center;
     margin: 20px;
   }
 
   .blogContent{
     display: block; 
-  }
-
-  .blogContent p{
-    font-size: 1rem !important;
-    color: #2e2e2e;
-    letter-spacing: 3px;
-    line-height: 1.5;
-    font-weight: 500;
-    margin: 20px;
- 
+    text-align: start;
   }
 
   .blogContainer p{
@@ -313,8 +308,20 @@
   .theLatest{
     display: none;
   }
-  .theLatestDesktop{
+  .theLatestTitle{
     display: block;
+    text-align: start;
+    font-size: 1.5rem;
+    margin: 0 0 0 20px; 
+  }
+
+  .blogLatestConten{
+    font-size: 0.9rem !important;
+    color: #2e2e2e;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 20px;
   }
   .card {
     min-height: 200px;

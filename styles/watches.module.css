@@ -110,11 +110,33 @@ text-align: center;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
+    .headerTitle {
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+
     .productContainer {
         margin: 20px;
     }
+    .contentTopContainer {
+        margin: 0 100px;
+    }
 
     .catDescription {
-        margin: 40px;
+        margin: 10px 40px;
     }
+
+    .viewDetailsBTNHeader {
+        border: solid 2px #91c0dc;
+        border-radius: 2px;
+        padding: 10px 30px;
+        margin: 30px 200px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #2e2e2e;
+        letter-spacing: 3px;
+        text-align: center;
+        cursor: pointer;
+    }
+
 }

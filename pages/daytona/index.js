@@ -50,45 +50,50 @@ function daytona({ products }) {
       </div>
       <h1 className={styles.headerTitle}>DAYTONA</h1>
 
-      <p className={styles.catDescription}>
-        Rolex Daytona is a line of luxury watches produced by Rolex, a Swiss
-        watch manufacturer. It was first introduced in 1963 and was designed
-        specifically for professional racing drivers. The watch is named after
-        the Daytona International Speedway, a renowned race track in Florida,
-        USA.
-      </p>
+      <div className={styles.contentTopContainer}>
+        <p className={styles.catDescription}>
+          Rolex Daytona is a line of luxury watches produced by Rolex, a Swiss
+          watch manufacturer. It was first introduced in 1963 and was designed
+          specifically for professional racing drivers. The watch is named after
+          the Daytona International Speedway, a renowned race track in Florida,
+          USA.
+        </p>
 
-      {/* CTA  */}
-      <div className={styles.viewDetailsBTN}>
-        <a href="tel:07976753254">CALL NOW</a>
+        {/* CTA  */}
+        <div className={styles.viewDetailsBTNHeader}>
+          <a href="tel:07976753254">CALL NOW</a>
+        </div>
       </div>
 
-      {products.map((product) => (
-        <div
-          className={styles.productContainer}
-          key={product._id}
-          id={product.image}
-        >
-          <h2 className={styles.productTitle}>{product.title}</h2>
-          <div>
-            <Image
-              src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
-              width={1680}
-              height={1120}
-            />
+      {/* MAIN */}
+      <main className={styles.mainContainer}>
+        {products.map((product) => (
+          <div
+            className={styles.productContainer}
+            key={product._id}
+            id={product.image}
+          >
+            <h2 className={styles.productTitle}>{product.title}</h2>
+            <div>
+              <Image
+                src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
+                width={1680}
+                height={1120}
+              />
+            </div>
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW DETAILS</h4>
+              </div>
+            </Link>
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW BLOG</h4>
+              </div>
+            </Link>
           </div>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW DETAILS</h4>
-            </div>
-          </Link>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW BLOG</h4>
-            </div>
-          </Link>
-        </div>
-      ))}
+        ))}
+      </main>
       <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
     </div>
   );
