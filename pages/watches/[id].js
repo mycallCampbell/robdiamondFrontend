@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "../../styles/watchID.module.css";
 import Link from "next/link";
 import Footer from "../../components/Footer";
-// import WatchCat from "../../components/WatchCat";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
@@ -27,7 +26,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-// Get all static props from Backend
+// GET STATIC PROPS FROM BACKEND
 export const getStaticProps = async (context) => {
   const id = context.params.id;
   const res = await fetch("https://www.robdiamond-be.co.uk/api/watch/" + id);
@@ -55,6 +54,7 @@ function WatchProductPage({ product }) {
 
   const [cart, setCart] = useContext(ProductPageContext);
 
+  // USE EFFECT
   useEffect(() => {
     if (cartStorage.length > 0) {
       setCheckout(true);
@@ -66,18 +66,18 @@ function WatchProductPage({ product }) {
 
   const productArr = Array.from(product.imageAmount);
 
-  const addToCart = () => {
-    setCartStorage((cartStorage) => [...cartStorage, product]);
-    setAdded(true);
-    setTimeout(() => setAdded(false), 5000);
-  };
+  // const addToCart = () => {
+  //   setCartStorage((cartStorage) => [...cartStorage, product]);
+  //   setAdded(true);
+  //   setTimeout(() => setAdded(false), 5000);
+  // };
 
-  const handleNextSlide = () => {
-    if (product.imageAmount > imageNumber) {
-      setImageNumber(imageNumber + 1);
-      console.log(imageNumber);
-    }
-  };
+  // const handleNextSlide = () => {
+  //   if (product.imageAmount > imageNumber) {
+  //     setImageNumber(imageNumber + 1);
+  //     console.log(imageNumber);
+  //   }
+  // };
 
   // const handlePreviousSlide = () => {
   //   if(imageNumber !== 1){
@@ -94,36 +94,65 @@ function WatchProductPage({ product }) {
         <h2>{product.title}</h2>
       </div>
 
-      <div className={styles.imageContainer}>
-        <Swiper
-          pagination={true}
-          modules={[Pagination]}
-          className={styles.swiper}
-        >
-          <div className={styles.swiperWrapper}>
-            {productArr.map((item, index) => (
-              <SwiperSlide className={styles.swiperSlide} key={index}>
-                <Image
-                  src={`/watches/${product.model}${product.ref}${
-                    product.strap
-                  }${product.dial}/${product.ref}${product.model}${
-                    index + 1
-                  }.JPG`}
-                  width={1680}
-                  height={1120}
-                />
-              </SwiperSlide>
-            ))}
+      <main className={styles.mainContainer}>
+        {/* GRID ITEM 1 */}
+        <div className={styles.imageContainer}>
+          <Swiper
+            pagination={true}
+            modules={[Pagination]}
+            className={styles.swiper}
+          >
+            <div
+              className={styles.previousSlide}
+              onClick={(e) => handleClick(e)}
+            >
+              <Image src={"/leftArrow.svg"} width={35} height={35} />
+            </div>
+
+            <div className={styles.nextSlide} onClick={(e) => handleClick(e)}>
+              <Image src={"/rightArrow.svg"} width={35} height={35} />
+            </div>
+            <div className={styles.swiperWrapper}>
+              {productArr.map((item, index) => (
+                <SwiperSlide className={styles.swiperSlide} key={index}>
+                  <Image
+                    src={`/watches/${product.model}${product.ref}${
+                      product.strap
+                    }${product.dial}/${product.ref}${product.model}${
+                      index + 1
+                    }.JPG`}
+                    width={1680}
+                    height={1120}
+                  />
+                </SwiperSlide>
+              ))}
+            </div>
+          </Swiper>
+        </div>
+        {/* GRID ITEM 2 */}
+        <div className={styles.productContent}>
+          <div className={styles.descriptionSmallContainer}>
+            <p>{product.descriptionSmall}</p>
           </div>
-        </Swiper>
-      </div>
+          <div className={styles.price}>PRICE: £{product.price1}</div>
 
-      <div className={styles.descriptionSmallContainer}>
-        <p>{product.descriptionSmall}</p>
-      </div>
-      <div className={styles.price}>PRICE: £{product.price1}</div>
+          <div className={styles.space}></div>
+          <div className={styles.productDescription}>{product.description}</div>
 
-      <div className={styles.space}></div>
+          <div className={styles.callForDetailsBTN}>
+            <h4>
+              <a href="tel:07976753254">CALL FOR DETAILS</a>
+            </h4>
+          </div>
+          <div className={styles.whatsAppBTN}>
+            <Link
+              href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
+            >
+              <h4>WHATSAPP</h4>
+            </Link>
+          </div>
+        </div>
+      </main>
 
       {/* SPECIFICATION */}
 
@@ -158,22 +187,6 @@ function WatchProductPage({ product }) {
         <div className={styles.labelDescription}>{product.dial}</div>
       </div>
 
-      <div className={styles.descriptionTitle}>Description</div>
-      <div className={styles.productDescription}>{product.description}</div>
-
-      <div className={styles.viewDetailsBTN}>
-        <h4>
-          <a href="tel:07976753254">CALL FOR DETAILS</a>
-        </h4>
-      </div>
-      <div className={styles.viewDetailsBTN}>
-        <Link
-          href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
-        >
-          <h4>WHATSAPP</h4>
-        </Link>
-      </div>
-      {/* <WatchCat products={product.model} /> */}
       <Footer src={"/rolexGoldFooter.JPG"} width={3360} height={2240} />
     </div>
   );

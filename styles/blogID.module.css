@@ -1,3 +1,16 @@
 .image {
     
 }
+
+.description {
+    margin: 20px;
+    text-align: center;
+}
+
+.imageRef {
+    margin: 20px;
+}
+
+.displayNone {
+    display: none;
+}

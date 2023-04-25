@@ -34,73 +34,82 @@ function Footer({ src, width, height }) {
   return (
     <section className={styles.containerFooter}>
       <div>
-        {/* <div className={styles.line}></div> */}
         <div className={styles.content}></div>
       </div>
-      <div className={styles.artWork}>
-        <Image src={src} width={width} height={height} />
-      </div>
-      <div className={styles.containerMailingList}>
-        <h4>Enter your Email to Subscribe to our mailing list</h4>
-      </div>
-      <div>
-        <div className={styles.mailingList}>
-          <input
-            className={styles.input}
-            name="email"
-            type="text"
-            placeholder="Email*"
-            value={email}
-            onChange={(e) => handleText(e)}
-          />
-          <div className={styles.inputBlack} onClick={handleSubmit}>
-            Submit
+
+      {/* SUBSCRIBE CONTAINER */}
+      <div className={styles.subscribeContainer}>
+        <div className={styles.containerMailingList}>
+          <h4>Enter your Email to Subscribe to our mailing list</h4>
+        </div>
+        <div>
+          <div className={styles.mailingList}>
+            <input
+              className={styles.input}
+              name="email"
+              type="text"
+              placeholder="Email*"
+              value={email}
+              onChange={(e) => handleText(e)}
+            />
+            <div className={styles.inputBlack} onClick={handleSubmit}>
+              Submit
+            </div>
           </div>
         </div>
-
-        {/* Social Links */}
-        <div className={styles.socials}>
-          <a href={"https://www.instagram.com/robdiamond_official/?hl=en-gb"}>
-            <Image src={"/instagramFooter.png"} width={60} height={60} />
-          </a>
-        </div>
-        <div className={styles.linksFooter}>
-          <Link href={"/contact"}>
-            <div className={styles.menuItem}>
-              <div>Contact</div>
-              <div className={styles.arrow}>{">"}</div>
-            </div>
-          </Link>
-          <Link href={"/terms"}>
-            <div className={styles.menuItem}>
-              <div>Terms {"&"} Conditions</div>
-              <div className={styles.arrow}>{">"}</div>
-            </div>
-          </Link>
-          <Link href={"/returns"}>
-            <div className={styles.menuItem}>
-              <div>Returns</div>
-              <div className={styles.arrow}>{">"}</div>
-            </div>
-          </Link>
-          <Link href={"/reviews"}>
-            <div className={styles.menuItem}>
-              <div>Reviews</div>
-              <div className={styles.arrow}>{">"}</div>
-            </div>
-          </Link>
-          <Link href={"/privacyPolicy"}>
-            <div className={styles.menuItem}>
-              <div>Privacy Policy</div>
-              <div className={styles.arrow}>{">"}</div>
-            </div>
-          </Link>
-        </div>
-        <div className={styles.locationTitle}>LOCATION </div>
-        <div className={styles.locationAddress}>Hatton Garden, London EC1N</div>
-        <div className={styles.locationUnited}>United Kingdom</div>
-        <div className={styles.space}></div>
       </div>
+
+      {/* GRID CONTAINER */}
+      <div className={styles.gridContainer}>
+        <div className={styles.gridItem}>
+          <Image src={src} width={width} height={height} />
+        </div>
+        <div className={styles.gridItem}>
+          {/* Social Links */}
+          <div className={styles.socials}>
+            <a href={"https://www.instagram.com/robdiamond_official/?hl=en-gb"}>
+              <Image src={"/instagramFooter.png"} width={60} height={60} />
+            </a>
+          </div>
+          <div className={styles.linksFooter}>
+            <Link href={"/contact"}>
+              <div className={styles.menuItem}>
+                <div>Contact</div>
+                <div className={styles.arrow}>{">"}</div>
+              </div>
+            </Link>
+            <Link href={"/terms"}>
+              <div className={styles.menuItem}>
+                <div>Terms {"&"} Conditions</div>
+                <div className={styles.arrow}>{">"}</div>
+              </div>
+            </Link>
+            <Link href={"/returns"}>
+              <div className={styles.menuItem}>
+                <div>Returns</div>
+                <div className={styles.arrow}>{">"}</div>
+              </div>
+            </Link>
+            <Link href={"/reviews"}>
+              <div className={styles.menuItem}>
+                <div>Reviews</div>
+                <div className={styles.arrow}>{">"}</div>
+              </div>
+            </Link>
+            <Link href={"/privacyPolicy"}>
+              <div className={styles.menuItem}>
+                <div>Privacy Policy</div>
+                <div className={styles.arrow}>{">"}</div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.locationTitle}>LOCATION </div>
+      <div className={styles.locationAddress}>Hatton Garden, London EC1N</div>
+      <div className={styles.locationUnited}>United Kingdom</div>
+      <div className={styles.space}></div>
     </section>
   );
 }

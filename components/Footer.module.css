@@ -1,13 +1,11 @@
 
-
-
 .line {
     border-top: solid 1px #000;
     margin-bottom: 10px;
 }
 
 .content {
-    margin: 10px;
+  margin: 10px;
 }
 
 .containerMailingList{
@@ -29,46 +27,47 @@
     background: #000;
     color: #fff;
     cursor: pointer;
-   } 
+} 
 
-   .menuItem {
-    display: grid;
-    grid-template-columns: 5fr 2fr;
-    align-items: start;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    padding-bottom: 5px;
-    border-bottom: solid 1px lightslategray;
-    max-width: 90%;
-    cursor: pointer;
-  }
+  .menuItem {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  align-items: start;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px lightslategray;
+  max-width: 90%;
+  cursor: pointer;
+}
 
-  .arrow {
-    font-size: 1.5rem;
-  }
-  .location {
-      margin: 3px 10px;
-      font-weight: 700;
-      text-align: center;
-  }
-
-  .locationTitle {
-    margin: 20px auto 5px auto;
+.arrow {
+  font-size: 1.5rem;
+}
+.location {
+    margin: 3px 10px;
+    font-weight: 700;
     text-align: center;
-  }
+}
 
-  .locationAddress {
-    text-align: center;
-    margin: 5px;
-  }
-  .locationUnited {
-    text-align: center;
-  }
+.locationTitle {
+  margin: 20px auto 5px auto;
+  text-align: center;
+}
+
+.locationAddress {
+  text-align: center;
+  margin: 5px;
+}
+.locationUnited {
+  text-align: center;
+}
   
-  .space {
-    height: 30px;
-  }
+.space {
+  height: 30px;
+}
+
 .socials {
     display: flex;
     cursor: pointer;
@@ -86,8 +85,20 @@
 @media (min-width: 768px) {
 
 .containerFooter {
-    max-width:500px;
-    margin: 0 auto;
+    margin: 20px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.gridItem {
+  margin: 20px;
+}
+
+.subscribeContainer {
+  margin-bottom: 40px;
 }
 
 }

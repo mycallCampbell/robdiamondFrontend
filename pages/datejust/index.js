@@ -54,33 +54,34 @@ function datejust({ products }) {
         Available with both Oyster and Jubilee bracelets and renowned for its
         popularity among watch enthusiasts and collectors.
       </p>
-
-      {products.map((product) => (
-        <div
-          className={styles.productContainer}
-          key={product._id}
-          id={product.image}
-        >
-          <h2 className={styles.productTitle}>{product.title}</h2>
-          <div>
-            <Image
-              src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
-              width={1680}
-              height={1120}
-            />
+      <main className={styles.mainContainer}>
+        {products.map((product) => (
+          <div
+            className={styles.productContainer}
+            key={product._id}
+            id={product.image}
+          >
+            <h2 className={styles.productTitle}>{product.title}</h2>
+            <div>
+              <Image
+                src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
+                width={1680}
+                height={1120}
+              />
+            </div>
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW DETAILS</h4>
+              </div>
+            </Link>
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW BLOG</h4>
+              </div>
+            </Link>
           </div>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW DETAILS</h4>
-            </div>
-          </Link>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW BLOG</h4>
-            </div>
-          </Link>
-        </div>
-      ))}
+        ))}
+      </main>
       <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
     </div>
   );

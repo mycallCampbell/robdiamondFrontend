@@ -1,3 +1,11 @@
+.nextSlide{ 
+    display: none;
+}
+
+.previousSlide {
+    display: none;
+}
+
 .videoGrid{
 display: flex;
 justify-content: center;
@@ -36,7 +44,7 @@ justify-content: center;
     cursor: pointer;
 }
 
-.viewDetailsBTN{
+.callForDetailsBTN{
     border: solid 2px #a37e2c;
     padding: 10px 30px;
     margin: 14px 30px;
@@ -46,18 +54,19 @@ justify-content: center;
     cursor: pointer;
 }
 
+.whatsAppBTN {
+    border: solid 2px #a37e2c;
+    padding: 10px 30px;
+    margin: 14px 30px 30px 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .viewDetailsBTN:hover{
     color: #006039;
 }
-
-.specContainer{
-    /* margin-top: 20px; */
-    /* padding: 20px;
-    display: flex;
-    justify-content: space-around; */
-}
-
-
 
 .specValueContainer{
     font-size: 0.9rem;
@@ -159,6 +168,7 @@ justify-content: center;
     margin: 20px 40px;
     color: #777777;
     letter-spacing: 1px;
+    line-height: 1.5;
     font-weight: 500;
     text-align: start;
   }
@@ -170,4 +180,41 @@ justify-content: center;
     text-transform: uppercase;
     font-weight: 500;
     margin: 20px;
+  }
+
+  @media (min-width: 768px) {
+
+    .mainContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .imageContainer {
+        position: relative;
+    }
+
+    .previousSlide {
+        display: block;
+        z-index: 1000;
+        position: absolute;
+        top: 50%;
+    }
+
+    .nextSlide {
+        display: block;
+        z-index: 1000;
+        position: absolute;
+        top: 50%;
+        left: 95%;
+    }
+
+    .title {
+        margin: 30px;
+    }
+
+    .specContainer {
+        margin-left: 40px;
+    }
   }

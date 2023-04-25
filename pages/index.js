@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Footer from "../components/Footer";
-import Search from "../components/Search";
+// import Search from "../components/Search";
 
 // export const getStaticProps = async () => {
 //   const data = await fetch("https://www.robdiamond-be.co.uk/api/blogs");
@@ -34,7 +34,7 @@ export default function Home() {
 
         <link rel="icon" href="/faviconRob.ico" />
       </Head>
-      <Search />
+      {/* <Search /> */}
       <main className={styles.main}>
         {/* HERO SECTION*/}
         <div className={styles.heroImage}>

@@ -20,6 +20,7 @@ export const getStaticProps = async () => {
 function watches({ products }) {
   return (
     <div className={styles.container}>
+      {/* META DATA */}
       <Head>
         <title>ROB DIAMOND</title>
         <meta name="description" content="Rolex Watches" />
@@ -32,30 +33,36 @@ function watches({ products }) {
 
         <link rel="icon" href="/rob_diamond_logo.png" />
       </Head>
+
+      {/* TITLE */}
       <div className={styles.title}>
         <h1>ROLEX</h1>
       </div>
-      {products.map((product) => (
-        <div
-          className={styles.productContainer}
-          key={product._id}
-          id={product.image}
-        >
-          <h2 className={styles.productTitle}>{product.title}</h2>
-          <div>
-            <Image
-              src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
-              width={1680}
-              height={1120}
-            />
-          </div>
-          <Link href={`/watches/${[product._id]}`}>
-            <div className={styles.viewDetailsBTN}>
-              <h4>VIEW DETAILS</h4>
+
+      {/* PRODUCT  */}
+      <main className={styles.mainContainer}>
+        {products.map((product) => (
+          <div
+            className={styles.productContainer}
+            key={product._id}
+            id={product.image}
+          >
+            <h2 className={styles.productTitle}>{product.title}</h2>
+            <div>
+              <Image
+                src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
+                width={1680}
+                height={1120}
+              />
             </div>
-          </Link>
-        </div>
-      ))}
+            <Link href={`/watches/${[product._id]}`}>
+              <div className={styles.viewDetailsBTN}>
+                <h4>VIEW DETAILS</h4>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </main>
       <Footer src={"/rolexFooter.jpg"} width={1704} height={700} />
     </div>
   );

@@ -40,41 +40,46 @@ export const getStaticProps = async (context) => {
 };
 
 function BlogId({ blog }) {
-  const [imageNumber, setImageNumber] = useState(1);
-  const [added, setAdded] = useState(false);
-  const [checkout, setCheckout] = useState(false);
-  const [cartStorage, setCartStorage] = useState(() => {
-    let storage;
-
-    if (typeof window !== "undefined") {
-      storage = localStorage.getItem("cartStorage");
-    }
-    return storage ? JSON.parse(storage) : [];
-  });
-
-  const [cart, setCart] = useContext(ProductPageContext);
-
-  useEffect(() => {
-    if (cartStorage.length > 0) {
-      setCheckout(true);
-    }
-    localStorage.setItem("cartStorage", JSON.stringify(cartStorage));
-    const storageLocal = JSON.parse(localStorage.getItem("cartStorage"));
-    setCart(storageLocal);
-  }, [cartStorage]);
-
   return (
     <div className={styles.container}>
       {/* <Link href={`/${blog.category}#${blog._id}`}>
         <div className={styles.breadcrumb}>{"<"} BACK</div>
       </Link> */}
       <div className={styles.title}>
-        <h2>{blog.title}</h2>
+        <h2>{blog.blogTitle}</h2>
       </div>
 
       <div className={styles.image}>
         <Image
-          src={`/blogs/${blog.imageRef1}.JPEG`}
+          src={`/blogs/${blog.imageTitle}/${blog.imageRef1}.jpeg`}
+          width={1024}
+          height={683}
+        />
+      </div>
+      {/* IMAGE REF */}
+      <div
+        className={blog.imageRef1 !== "" ? styles.imageRef : styles.displayNone}
+      >
+        {blog.imageRef1}
+      </div>
+      <div
+        className={blog.imageRef2 !== "" ? styles.imageRef : styles.displayNone}
+      >
+        {blog.imageRef2}
+      </div>
+      <div className={styles.imageRef}>{blog.imageRef2}</div>
+
+      <div className={styles.description}>{blog.description1}</div>
+      <div className={styles.description}>{blog.description1}</div>
+      <div className={styles.description}>{blog.description1}</div>
+      <div className={styles.description}>{blog.description1}</div>
+
+      <div className={styles.description}>{blog.description1}</div>
+      <div className={styles.description}>{blog.description2}</div>
+
+      <div className={styles.image}>
+        <Image
+          src={`/blogs/${blog.imageTitle}/${blog.imageRef2}.jpeg`}
           width={1024}
           height={683}
         />

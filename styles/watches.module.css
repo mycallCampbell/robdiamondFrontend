@@ -1,5 +1,4 @@
 .container {
-/* margin: 20px; */
 text-align: center;
 }
 
@@ -9,13 +8,6 @@ text-align: center;
     cursor: pointer;
     text-align: left;
 }
-
-/* .title{
-    display: flex;
-    justify-content: space-between;
-    /* border-bottom: solid 2px #006039; */
-    
-
 
 .title h1{
     margin-bottom: 20px;
@@ -109,4 +101,20 @@ text-align: center;
 .featuredGrid {
     display: grid;
     grid-template-columns: 50 50;
+}
+
+@media (min-width: 768px) {
+
+    .mainContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .productContainer {
+        margin: 20px;
+    }
+
+    .catDescription {
+        margin: 40px;
+    }
 }
