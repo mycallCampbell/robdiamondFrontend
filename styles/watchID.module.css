@@ -217,4 +217,8 @@ justify-content: center;
     .specContainer {
         margin-left: 40px;
     }
+
+    .swiper-button-prev {
+        color: red; 
+    }
   }

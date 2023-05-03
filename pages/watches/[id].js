@@ -54,6 +54,12 @@ function WatchProductPage({ product }) {
 
   const [cart, setCart] = useContext(ProductPageContext);
 
+  // CONVERT TO LOWER CASE
+  const model = product.model.toLowerCase();
+  const ref = product.ref.toLowerCase();
+  const strap = product.strap.toLowerCase();
+  const dial = product.dial.toLowerCase();
+
   // USE EFFECT
   useEffect(() => {
     if (cartStorage.length > 0) {
@@ -72,12 +78,11 @@ function WatchProductPage({ product }) {
   //   setTimeout(() => setAdded(false), 5000);
   // };
 
-  // const handleNextSlide = () => {
-  //   if (product.imageAmount > imageNumber) {
-  //     setImageNumber(imageNumber + 1);
-  //     console.log(imageNumber);
-  //   }
-  // };
+  const handleNextSlide = () => {
+    if (imageNumber < productArr.length) {
+      setImageNumber(imageNumber + 1);
+    }
+  };
 
   // const handlePreviousSlide = () => {
   //   if(imageNumber !== 1){
@@ -109,18 +114,17 @@ function WatchProductPage({ product }) {
               <Image src={"/leftArrow.svg"} width={35} height={35} />
             </div>
 
-            <div className={styles.nextSlide} onClick={(e) => handleClick(e)}>
+            <div
+              className={styles.nextSlide}
+              onClick={(e) => handleNextSlide(e)}
+            >
               <Image src={"/rightArrow.svg"} width={35} height={35} />
             </div>
             <div className={styles.swiperWrapper}>
               {productArr.map((item, index) => (
                 <SwiperSlide className={styles.swiperSlide} key={index}>
                   <Image
-                    src={`/watches/${product.model}${product.ref}${
-                      product.strap
-                    }${product.dial}/${product.ref}${product.model}${
-                      index + 1
-                    }.JPG`}
+                    src={`/watches/${model}${ref}${strap}${dial}/${ref}${model}${imageNumber}.JPG`}
                     width={1680}
                     height={1120}
                   />
