@@ -20,7 +20,6 @@ export const getStaticProps = async () => {
 };
 
 function datejust({ products }) {
-  console.log(products);
   return (
     <div className={styles.container}>
       <Head>

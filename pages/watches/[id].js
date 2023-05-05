@@ -104,19 +104,6 @@ function WatchProductPage({ product }) {
             modules={[Pagination, Navigation]}
             className={styles.swiper}
           >
-            {/* <div
-              className={styles.previousSlide}
-              onClick={(e) => handleClick(e)}
-            >
-              <Image src={"/leftArrow.svg"} width={35} height={35} />
-            </div> */}
-
-            {/* <div
-              className={styles.nextSlide}
-              onClick={(e) => handleNextSlide(e)}
-            >
-              <Image src={"/rightArrow.svg"} width={35} height={35} />
-            </div> */}
             <div className={styles.swiperWrapper}>
               {productArr.map((item, index) => (
                 <SwiperSlide className={styles.swiperSlide} key={index}>
@@ -130,6 +117,7 @@ function WatchProductPage({ product }) {
             </div>
           </Swiper>
         </div>
+
         {/* GRID ITEM 2 */}
         <div className={styles.productContent}>
           <div className={styles.descriptionSmallContainer}>
