@@ -82,11 +82,11 @@ function daydate({ products }) {
                 <h4>VIEW DETAILS</h4>
               </div>
             </Link>
-            <Link href={`/watches/${[product._id]}`}>
+            {/* <Link href={`/watches/${[product._id]}`}>
               <div className={styles.viewDetailsBTN}>
                 <h4>VIEW BLOG</h4>
               </div>
-            </Link>
+            </Link> */}
           </div>
         ))}
       </main>
