@@ -5,9 +5,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import { Navigation } from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { ProductPageContext } from "../../productPageContext";
@@ -74,11 +72,11 @@ function WatchProductPage({ product }) {
   //   setTimeout(() => setAdded(false), 5000);
   // };
 
-  // const handleNextSlide = () => {
-  //   if (imageNumber < productArr.length) {
-  //     setImageNumber(imageNumber + 1);
-  //   }
-  // };
+  const handleNextSlide = () => {
+    if (imageNumber < productArr.length) {
+      setImageNumber(imageNumber + 1);
+    }
+  };
 
   // const handlePreviousSlide = () => {
   //   if(imageNumber !== 1){
@@ -100,15 +98,14 @@ function WatchProductPage({ product }) {
         <div className={styles.imageContainer}>
           <Swiper
             pagination={true}
-            navigation={true}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination]}
             className={styles.swiper}
           >
             <div className={styles.swiperWrapper}>
               {productArr.map((item, index) => (
                 <SwiperSlide className={styles.swiperSlide} key={index}>
                   <Image
-                    src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
+                    src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}${imageNumber}.JPG`}
                     width={1680}
                     height={1120}
                   />
