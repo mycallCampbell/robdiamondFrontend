@@ -18,6 +18,12 @@ export const getStaticProps = async () => {
 };
 
 function watches({ products }) {
+  // CONVERT TO LOWER CASE
+  const model = products.model.toLowerCase();
+  const ref = products.ref.toLowerCase();
+  const strap = products.strap.toLowerCase();
+  const dial = products.dial.toLowerCase();
+
   return (
     <div className={styles.container}>
       {/* META DATA */}
@@ -50,7 +56,7 @@ function watches({ products }) {
             <h2 className={styles.productTitle}>{product.title}</h2>
             <div>
               <Image
-                src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
+                src={`/watches/${model}${ref}${strap}${dial}/${ref}${model}1.JPG`}
                 width={1680}
                 height={1120}
               />

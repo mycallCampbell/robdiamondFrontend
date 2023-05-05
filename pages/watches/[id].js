@@ -5,7 +5,9 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import { Navigation } from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { ProductPageContext } from "../../productPageContext";
@@ -54,12 +56,6 @@ function WatchProductPage({ product }) {
 
   const [cart, setCart] = useContext(ProductPageContext);
 
-  // CONVERT TO LOWER CASE
-  const model = product.model.toLowerCase();
-  const ref = product.ref.toLowerCase();
-  const strap = product.strap.toLowerCase();
-  const dial = product.dial.toLowerCase();
-
   // USE EFFECT
   useEffect(() => {
     if (cartStorage.length > 0) {
@@ -78,11 +74,11 @@ function WatchProductPage({ product }) {
   //   setTimeout(() => setAdded(false), 5000);
   // };
 
-  const handleNextSlide = () => {
-    if (imageNumber < productArr.length) {
-      setImageNumber(imageNumber + 1);
-    }
-  };
+  // const handleNextSlide = () => {
+  //   if (imageNumber < productArr.length) {
+  //     setImageNumber(imageNumber + 1);
+  //   }
+  // };
 
   // const handlePreviousSlide = () => {
   //   if(imageNumber !== 1){
@@ -104,27 +100,28 @@ function WatchProductPage({ product }) {
         <div className={styles.imageContainer}>
           <Swiper
             pagination={true}
-            modules={[Pagination]}
+            navigation={true}
+            modules={[Pagination, Navigation]}
             className={styles.swiper}
           >
-            <div
+            {/* <div
               className={styles.previousSlide}
               onClick={(e) => handleClick(e)}
             >
               <Image src={"/leftArrow.svg"} width={35} height={35} />
-            </div>
+            </div> */}
 
-            <div
+            {/* <div
               className={styles.nextSlide}
               onClick={(e) => handleNextSlide(e)}
             >
               <Image src={"/rightArrow.svg"} width={35} height={35} />
-            </div>
+            </div> */}
             <div className={styles.swiperWrapper}>
               {productArr.map((item, index) => (
                 <SwiperSlide className={styles.swiperSlide} key={index}>
                   <Image
-                    src={`/watches/${model}${ref}${strap}${dial}/${ref}${model}${imageNumber}.JPG`}
+                    src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
                     width={1680}
                     height={1120}
                   />
