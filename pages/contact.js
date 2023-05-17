@@ -71,6 +71,8 @@ function Contact() {
       <div>
         <h1 className={styles.headerTitle}>ROB DIAMOND CONTACT</h1>
       </div>
+
+      {/* BTN */}
       <div className={styles.heroBtn}>
         <a href="tel:07976753254">CALL NOW</a>
       </div>
@@ -81,6 +83,7 @@ function Contact() {
           WHATSAPP
         </Link>
       </div>
+      <div className={styles.heroBtnDesktop}>07976753254</div>
       <div className={styles.contactInfo}>
         <p>
           Please Fill out the form and we will respond within the first 24
@@ -89,61 +92,60 @@ function Contact() {
         </p>
         <br />
       </div>
-      <form>
-        <div className={styles.form}>
-          <label className={styles.label} htmlFor="name">
-            Name
-          </label>
-          <input
-            className={styles.input}
-            name="name"
-            type="text"
-            placeholder="First Name*"
-            value={firstName}
-            onChange={(e) => handleChange(e)}
-          />
-          <input
-            className={styles.input}
-            name="name"
-            type="text"
-            placeholder="Surname*"
-            value={sureName}
-            onChange={(e) => handleChangeSureName(e)}
-          />
-          <div className={styles.phone}>
-            <p>Phone</p>
-          </div>
-          <input
-            className={styles.input}
-            name="phone"
-            type="tel"
-            placeholder="Phone*"
-            pattern="^-?[0-9]\d*\.?\d*$"
-            value={phone}
-            onChange={(e) => handlePhone(e)}
-          />
-          <div className={styles.phone}>
-            <p>Email</p>
-          </div>
-          <input
-            className={styles.input}
-            name="email"
-            type="text"
-            placeholder="Email*"
-            value={email}
-            onChange={(e) => handleEmail(e)}
-          />
-          <div className={styles.message}>
-            <p>Message</p>
-          </div>
-          <textarea
-            className={styles.inputMessage}
-            value={message}
-            placeholder={"Message*"}
-            rows={10}
-            onChange={(e) => handleMessage(e)}
-          />
+      <form className={styles.form}>
+        <div className={styles.label}>
+          <p>Name</p>
         </div>
+        <input
+          className={styles.input}
+          name="name"
+          type="text"
+          placeholder="First Name*"
+          value={firstName}
+          onChange={(e) => handleChange(e)}
+        />
+        <input
+          className={styles.input}
+          name="name"
+          type="text"
+          placeholder="Surname*"
+          value={sureName}
+          onChange={(e) => handleChangeSureName(e)}
+        />
+        <div className={styles.label}>
+          <p>Phone</p>
+        </div>
+        <input
+          className={styles.input}
+          name="phone"
+          type="tel"
+          placeholder="Phone*"
+          pattern="^-?[0-9]\d*\.?\d*$"
+          value={phone}
+          onChange={(e) => handlePhone(e)}
+        />
+        <div className={styles.label}>
+          <p>Email</p>
+        </div>
+        <input
+          className={styles.input}
+          name="email"
+          type="text"
+          placeholder="Email*"
+          value={email}
+          onChange={(e) => handleEmail(e)}
+        />
+        <div className={styles.message}>
+          <p>Message</p>
+        </div>
+        <textarea
+          className={styles.inputMessage}
+          value={message}
+          placeholder={"Message*"}
+          rows={10}
+          onChange={(e) => handleMessage(e)}
+        />
+
         {!messageSuccess ? (
           <div onClick={(e) => handleSubmit(e)} className={styles.submit}>
             <a>Submit Enquiry</a>

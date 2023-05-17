@@ -1,8 +1,3 @@
-
-  
-  /* .displayNone {
-    display: none;
-  } */
   
   .headerTitle {
     margin: 40px;
@@ -15,9 +10,10 @@
   
   .contactInfo {
     text-align: center;
-    margin: 15px;
+    margin: 15px 20px;
     padding: 15px;
     font-weight: 500;
+    line-height: 1.5;
     color: #5a5a5a;
   }
   
@@ -33,10 +29,10 @@
     margin: 10px 20px;
   }
   
-  .phone {
+  /* .label {
     margin: 20px 20px 0 20px;
     font-size: 1.1rem;
-  }
+  } */
   
   .message {
     margin: 20px 20px 0 20px;
@@ -100,5 +96,59 @@
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
+  }
+
+  .heroBtnDesktop {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+
+    .form {
+      text-align: center;
+      margin: 0 300px;
+    }
+    .heroBtnDesktop{
+      display: block;
+      padding: 10px 20px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 2px;
+      background: #91c0dc;
+      border: 2px solid #91c0dc;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+    -webkit-filter: brightness(100%);
+      margin: 20px 300px;
+    }
+
+    .heroBtn{
+      display: none;
+    }
+
+    .submit {
+      display: block;
+      padding: 10px 20px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 2px;
+      background: #91c0dc;
+      border: 2px solid #91c0dc;
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+    -webkit-filter: brightness(100%);
+      margin: 20px 33px 30px 33px;
+    }
+
+    .contactInfo {
+      text-align: center;
+      margin: 15px 300px;
+      padding: 15px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #5a5a5a;
+    }
   }
   
