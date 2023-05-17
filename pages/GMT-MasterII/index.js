@@ -57,7 +57,7 @@ function GMTMasterII({ products }) {
         </p>
 
         {/* CTA  */}
-        <div className={styles.viewDetailsBTNHeader}>
+        <div className={styles.viewDetailsBTN}>
           <a href="tel:07976753254">CALL NOW</a>
         </div>
       </div>

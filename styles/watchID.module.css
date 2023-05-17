@@ -18,6 +18,8 @@ justify-content: center;
 .title{
     margin: 20px 20px;
     text-align: center;
+    font-weight: 100;
+    color: #2e2e2e;
 }
 
 .breadcrumb{

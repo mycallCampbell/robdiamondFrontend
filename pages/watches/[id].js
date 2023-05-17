@@ -73,11 +73,11 @@ function WatchProductPage({ product }) {
   //   setTimeout(() => setAdded(false), 5000);
   // };
 
-  const handleNextSlide = () => {
-    if (imageNumber < productArr.length) {
-      setImageNumber(imageNumber + 1);
-    }
-  };
+  // const handleNextSlide = () => {
+  //   if (imageNumber < productArr.length) {
+  //     setImageNumber(imageNumber + 1);
+  //   }
+  // };
 
   // const handlePreviousSlide = () => {
   //   if(imageNumber !== 1){
@@ -91,7 +91,7 @@ function WatchProductPage({ product }) {
         <div className={styles.breadcrumb}>{"<"} BACK</div>
       </Link>
       <div className={styles.title}>
-        <h2>{product.title}</h2>
+        <h4>{product.title}</h4>
       </div>
 
       <main className={styles.mainContainer}>
