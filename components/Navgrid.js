@@ -16,7 +16,7 @@ function Navgrid() {
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link href={"/blogs"}>
             <div className={styles.menuItem}>
               <div>
@@ -24,7 +24,7 @@ function Navgrid() {
               </div>
             </div>
           </Link>
-        </li>
+        </li> */}
 
         <li>
           <Link href={"/contact"}>

@@ -57,7 +57,7 @@ function Layout({ children }) {
                       </Link>
                     </li>
 
-                    <li>
+                    {/* <li>
                       <Link href={"/blogs"}>
                         <div className={styles.menuGrid}>
                           <div className={styles.menuItem1}>
@@ -66,7 +66,7 @@ function Layout({ children }) {
                           <div className={styles.menuItem2}>{">"}</div>
                         </div>
                       </Link>
-                    </li>
+                    </li> */}
 
                     <li>
                       <Link href={"/contact"}>
