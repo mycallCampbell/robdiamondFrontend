@@ -14,6 +14,9 @@
   cursor: pointer;
 }
 
+.heroBtnDesktop {
+  display: none;
+}
 .readMoreBTN {
   margin: 10px 0;
   padding: 10px 80px;
@@ -249,7 +252,23 @@
 
 @media (min-width: 768px) {
 
+.heroBtn {
+  display: none;
+}
 
+.heroBtnDesktop{
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 10px 80px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 2px;
+  background: #91c0dc;
+  border: 2px solid #91c0dc;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
   .heroImage{
     display: none;
   }

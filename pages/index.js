@@ -59,6 +59,9 @@ export default function Home() {
             WHATSAPP
           </Link>
         </div>
+        <div className={styles.heroBtnDesktop}>
+          <a href="tel:07976753254">07976753254</a>
+        </div>
 
         {/* CATEGORIES SECTION */}
 
