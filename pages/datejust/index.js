@@ -72,7 +72,7 @@ function datejust({ products }) {
             id={product.image}
           >
             <h2 className={styles.productTitle}>{product.title}</h2>
-            <div>
+            <div className={styles.imageContainer}>
               <Image
                 src={`/watches/${product.model}${product.ref}${product.strap}${product.dial}/${product.ref}${product.model}1.JPG`}
                 width={1680}
