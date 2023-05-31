@@ -160,12 +160,12 @@ export default function Home() {
 
         {/* <div className={styles.space}></div> */}
 
-        {/* BLOG SECTION */}
+        {/* HIGHLIGHT SECTION */}
         <div className={styles.blogContainer}>
           <div className={styles.blog}>
             <Image
               className={styles.blogImage}
-              src={"/highlight_image.JPG"}
+              src={"/highlight_image.jpg"}
               width={3360}
               height={2240}
             />
