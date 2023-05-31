@@ -154,38 +154,30 @@ export default function Home() {
             </div>
           </Link>
         </div>
+        <Link href={"/watches"}>
+          <div className={styles.heroBtn}>VIEW ALL</div>
+        </Link>
 
         {/* <div className={styles.space}></div> */}
 
         {/* BLOG SECTION */}
         <div className={styles.blogContainer}>
           <div className={styles.blog}>
-            <p className={styles.theLatest}>THE LATEST BLOGS</p>
             <Image
               className={styles.blogImage}
-              src={"/blogImage_desktop.JPG"}
-              width={3357}
-              height={1473}
+              src={"/highlight_image.JPG"}
+              width={3360}
+              height={2240}
             />
             <div className={styles.blogCaption}>
-              <p>Should You Invest In a Rolex Watch or Buy Gold</p>
+              <p>THE SOPHISTICATED SKY DWELLER</p>
             </div>
-            <div className={styles.readMoreBTN}>
-              <Link href={"/blogs"}>READ MORE</Link>
-            </div>
+          </div>
+          <div className={styles.readMoreBTN}>
+            <Link href={"/blogs"}>READ MORE</Link>
           </div>
 
           {/* DESKTOP ONLY */}
-          <div className={styles.blogContent}>
-            <div className={styles.theLatestTitle}>THE LATEST BLOGS</div>
-            <div className={styles.blogLatestConten}>
-              Looking for the latest and most informative blogs on Rolex? Look
-              no further! Our team of expert writers have worked tirelessly to
-              deliver the latest news, trends, and insights on all things Rolex.
-              Whether you're a seasoned collector or a casual admirer, our
-              newest blogs are sure to captivate and engage.
-            </div>
-          </div>
         </div>
       </main>
 
