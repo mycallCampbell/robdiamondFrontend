@@ -174,7 +174,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.readMoreBTN}>
-            <Link href={"/blogs"}>READ MORE</Link>
+            <Link href={"/#"}>READ MORE</Link>
           </div>
 
           {/* DESKTOP ONLY */}
