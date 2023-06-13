@@ -1,0 +1,62 @@
+.mainContainer {
+    margin: 10px;
+}
+
+.topBar {
+    height: 36px;
+    background: #a09e9e;
+}
+
+.contactBTN {
+    background: #184D47;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 13px;
+    margin: 20px 110px;
+    border-radius: 22px;
+}
+
+.gridContainerCategories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.categoryGrid {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.categoryTitle {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+.categoryImageContainer {
+}
+
+.categoryImage {
+    display: block;
+    border-radius: 22px 22px 0 0;
+}
+.contentBG {
+    background:#a09e9e;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 22px 22px;
+}
+
+.contentRolexContainer {
+    margin: 3px;
+}
+.rolex {
+    color: #fff;
+    font-size: 12px;
+}
+
+.category {
+    color: #fff;
+    font-size: 16px;
+}

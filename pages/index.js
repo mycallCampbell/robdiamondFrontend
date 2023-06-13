@@ -34,7 +34,7 @@ export default function Home() {
 
         <link rel="icon" href="/faviconRob.ico" />
       </Head>
-      {/* <Search /> */}
+
       <main className={styles.main}>
         {/* HERO SECTION*/}
         <div className={styles.heroImage}>

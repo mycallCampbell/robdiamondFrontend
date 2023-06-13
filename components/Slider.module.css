@@ -1,0 +1,17 @@
+.sliderContainer {
+    width: 400px; 
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    color: white;
+  }
+  
+  .slide {
+    width: 100%;
+  }
+  
+  
+  
