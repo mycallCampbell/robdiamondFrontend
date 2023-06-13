@@ -24,7 +24,9 @@ export default function TestHome() {
         </Head>
       </div>
 
-      <div className={styles.topBar}>{/* <Slider /> */}</div>
+      <div className={styles.topBar}>
+        <div className={styles.topBarContent}>UPDATED: 13TH JUNE 2023 - 03:10</div>
+      </div>
 
 {/* HERO SECTION */}
       <div>
@@ -116,6 +118,48 @@ export default function TestHome() {
               </div>
             </>
           </Link>
+
+          <Link href={"/datejust"}>
+            <>
+              <div className={styles.categoryGrid}>
+                <div className={styles.categoryImageContainer}>
+                  <Image
+                    src={`/watches/datejust126231jubileewimbledon/126231datejust1.JPG`}
+                    width={840}
+                    height={560}
+                    className={styles.categoryImage}
+                  />
+                </div>
+                <div className={styles.contentBG}>
+                  <div className={styles.contentRolexContainer}>
+                    <p className={styles.rolex}>Rolex</p>
+                    <p className={styles.category}>DateJust</p>
+                  </div>
+                </div>
+              </div>
+            </>
+          </Link>
+
+          <Link href={"/datejust"}>
+            <>
+              <div className={styles.categoryGrid}>
+                <div className={styles.categoryImageContainer}>
+                  <Image
+                    src={`/watches/datejust126231jubileewimbledon/126231datejust1.JPG`}
+                    width={840}
+                    height={560}
+                    className={styles.categoryImage}
+                  />
+                </div>
+                <div className={styles.contentBG}>
+                  <div className={styles.contentRolexContainer}>
+                    <p className={styles.rolex}>Rolex</p>
+                    <p className={styles.category}>DateJust</p>
+                  </div>
+                </div>
+              </div>
+            </>
+          </Link>
         </div>
 
 {/* CTA VIEW ALL */}
@@ -134,21 +178,27 @@ export default function TestHome() {
           <div className={styles.guidesImageContainer}>
               <Image src={'/rotatedRolex.JPG'} className={styles.guidesImage} width={3320} height={2240} />
               <div className={styles.guidesTitle}>Guides</div>
-              <div className={styles.guidesContent}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisquevitae congue mauris rhoncus aenean vel elit scelerisque</div>
+              <div className={styles.guidesContent}>With extensive knowledge and passion for luxury timepieces, Rob provides comprehensive information on the history, technical specifications, and distinctive features of each Rolex model. Checkout our Latest Guides </div>
               <div className={styles.seeGuidesBTN}>
                 <p className={styles.guidesText}>See Guides</p>
               </div>
           </div>
 </section>
 <section>
-<div className={styles.blogsTitle}>BLOGS</div>
-<div className={styles.blogContainer}>
-  <Image src={'/blog_image.jpg'} className={styles.blogImage} width={4000} height={2667} />
-</div>
-<div className={styles.blogsContentTitle}>The Story of the Wimbledon</div>
-<div className={styles.blogsContentSubTitle}>Why, How and What's Next....</div>
-<div className={styles.readMoreBTN}>Read More</div>
+          <div className={styles.blogsTitle}>BLOGS</div>
+          <div className={styles.blogContainer}>
+            <Image src={'/blog_image.jpg'} className={styles.blogImage} width={4000} height={2667} />
+          </div>
+          <div className={styles.blogsContentTitle}>The Story of the Wimbledon</div>
+          <div className={styles.blogsContentSubTitle}>Why, How and What's Next....</div>
+          <div className={styles.readMoreBTN}>Read More</div>
+</section>
+<section>
+          <div className={styles.reviewImageContainer}>
+            <Image src={'/hulk.jpg'} className={styles.reviewImage} width={1200} height={1200} />
+          <div className={styles.reviewsTitle}>REVIEWS</div>
 
+          </div>
 </section>
 
     </>
