@@ -36,7 +36,9 @@ export default function TestHome() {
       </div>
 
       {/* CTA CONTACT */}
-      <div className={styles.contactBTN}>Contact</div>
+      <div className={styles.contactBTN}>
+        <a href="tel:07976753254">Contact</a>
+      </div>
 
       <section className={styles.mainContainer}>
         <div className={styles.categoryTitle}>CATEGORIES</div>
@@ -279,7 +281,7 @@ export default function TestHome() {
           </div>
           <div className={styles.footerContentContainerRow}>
             <Link href={"#"}>
-              <div className={styles.contentItemRow}>Terms & Conditions</div>
+              <div className={styles.contentItemRow}>Terms and Conditions</div>
             </Link>
             <Link href={"#"}>
               <div className={styles.contentItemRow}>FAQs</div>
