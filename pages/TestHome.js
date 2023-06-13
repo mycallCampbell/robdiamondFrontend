@@ -132,14 +132,23 @@ export default function TestHome() {
 </section>
 <section>
           <div className={styles.guidesImageContainer}>
-            <Image src={'/rotatedRolex.JPG'} className={styles.guidesImage} width={3320} height={2240} />
-            <div className={styles.guidesTitle}>Guides</div>
-            <div className={styles.guidesContent}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisquevitae congue mauris rhoncus aenean vel elit scelerisque</div>
-            <div className={styles.seeGuidesBTN}>
-              <p className={styles.guidesText}>See Guides</p>
-            </div>
-
+              <Image src={'/rotatedRolex.JPG'} className={styles.guidesImage} width={3320} height={2240} />
+              <div className={styles.guidesTitle}>Guides</div>
+              <div className={styles.guidesContent}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisquevitae congue mauris rhoncus aenean vel elit scelerisque</div>
+              <div className={styles.seeGuidesBTN}>
+                <p className={styles.guidesText}>See Guides</p>
+              </div>
           </div>
+</section>
+<section>
+<div className={styles.blogsTitle}>BLOGS</div>
+<div className={styles.blogContainer}>
+  <Image src={'/blog_image.jpg'} className={styles.blogImage} width={4000} height={2667} />
+</div>
+<div className={styles.blogsContentTitle}>The Story of the Wimbledon</div>
+<div className={styles.blogsContentSubTitle}>Why, How and What's Next....</div>
+<div className={styles.readMoreBTN}>Read More</div>
+
 </section>
 
     </>

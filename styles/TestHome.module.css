@@ -47,14 +47,17 @@
     color: #323232;
     font-size: 16px;
     text-align: center;
-    padding: 13px 20px;
-    margin: 20px 10px;
+    padding: 13px 40px;
+    margin: 20px 0px;
     border-radius: 22px;
 }
 
 .guidesText {
     
 }
+
+
+/* CATEGORIES SECTION  */
 
 .gridContainerCategories {
     display: grid;
@@ -166,4 +169,34 @@
     text-align: center;
     color: #fff;
     margin: 7px 20px;
+}
+
+
+/* BLOGS */
+
+.blogsTitle {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+.blogContainer {
+    margin: 10px 22px;
+}
+.blogImage {
+    border-radius: 22px;
+}
+.blogsContentTitle {
+ text-align: center;
+ font-size: 19px;
+ font-weight: 700;
+ color: #323232;
+}
+.blogsContentSubTitle {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #323232;
+    margin: 5px;
 }
