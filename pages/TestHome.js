@@ -9,6 +9,7 @@ export default function TestHome() {
   return (
     <>
       <div>
+{/* META */}
         <Head>
           <title>ROB DIAMOND</title>
           <meta name="description" content="Rolex Specialistss" />
@@ -25,15 +26,15 @@ export default function TestHome() {
 
       <div className={styles.topBar}>{/* <Slider /> */}</div>
 
-      {/* HERO SECTION */}
+{/* HERO SECTION */}
       <div>
         <Image src={"/hero_daytona.JPG"} width={3360} height={2240} />
       </div>
 
-      {/* CTA CONTACT */}
+{/* CTA CONTACT */}
       <div className={styles.contactBTN}>Contact</div>
 
-      <main className={styles.mainContainer}>
+      <section className={styles.mainContainer}>
         <div className={styles.categoryTitle}>CATEGORIES</div>
         <div className={styles.gridContainerCategories}>
           <Link href={"/datejust"}>
@@ -116,7 +117,31 @@ export default function TestHome() {
             </>
           </Link>
         </div>
-      </main>
+
+{/* CTA VIEW ALL */}
+          <div className={styles.viewAllBTN}>View All</div>
+          <div className={styles.categoryTitle}>HIGHLIGHTS</div>
+
+          <div className={styles.highlightImageContainer}>
+            <Image src={'/sky_dweller_highlights.JPG'} className={styles.highlightImage} width={3320} height={2240} />
+          </div>
+          <div className={styles.highlightContentRolex}>Rolex</div>
+          <div className={styles.highlightContentModel}>Sky Dweller</div>
+          <div className={styles.highlightContent}>Lorem ipsum dolor sit amet. Eum labore quos non soluta deleniti et voluptates maiores a impedit corporis hic iusto aliquam sit optio quas aut sint autem. Et nihil nostrum sit cumque minima ex aliquid vero est galisum cumque.</div>
+          <div className={styles.viewAllBTN}>Read More</div>
+</section>
+<section>
+          <div className={styles.guidesImageContainer}>
+            <Image src={'/rotatedRolex.JPG'} className={styles.guidesImage} width={3320} height={2240} />
+            <div className={styles.guidesTitle}>Guides</div>
+            <div className={styles.guidesContent}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisquevitae congue mauris rhoncus aenean vel elit scelerisque</div>
+            <div className={styles.seeGuidesBTN}>
+              <p className={styles.guidesText}>See Guides</p>
+            </div>
+
+          </div>
+</section>
+
     </>
   );
 }
