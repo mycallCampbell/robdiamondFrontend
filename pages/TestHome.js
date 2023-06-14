@@ -284,7 +284,7 @@ export default function TestHome() {
               <div className={styles.contentItemRow}>Terms and Conditions</div>
             </Link>
             <Link href={"#"}>
-              <div className={styles.contentItemRow}>FAQ</div>
+              <div className={styles.contentItemRow}>FAQs</div>
             </Link>
             <Link href={"#"}>
               <div className={styles.contentItemRow}>Privacy Policy</div>
