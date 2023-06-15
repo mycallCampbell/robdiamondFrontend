@@ -30,18 +30,42 @@ export default function TestHome() {
         </div>
       </div>
 
-      {/* HERO SECTION */}
-      <div>
+      {/* HERO SECTION MOBILE */}
+      <div className={styles.heroMobile}>
         <Image src={"/hero_daytona.JPG"} width={3360} height={2240} />
       </div>
 
-      {/* CTA CONTACT */}
+      {/* HERO SECTION DESKTOP */}
+      <div className={styles.heroDesktop}>
+        <Image src={"/hero_daytona_desktop.png"} width={3348} height={1017} />
+      </div>
+
+      {/* CTA CONTACT MOBILE*/}
       <div className={styles.contactBTN}>
         <a href="tel:07976753254">Contact</a>
       </div>
 
+      {/* CTA CONTACT DESKTOP*/}
+      <div className={styles.contactBTNDesktop}>
+        <div className={styles.contactImage}>
+          <Image src={"/call.png"} width={25} height={25} />
+        </div>
+        <div>
+          <a href="tel:07976753254">Contact</a>
+        </div>
+      </div>
+
       <section className={styles.mainContainer}>
-        <div className={styles.categoryTitle}>CATEGORIES</div>
+        {/* TTILE LAYOUT MOBILE */}
+        <div className={styles.categoryTitleMobile}>CATEGORIES</div>
+
+        {/* TITLE LAYOUT DESKTOP */}
+
+        <div className={styles.containerTitleDesktop}>
+          <div className={styles.categoryTitleDesktop}>CATEGORIES</div>
+          <div className={styles.viewAllBTNDesktop}>View All</div>
+        </div>
+
         <div className={styles.gridContainerCategories}>
           <Link href={"/datejust"}>
             <>
