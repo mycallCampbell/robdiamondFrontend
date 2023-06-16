@@ -194,28 +194,79 @@ export default function TestHome() {
 
         {/* CTA VIEW ALL */}
         <div className={styles.viewAllBTN}>View All</div>
-        <div className={styles.categoryTitle}>HIGHLIGHTS</div>
+        <div className={styles.highlightTitleMobile}>HIGHLIGHTS</div>
 
-        <div className={styles.highlightImageContainer}>
-          <Image
-            src={"/sky_dweller_highlights.JPG"}
-            className={styles.highlightImage}
-            width={3320}
-            height={2240}
-          />
+        {/* HGIHLIGHT MOBILE */}
+        <div className={styles.highlightContainerMobile}>
+          <div className={styles.highlightImageContainer}>
+            <Image
+              src={"/sky_dweller_highlights.JPG"}
+              className={styles.highlightImage}
+              width={3320}
+              height={2240}
+            />
+          </div>
+          <div className={styles.highlightContentRolex}>Rolex</div>
+          <div className={styles.highlightContentModel}>Sky Dweller</div>
+          <div className={styles.highlightContent}>
+            Introducing the Rolex Skydweller: where elegance meets precision.
+            With its iconic design, dual time zones, and annual calendar, this
+            horological masterpiece exudes luxury and functionality. Jet-set in
+            style and command attention with the Skydweller's timeless allure.
+            Experience the pinnacle of craftsmanship and elevate your presence
+            with Rolex's remarkable creation.
+          </div>
+          <div className={styles.readMoreBTN}>Read More</div>
         </div>
-        <div className={styles.highlightContentRolex}>Rolex</div>
-        <div className={styles.highlightContentModel}>Sky Dweller</div>
-        <div className={styles.highlightContent}>
-          Introducing the Rolex Skydweller: where elegance meets precision. With
-          its iconic design, dual time zones, and annual calendar, this
-          horological masterpiece exudes luxury and functionality. Jet-set in
-          style and command attention with the Skydweller's timeless allure.
-          Experience the pinnacle of craftsmanship and elevate your presence
-          with Rolex's remarkable creation.
+
+        {/* HIGHLIGHT DESKTOP */}
+
+        <div className={styles.highlightTitleDesktop}>HIGHLIGHTS</div>
+
+        <div className={styles.highlightContainerDesktop}>
+          <div className={styles.highlightImageContainer}>
+            <Image
+              src={"/sky_dweller_highlights.JPG"}
+              className={styles.highlightImage}
+              width={3320}
+              height={2240}
+            />
+            <div className={styles.highlightContentRolex}>Rolex</div>
+            <div className={styles.highlightContentModel}>Sky Dweller</div>
+            <div className={styles.highlightContent}>
+              Introducing the Rolex Skydweller: where elegance meets precision.
+              With its iconic design, dual time zones, and annual calendar, this
+              horological masterpiece exudes luxury and functionality. Jet-set
+              in style and command attention with the Skydweller's timeless
+              allure. Experience the pinnacle of craftsmanship and elevate your
+              presence with Rolex's remarkable creation.
+            </div>
+            <div className={styles.readMoreBTN}>Read More</div>
+          </div>
+
+          <div className={styles.highlightImageContainer}>
+            <Image
+              src={"/daytona_highlights.JPG"}
+              className={styles.highlightImage}
+              width={3320}
+              height={2240}
+            />
+            <div className={styles.highlightContentRolex}>Rolex</div>
+            <div className={styles.highlightContentModel}>Daytona</div>
+            <div className={styles.highlightContent}>
+              Introducing the Rolex Daytona: where elegance meets precision.
+              With its iconic design, dual time zones, and annual calendar, this
+              horological masterpiece exudes luxury and functionality. Jet-set
+              in style and command attention with the Daytona's timeless allure.
+              Experience the pinnacle of craftsmanship and elevate your presence
+              with Rolex's remarkable creation.
+            </div>
+            <div className={styles.readMoreBTN}>Read More</div>
+          </div>
         </div>
-        <div className={styles.viewAllBTN}>Read More</div>
       </section>
+
+      {/* GUIDES SECTION */}
       <section>
         <div className={styles.guidesImageContainer}>
           <Image
