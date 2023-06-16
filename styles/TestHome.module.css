@@ -42,6 +42,7 @@
     padding: 13px;
     margin: 20px 90px;
     border-radius: 22px;
+    cursor: pointer;
 }
 
 .readMoreBTN {
@@ -52,6 +53,7 @@
     padding: 13px;
     margin: 20px 90px;
     border-radius: 22px;
+    cursor: pointer;
 }
 
 .seeGuidesBTN {
@@ -67,10 +69,7 @@
     padding: 13px 40px;
     margin: 20px 0px;
     border-radius: 22px;
-}
-
-.guidesText {
-    
+    cursor: pointer;
 }
 
 
@@ -179,11 +178,16 @@
 
 /* GUIDES SECTION */
 
+.guidesImageContainerDesktop {
+    display: none;
+}
 .guidesImage {
     opacity: 0.3;
 }
 
-.guidesImageContainer {
+.guidesImageContainerMobile {
+    display: flex;
+    justify-content: center;
     position: relative;
     z-index: -1000;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 0.4) 100%)
@@ -200,10 +204,20 @@
     z-index: 1000;
 }
 
-.guidesContent {
+.guidesContent1 {
     position: absolute;
     top: 30%;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin: 7px 20px;
+}
+
+.guidesContent2 {
+    position: absolute;
+    top: 40%;
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
     color: #fff;
@@ -341,6 +355,11 @@ opacity: 0.3;
 
 @media (min-width: 768px) {
 
+    .gridContainerContactBTN {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
     .contactBTNDesktop {
         display: flex;
         justify-content: center;
@@ -350,7 +369,7 @@ opacity: 0.3;
         font-size: 18px;
         text-align: center;
         padding: 13px;
-        margin: 40px 530px;
+        margin: 30px 30px 20px 30px;
         border-radius: 11px;
         cursor: pointer;
     }
@@ -420,7 +439,7 @@ opacity: 0.3;
         font-size: 24px;
         font-weight: 700;
         text-align: center;
-        margin: 70px auto 20px auto;
+        margin: 70px auto 40px auto;
     }
 
     .highlightTitleMobile {
@@ -437,5 +456,98 @@ opacity: 0.3;
 
     .highlightContainerMobile {
         display: none;
+    }
+
+    .highlightContentDesktop {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        color: #323232;
+        margin: 10px 70px;
+    }
+    .highlightContentRolexDesktop {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        color: #323232;
+        margin: 10px auto 0 auto;
+    }
+
+    .highlightContentModelDesktop {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        color: #323232;
+        margin: 0 30px 15px 30px;
+    }
+
+    .guidesImageContainerMobile {
+        display: none;
+    }
+
+    .guidesImageContainerDesktop {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: -1000;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 0.4) 100%)
+    }
+
+    .guidesTitleDesktop {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+        z-index: 1000;
+    }
+
+    .guidesContentDesktop {
+        position: absolute;
+        display: block;
+        top: 30%;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+        margin: 7px 300px;
+    }
+
+    .guidesContent1 {
+        position: absolute;
+        top: 30%;
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        margin: 7px 20px;
+    }
+
+    .guidesContent2 {
+        position: absolute;
+        top: 40%;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+        margin: 7px 20px;
+    }
+
+    .seeGuidesBTNDesktop {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border: 2px solid #184D47;
+        color: #184D47;
+        font-size: 22px;
+        text-align: center;
+        padding: 13px 40px;
+        margin: 20px 0px;
+        border-radius: 22px;
+        cursor: pointer;
     }
 }

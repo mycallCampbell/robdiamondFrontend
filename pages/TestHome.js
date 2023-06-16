@@ -46,13 +46,17 @@ export default function TestHome() {
       </div>
 
       {/* CTA CONTACT DESKTOP*/}
-      <div className={styles.contactBTNDesktop}>
-        <div className={styles.contactImage}>
-          <Image src={"/call.png"} width={25} height={25} />
+      <div className={styles.gridContainerContactBTN}>
+        <div></div>
+        <div className={styles.contactBTNDesktop}>
+          <div className={styles.contactImage}>
+            <Image src={"/call.png"} width={25} height={25} />
+          </div>
+          <div>
+            <a href="tel:07976753254">Contact</a>
+          </div>
         </div>
-        <div>
-          <a href="tel:07976753254">Contact</a>
-        </div>
+        <div></div>
       </div>
 
       <section className={styles.mainContainer}>
@@ -210,11 +214,7 @@ export default function TestHome() {
           <div className={styles.highlightContentModel}>Sky Dweller</div>
           <div className={styles.highlightContent}>
             Introducing the Rolex Skydweller: where elegance meets precision.
-            With its iconic design, dual time zones, and annual calendar, this
-            horological masterpiece exudes luxury and functionality. Jet-set in
-            style and command attention with the Skydweller's timeless allure.
-            Experience the pinnacle of craftsmanship and elevate your presence
-            with Rolex's remarkable creation.
+            With its iconic design, dual time zones, and ....
           </div>
           <div className={styles.readMoreBTN}>Read More</div>
         </div>
@@ -231,15 +231,13 @@ export default function TestHome() {
               width={3320}
               height={2240}
             />
-            <div className={styles.highlightContentRolex}>Rolex</div>
-            <div className={styles.highlightContentModel}>Sky Dweller</div>
-            <div className={styles.highlightContent}>
+            <div className={styles.highlightContentRolexDesktop}>Rolex</div>
+            <div className={styles.highlightContentModelDesktop}>
+              Sky Dweller
+            </div>
+            <div className={styles.highlightContentDesktop}>
               Introducing the Rolex Skydweller: where elegance meets precision.
-              With its iconic design, dual time zones, and annual calendar, this
-              horological masterpiece exudes luxury and functionality. Jet-set
-              in style and command attention with the Skydweller's timeless
-              allure. Experience the pinnacle of craftsmanship and elevate your
-              presence with Rolex's remarkable creation.
+              With its iconic design, dual time zones, and ....
             </div>
             <div className={styles.readMoreBTN}>Read More</div>
           </div>
@@ -251,15 +249,11 @@ export default function TestHome() {
               width={3320}
               height={2240}
             />
-            <div className={styles.highlightContentRolex}>Rolex</div>
-            <div className={styles.highlightContentModel}>Daytona</div>
-            <div className={styles.highlightContent}>
+            <div className={styles.highlightContentRolexDesktop}>Rolex</div>
+            <div className={styles.highlightContentModelDesktop}>Daytona</div>
+            <div className={styles.highlightContentDesktop}>
               Introducing the Rolex Daytona: where elegance meets precision.
-              With its iconic design, dual time zones, and annual calendar, this
-              horological masterpiece exudes luxury and functionality. Jet-set
-              in style and command attention with the Daytona's timeless allure.
-              Experience the pinnacle of craftsmanship and elevate your presence
-              with Rolex's remarkable creation.
+              With its iconic design, dual time zones, and ....
             </div>
             <div className={styles.readMoreBTN}>Read More</div>
           </div>
@@ -268,7 +262,8 @@ export default function TestHome() {
 
       {/* GUIDES SECTION */}
       <section>
-        <div className={styles.guidesImageContainer}>
+        {/* GUIDES MOBILE */}
+        <div className={styles.guidesImageContainerMobile}>
           <Image
             src={"/rotatedRolex.JPG"}
             className={styles.guidesImage}
@@ -276,22 +271,38 @@ export default function TestHome() {
             height={2240}
           />
           <div className={styles.guidesTitle}>Guides</div>
-          <div className={styles.guidesContent}>
-            With extensive knowledge and passion for luxury timepieces, Rob
-            provides comprehensive information on the history, technical
-            specifications, and distinctive features of each Rolex model.
+          <div className={styles.guidesContent1}>All You Need to Know....</div>
+          <div className={styles.guidesContent2}>
+            With extensive knowledge and passion for luxury Rolex timepieces....
             Checkout our Latest Guides{" "}
           </div>
-          <div className={styles.seeGuidesBTN}>
-            <p className={styles.guidesText}>See Guides</p>
+          <div className={styles.seeGuidesBTN}>See Guides</div>
+        </div>
+
+        {/* GUIDES DESKTOP */}
+        <div className={styles.guidesImageContainerDesktop}>
+          <Image
+            src={"/rotated_rolex_desktop.JPG"}
+            className={styles.guidesImage}
+            width={3357}
+            height={1392}
+          />
+          <div className={styles.guidesTitleDesktop}>Guides</div>
+          <div className={styles.guidesContent1}>All You Need to Know....</div>
+          <div className={styles.guidesContent2}>
+            With extensive knowledge and passion for luxury Rolex timepieces....
+            Checkout our Latest Guides{" "}
           </div>
+          <div className={styles.seeGuidesBTNDesktop}>See Guides</div>
         </div>
       </section>
+
+      {/* BLOGS SECTION */}
       <section>
         <div className={styles.blogsTitle}>BLOGS</div>
         <div className={styles.blogContainer}>
           <Image
-            src={"/blog_image.jpg"}
+            src={"/blog_image_wimbledon.JPG"}
             className={styles.blogImage}
             width={4000}
             height={2667}
