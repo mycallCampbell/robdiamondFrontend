@@ -300,6 +300,8 @@ export default function TestHome() {
       {/* BLOGS SECTION */}
       <section>
         <div className={styles.blogsTitle}>BLOGS</div>
+
+        {/* MOBILE */}
         <div className={styles.blogContainer}>
           <Image
             src={"/blog_image_wimbledon.JPG"}
@@ -308,15 +310,32 @@ export default function TestHome() {
             height={2667}
           />
         </div>
-        <div className={styles.blogsContentTitle}>
-          The Story of the Wimbledon
+
+        {/* DESKTOP */}
+        <div className={styles.blogContainerDesktop}>
+          <div className={styles.blogImageContainer}>
+            <Image
+              src={"/blog_image_wimbledon.JPG"}
+              className={styles.blogImage}
+              width={4000}
+              height={2667}
+            />
+          </div>
+          <div className={styles.blogBG}>
+            <div className={styles.blogsContentTitleDesktop}>
+              The Story of the Wimbledon
+            </div>
+
+            <div className={styles.blogsContentSubTitleDesktop}>
+              Why, How and What's Next....
+            </div>
+            <div className={styles.readMoreBTNBlogsDesktop}>Read More</div>
+          </div>
         </div>
-        <div className={styles.blogsContentSubTitle}>
-          Why, How and What's Next....
-        </div>
-        <div className={styles.readMoreBTN}>Read More</div>
       </section>
-      <section>
+
+      {/* REVIEW SECTION */}
+      {/* <section>
         <div className={styles.reviewImageContainer}>
           <Image
             src={"/rolexBlueClose.JPEG"}
@@ -326,24 +345,28 @@ export default function TestHome() {
           />
           <div className={styles.reviewsTitle}>REVIEWS</div>
         </div>
-      </section>
+      </section> */}
+
+      {/* SUBSCRIPTION SECTION */}
       <section>
-        <div className={styles.subscriptionTitle}>SUBSCRIPTION</div>
-        <div className={styles.subscriptionContent}>
-          Enter Your Email address to recieve our latest updates on Guides and
-          Blogs
-        </div>
-        <div className={styles.subscriptionContainer}>
-          <div className={styles.subscriptionEmailContent}>
-            Enter Your Email Address
+        <div className={styles.gridContainerSubscription}>
+          <div className={styles.subscriptionContent}>
+            <div className={styles.subscriptionTitle}>SUBSCRIPTION</div>
+            Enter Your Email address to recieve our latest updates on Guides and
+            Blogs
           </div>
-          <div className={styles.subscriptionArrow}>
-            <Image
-              src={"/right-arrow-white.PNG"}
-              className={styles.whiteArrow}
-              width={32}
-              height={32}
-            />
+          <div className={styles.subscriptionContainer}>
+            <div className={styles.subscriptionEmailContent}>
+              Enter Your Email Address
+            </div>
+            <div className={styles.subscriptionArrow}>
+              <Image
+                src={"/right-arrow-white.PNG"}
+                className={styles.whiteArrow}
+                width={32}
+                height={32}
+              />
+            </div>
           </div>
         </div>
       </section>

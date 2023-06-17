@@ -236,6 +236,11 @@
 }
 .blogContainer {
     margin: 10px 22px;
+    cursor: pointer;
+}
+
+.blogContainerDesktop {
+    display: none;
 }
 .blogImage {
     border-radius: 22px;
@@ -549,5 +554,82 @@ opacity: 0.3;
         margin: 20px 0px;
         border-radius: 22px;
         cursor: pointer;
+    }
+
+    .blogContainer {
+        display: none;
+    }
+
+    .blogContainerDesktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin: 20px 50px;
+        
+    }
+
+    .blogImageContainer {
+        display: block;
+    }
+
+    .blogImage {
+        border-radius: 22px 0  0 22px;
+    }
+    .blogBG {
+        background: #184D47;
+        border-radius: 0 22px 22px 0;
+        height: 98.5%
+    }
+
+
+
+    .blogsContentTitleDesktop {
+        display: grid;
+        justify-content: center;
+        margin: 100px auto 20px auto;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .blogsContentSubTitleDesktop {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .readMoreBTNBlogsDesktop {
+        padding: 7px 70px; 
+        margin: 40px;
+        text-align: center;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 11px;
+        cursor: pointer;
+    }
+
+    .gridContainerSubscription {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 40px;
+        
+    }
+
+    .subscriptionTitle {
+        text-align: start;
+    }
+
+    .subscriptionContent {
+        text-align: start;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 10px 20px;
+        color: #323232;
+        max-width: 400px;
+    }
+
+    .subscriptionArrow {
+        width: 120px;
     }
 }
