@@ -37,7 +37,7 @@ export default function TestHome() {
 
       {/* HERO SECTION DESKTOP */}
       <div className={styles.heroDesktop}>
-        <Image src={"/hero_daytona_desktop.png"} width={3348} height={1017} />
+        <Image src={"/hero_daytona_desktop.png"} width={3246} height={1014} />
       </div>
 
       {/* CTA CONTACT MOBILE*/}
@@ -198,6 +198,8 @@ export default function TestHome() {
 
         {/* CTA VIEW ALL */}
         <div className={styles.viewAllBTN}>View All</div>
+
+        {/* HIGHLIGHT SECTION */}
         <div className={styles.highlightTitleMobile}>HIGHLIGHTS</div>
 
         {/* HGIHLIGHT MOBILE */}
@@ -220,7 +222,6 @@ export default function TestHome() {
         </div>
 
         {/* HIGHLIGHT DESKTOP */}
-
         <div className={styles.highlightTitleDesktop}>HIGHLIGHTS</div>
 
         <div className={styles.highlightContainerDesktop}>
@@ -301,35 +302,43 @@ export default function TestHome() {
       <section>
         <div className={styles.blogsTitle}>BLOGS</div>
 
-        {/* MOBILE */}
+        {/* BLOGS MOBILE */}
         <div className={styles.blogContainer}>
           <Image
             src={"/blog_image_wimbledon.JPG"}
             className={styles.blogImage}
-            width={4000}
-            height={2667}
+            width={2000}
+            height={1333.5}
           />
         </div>
 
-        {/* DESKTOP */}
+        {/* BLOGS DESKTOP */}
         <div className={styles.blogContainerDesktop}>
           <div className={styles.blogImageContainer}>
             <Image
               src={"/blog_image_wimbledon.JPG"}
               className={styles.blogImage}
-              width={4000}
-              height={2667}
+              width={2000}
+              height={1333.5}
             />
           </div>
-          <div className={styles.blogBG}>
-            <div className={styles.blogsContentTitleDesktop}>
-              The Story of the Wimbledon
-            </div>
+          <div className={styles.blogBGContainer}>
+            <Image
+              src={"/blog_bg_desktop.PNG"}
+              className={styles.blogBG}
+              width={2000}
+              height={1333.5}
+            />
+            <div className={styles.blogsContentContainerDesktop}>
+              <div className={styles.blogsContentTitleDesktop}>
+                The Story of the Wimbledon
+              </div>
 
-            <div className={styles.blogsContentSubTitleDesktop}>
-              Why, How and What's Next....
+              <div className={styles.blogsContentSubTitleDesktop}>
+                Why, How and What's Next....
+              </div>
+              <div className={styles.readMoreBTNBlogsDesktop}>Read More</div>
             </div>
-            <div className={styles.readMoreBTNBlogsDesktop}>Read More</div>
           </div>
         </div>
       </section>
