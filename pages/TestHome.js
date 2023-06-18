@@ -12,7 +12,7 @@ export default function TestHome() {
         {/* META */}
         <Head>
           <title>ROB DIAMOND</title>
-          <meta name="description" content="Rolex Specialistss" />
+          <meta name="description" content="Rolex Test HomePage" />
           <meta property="og:image" content="faviconRob.ico" />
           <meta
             name="facebook-domain-verification"

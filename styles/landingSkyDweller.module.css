@@ -1,0 +1,81 @@
+.contactBTNContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.contactBTN {
+    background: #184D47;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 13px;
+    margin: 20px 35px;
+    border-radius: 22px;
+}
+
+.topBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: #a09e9e;
+    
+}
+
+.topBarContent {
+    color: #fff;
+}
+
+.gridContainerHero {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .heroMobile {
+        display: none;
+    }
+    .gridContainerHero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .heroContentContainer {
+        position: relative;
+    }
+
+    .heroBGContent {
+        position: absolute;
+        color: #fff;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .headlineContentLeft {
+        position: absolute;
+        font-size: 28px;
+        font-weight: 700;
+        top: 37%;
+        left: 3%;
+        margin: 20px;
+        color: #fff;
+    }
+
+    .headlineContentRight {
+        position: absolute;
+        font-size: 28px;
+        font-weight: 700;
+        top: 37%;
+        right: 2%;
+        margin: 20px;
+        color: #fff;
+    }
+
+    .titleSkyDweller {
+        font-size: 28px;
+        font-weight: 700;
+        color: #323232;
+        margin: 30px;
+        text-align: center;
+    }
+}

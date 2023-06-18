@@ -642,5 +642,6 @@ opacity: 0.3;
 
     .subscriptionArrow {
         width: 120px;
+        cursor: pointer;
     }
 }
