@@ -324,7 +324,7 @@ export default function TestHome() {
           </div>
           <div className={styles.blogBGContainer}>
             <Image
-              src={"/blog_bg_desktop.PNG"}
+              src={"/blog_bg_desktop.png"}
               className={styles.blogBG}
               width={2000}
               height={1333.5}
