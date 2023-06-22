@@ -379,7 +379,7 @@ export default function TestHome() {
           </div>
         </div>
       </section>
-      <section>
+      <section className={styles.footerSection}>
         <div className={styles.footerContainer}>
           <div className={styles.footerContentContainerColumn}>
             <Link href={"#"}>

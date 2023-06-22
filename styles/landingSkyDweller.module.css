@@ -13,6 +13,18 @@
     border-radius: 22px;
 }
 
+.numbreContactBTN {
+    margin: 20px 100px;
+    background: #fff;
+    color: #184D47;
+    font-weight: 700;
+    border: 2px solid #323232;
+    padding: 7px 20px;
+    border-radius: 11px;
+    text-align: center;
+    cursor: pointer;
+}
+
 .topBar {
     display: flex;
     justify-content: center;
@@ -26,11 +38,52 @@
     color: #fff;
 }
 
-.gridContainerHero {
+.heroContentContainer {
     display: none;
 }
 
+.heroDesktop {
+    /* display: none; */
+}
+
+/* FOOTER SECTION */
+
+.footerContainer {
+    background: #a09e9e;
+}
+
+.footerContentContainerColumn {
+    color: #fff;
+    padding: 50px 50px 20px 50px;
+}
+
+.footerContentContainerRow {
+    display: flex;
+    color: #fff;
+    font-size: 12px;
+}
+
+.contentItemColumn {
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+}
+
+.contentItemRow {
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+}
+
+.instagramIcon {
+    padding: 0 0 20px 50px;
+    cursor: pointer;
+}
+
+
 @media (min-width: 768px) {
+
+    .heroContentContainer {
+        display: block;
+    }
     .heroMobile {
         display: none;
     }
@@ -77,5 +130,104 @@
         color: #323232;
         margin: 30px;
         text-align: center;
+    }
+
+
+    /* SWIPER */
+    .swiperContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 20px;
+    }
+    
+    .swiperImage {
+        border-radius: 11px;
+    }
+    .imageContainer {
+        margin: 20px;
+    }
+    
+    .detailsContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .titleSwiper {
+        font-size: 24px;
+        color: #323232;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .contentSwiper {
+        font-size: 16px;
+        margin: 20px;
+        text-align: start;
+        color: #323232;
+    }
+
+
+/* ROB DIAMOND CONTENT SECTION */
+    .contentRobDiamond {
+        margin: 40px 80px 60px 80px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #323232;
+    }
+
+    .imageSpecContainer {
+        position: relative;
+        margin: 40px;
+        background-image: linear-gradient(180deg, rgb(87, 87, 87) 0.61%, rgba(0, 0, 0, 0.4) 100%);
+        border-radius: 11px;
+    }
+
+    .imageSpecBanner {
+        z-index: -1000;
+        border-radius: 11px;
+    }
+
+    .contentSpecContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        width: 80vw;
+        max-width: 700px;
+    }
+
+    .specTitle {
+        font-size: 28px;
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+    }
+    .specContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+
+    .specKey {
+        margin: 20px;
+        line-height: 2.5;
+        letter-spacing: 1.3px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        justify-self: center;
+    }
+
+    .specValue {
+        margin: 20px;
+        line-height: 2.5;
+        letter-spacing: 1.3px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        justify-self: center;
     }
 }
