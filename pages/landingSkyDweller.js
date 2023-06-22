@@ -38,7 +38,7 @@ export default function landingSkyDweller() {
       {/* TOP BAR */}
       <div className={styles.topBar}>
         <div className={styles.topBarContent}>
-          UPDATED: 13TH JUNE 2023 - 03:10
+          UPDATED: 22nd JUNE 2023 - 03:17
         </div>
       </div>
 
@@ -178,6 +178,30 @@ export default function landingSkyDweller() {
               </div>
             </div>
             <div className={styles.numbreContactBTN}>07976 753 254</div>
+          </div>
+        </div>
+      </section>
+
+      {/* SUBSCRIPTION */}
+      <section>
+        <div className={styles.gridContainerSubscription}>
+          <div className={styles.subscriptionContent}>
+            <div className={styles.subscriptionTitle}>SUBSCRIPTION</div>
+            Enter Your Email address to recieve our latest updates on Guides and
+            Blogs
+          </div>
+          <div className={styles.subscriptionContainer}>
+            <div className={styles.subscriptionEmailContent}>
+              Enter Your Email Address
+            </div>
+            <div className={styles.subscriptionArrow}>
+              <Image
+                src={"/right-arrow-white.PNG"}
+                className={styles.whiteArrow}
+                width={32}
+                height={32}
+              />
+            </div>
           </div>
         </div>
       </section>
