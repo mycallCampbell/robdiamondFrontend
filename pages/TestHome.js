@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styles from "../styles/TestHome.module.css";
 import Link from "next/link";
-import Slider from "../components/Slider";
 
 export default function TestHome() {
   return (
