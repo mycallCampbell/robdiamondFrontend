@@ -20,7 +20,7 @@ export default function landingSkyDweller() {
   return (
     <>
       <div>
-        {/* META */}
+        {/* META SECTION*/}
         <Head>
           <title>ROB DIAMOND</title>
           <meta name="description" content="Rolex SkyDweller Landing Page" />
@@ -35,7 +35,7 @@ export default function landingSkyDweller() {
         </Head>
       </div>
 
-      {/* TOP BAR */}
+      {/* TOP BAR SECTION*/}
       <div className={styles.topBar}>
         <div className={styles.topBarContent}>
           UPDATED: 22nd JUNE 2023 - 03:17
@@ -52,7 +52,7 @@ export default function landingSkyDweller() {
       </section>
 
       {/* HERO SECTION DESKTOP */}
-      <section className={styles.heroContentContainer}>
+      <section className={styles.heroContentSection}>
         <div className={styles.heroDesktop}>
           <Image
             src={"/sky_dweller_highlights_landing_trimmed.JPG"}
@@ -60,17 +60,35 @@ export default function landingSkyDweller() {
             height={1089}
           />
         </div>
-        <div className={styles.headlineContentLeft}>Discover Time Mastery</div>
-        <div className={styles.headlineContentRight}>
-          Unleash The Extrodinary
+        <div className={styles.contentMainHeroContainer}>
+          <div className={styles.headlineContentMain}>
+            Discover Time Mastery
+          </div>
+          <div className={styles.headlineContentSub}>
+            Whilst Unleashing The Extrodinary
+          </div>
         </div>
 
         <div className={styles.titleSkyDweller}>The Rolex SkyDweller</div>
-        {/* CONTACT BTN */}
+        <div className={styles.refSkyDweller}>Reference: 326934</div>
+        {/* CONTACT BTN
         <div className={styles.contactBTNContainer}>
           <div></div>
           <div className={styles.contactBTN}>
             <a href="tel:07976753254">Contact</a>
+          </div>
+          <div></div>
+        </div> */}
+
+        <div className={styles.gridContainerContactBTN}>
+          <div></div>
+          <div className={styles.contactBTNDesktop}>
+            <div className={styles.contactImage}>
+              <Image src={"/call.png"} width={25} height={25} />
+            </div>
+            <div>
+              <a href="tel:07976753254">Contact</a>
+            </div>
           </div>
           <div></div>
         </div>
@@ -182,7 +200,7 @@ export default function landingSkyDweller() {
         </div>
       </section>
 
-      {/* SUBSCRIPTION */}
+      {/* SUBSCRIPTION SECTION */}
       <section>
         <div className={styles.gridContainerSubscription}>
           <div className={styles.subscriptionContent}>
@@ -196,7 +214,7 @@ export default function landingSkyDweller() {
             </div>
             <div className={styles.subscriptionArrow}>
               <Image
-                src={"/right-arrow-white.PNG"}
+                src={"/right-arrow-white.png"}
                 className={styles.whiteArrow}
                 width={32}
                 height={32}

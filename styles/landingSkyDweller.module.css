@@ -1,3 +1,4 @@
+/* BTN SECTION */
 .contactBTNContainer {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -27,6 +28,7 @@
     cursor: pointer;
 }
 
+/* TOP BAR SECTION */
 .topBar {
     display: flex;
     justify-content: center;
@@ -40,9 +42,13 @@
     color: #fff;
 }
 
+
+/* HERO SECTION */
 .heroContentContainer {
     display: none;
 }
+
+
 
 .heroDesktop {
     /* display: none; */
@@ -127,54 +133,72 @@
 
 @media (min-width: 768px) {
 
-    .heroContentContainer {
+    .gridContainerContactBTN {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .contactBTNDesktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #184D47;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        padding: 13px;
+        margin: 30px 30px 20px 30px;
+        border-radius: 11px;
+        cursor: pointer;
+    }
+
+    .contactImage {
+        margin-right: 10px;
+    }
+
+    .heroContentSection {
         display: block;
+        position: relative;
     }
     .heroMobile {
         display: none;
     }
-    .gridContainerHero {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+
+    .contentMainHeroContainer {
+        position: absolute; 
+        top: 29%;
+        left: 20%; 
+        transform: translate(-50%, -50%); 
     }
 
-    .heroContentContainer {
-        position: relative;
-    }
-
-    .heroBGContent {
-        position: absolute;
+    .headlineContentMain {
+        max-width: 400px;
         color: #fff;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .headlineContentLeft {
-        position: absolute;
         font-size: 28px;
         font-weight: 700;
-        top: 37%;
-        left: 3%;
-        margin: 20px;
-        color: #fff;
+        justify-items: center;
     }
 
-    .headlineContentRight {
-        position: absolute;
-        font-size: 28px;
-        font-weight: 700;
-        top: 37%;
-        right: 2%;
-        margin: 20px;
+    .headlineContentSub {
+        max-width: 300px;
         color: #fff;
+        font-size: 24px;
+        justify-self: center;
     }
 
     .titleSkyDweller {
         font-size: 28px;
         font-weight: 700;
         color: #323232;
-        margin: 30px;
+        margin: 30px auto 10px auto;
+        text-align: center;
+    }
+
+    .refSkyDweller {
+        font-size: 24px;
+        font-weight: 500;
+        color: #323232;
+        /* margin: 30px; */
         text-align: center;
     }
 
@@ -201,6 +225,7 @@
 
     .titleSwiper {
         font-size: 24px;
+        font-weight: 700;
         color: #323232;
         margin: 20px;
         text-align: center;
