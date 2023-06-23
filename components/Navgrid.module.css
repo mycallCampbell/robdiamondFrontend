@@ -16,7 +16,6 @@
     }
    
     .navbar ul li:hover {
-        /* margin: 10px 10px 0 10px; */
         font-size: 1.1rem;
         cursor: pointer;
         transition: all 0.7s ease 0s;
@@ -26,13 +25,6 @@
       color: #323232;
       font-weight: 400;
       margin: 0 10px;
-    }
-
-    .categoryOpen {
-      background: #fff;
-      height: 200px;
-      width: 150px;
-      transition: all 0.7s ease 0s;
     }
 
     .listContainer {
@@ -48,7 +40,7 @@
       font-size: 14px;
     }
 
-    .categoryClosed {
-      
+    .categoryOpen {
+    
     }
   }

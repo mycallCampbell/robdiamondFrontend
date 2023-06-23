@@ -18,7 +18,7 @@ function Navgrid() {
       <ul>
         <li>
           <Link href={"/watches"}>
-            <div>
+            <div className={styles.navContainer}>
               {isOpen ? (
                 <div
                   onMouseEnter={handleMouseClosed}
@@ -33,16 +33,17 @@ function Navgrid() {
                   onMouseLeave={handleMouseOpen}
                   className={styles.categoryOpen}
                 >
-                  <div>
+                  <div className={styles.navName}>
                     <h5>Categories</h5>
+
+                    <ul className={styles.listContainer}>
+                      <div className={styles.categoryList}>DateJust</div>
+                      <div className={styles.categoryList}>Submariner</div>
+                      <div className={styles.categoryList}>GMT MAster II</div>
+                      <div className={styles.categoryList}>Sky Dweller</div>
+                      <div className={styles.categoryList}>Daytona</div>
+                    </ul>
                   </div>
-                  <ul className={styles.listContainer}>
-                    <div className={styles.categoryList}>DateJust</div>
-                    <div className={styles.categoryList}>Submariner</div>
-                    <div className={styles.categoryList}>GMT MAster II</div>
-                    <div className={styles.categoryList}>Sky Dweller</div>
-                    <div className={styles.categoryList}>Daytona</div>
-                  </ul>
                 </div>
               )}
             </div>

@@ -1,136 +1,61 @@
-.displayNone {
-  display: none;
-}
-
-.container {
-  position: relative;
-  top: 37px;
-}
-
-.menuContainer{
-margin-top: 10px;
-}
-
-.menuGrid {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: solid 1px rgb(220, 220, 220); 
-}
-.menuItem1 {
-  margin: 10px;
-}
-
-.menuItem2 {
-  font-size: 1.5rem;
-  margin: 5px 10px;
-  color: #747474;
-}
-
-.robDiamondTitle{
-  text-align: center;  
-}
-
-.robOpen {
-  color: #2e2e2e;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-.diamondOpen {
-  color: #2e2e2e;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-.displayTitle{
-  margin: 20px 0;
-  cursor: pointer;
-}
-
-
-.closeMenu {
-  margin: 10px 0 20px 0;
-  color: #2e2e2e;
-  letter-spacing: 3px;
-  font-weight: 500;
-  text-align: center;
-}
-
-
-.layoutContainer{
+.containerGrid {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 1000;
-}
-
-.logoContainer {
-  text-align: center;
-  max-height: 220px;
-  cursor: pointer;
+  grid-template-columns: 33% 33% 33%;
   margin: 20px;
 }
 
-.gridContainer {
+.imageItem {
+
+}
+
+.titleItem {
+  text-align: center;
+  color: #323232;
+}
+
+.messageIconContainer {
+  text-align: end;
+}
+
+.nav {
+  width: 70wv;
+}
+
+.unorderedList {
   display: grid;
-  grid-template-columns: 1.2fr 5fr 1.2fr;
-  align-items: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
+  width: 50vw;
+  margin: 20px auto;
 }
 
-.cartIcon {
-margin: 20px;
-}
-
-.navgrid {
-  display: none;
-}
- .title {
-  font-weight: 500;
-  margin-top: 5px;
- }
-
-.rob {
-  color: #2e2e2e;
-  letter-spacing: 3px;
-}
-.diamond {
-  color: #2e2e2e;
-  letter-spacing: 3px;
-}
-
-.hamburgerIcon {
-  margin-left: 10px;
+.listItem {
+  text-decoration: none;
+  color: #323232;
   list-style: none;
+  justify-self: center;
   cursor: pointer;
-  margin: 20px;
 }
 
-.navbar ul {
-  list-style-type: none;
+.catModels {
+  list-style: none;
+  margin: 7px auto;
+  color: #323232;
+  font-weight: 700;
+}
+.categoriesListFlex {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+  list-style: none;
+  text-decoration: none;
 }
 
-@media (min-width: 768px) {
-
-  .navgrid {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-  .menu {
-  display: none;
+.arrowListItem {
+  margin-left: 5px;
 }
 
- .gridContainer {
- display: grid;
- grid-template-columns: 100%;
-}
-.cartIcon {
-  display: block;
-  text-align: center;
-}
+.mouseLeaveContainer {
+  display: inline;
 }

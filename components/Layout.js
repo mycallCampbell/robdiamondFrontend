@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import CartIcon from "./CartIcon";
@@ -7,116 +7,92 @@ import styles from "./Layout.module.css";
 import Navgrid from "./Navgrid";
 
 function Layout({ children }) {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(!open);
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.sticky}>
-        <main className={!open ? styles.layoutContainer : styles.displayTitle}>
-          <section>
-            {!open ? (
-              <div>
-                <Link href={"#menuContainer"}>
-                  <li
-                    className={styles.hamburgerIcon}
-                    onClick={(e) => handleOpen(e)}
-                  >
-                    <Image src="/hamburger.png" width={25} height={25} />
-                  </li>
-                </Link>
-              </div>
-            ) : (
-              <div
-                onClick={(e) => handleOpen(e)}
-                className={styles.menuContainer}
-                id="menuContainer"
-              >
-                <div className={styles.robDiamondTitle}>
-                  <Link href="/#">
-                    <h3>
-                      <span className={styles.robOpen}>ROB </span>
-                      <span className={styles.diamondOpen}>DIAMOND</span>
-                    </h3>
-                  </Link>
-                </div>
-
-                <nav className={styles.navbar}>
-                  <ul>
-                    <li>
-                      <Link href={"/watches"}>
-                        <div className={styles.menuGrid}>
-                          <div className={styles.menuItem1}>
-                            <p>ROLEX</p>
-                          </div>
-                          <div className={styles.menuItem2}>{">"}</div>
-                        </div>
-                      </Link>
-                    </li>
-
-                    {/* <li>
-                      <Link href={"/blogs"}>
-                        <div className={styles.menuGrid}>
-                          <div className={styles.menuItem1}>
-                            <p>BLOG</p>
-                          </div>
-                          <div className={styles.menuItem2}>{">"}</div>
-                        </div>
-                      </Link>
-                    </li> */}
-
-                    <li>
-                      <Link href={"/contact"}>
-                        <div className={styles.menuGrid}>
-                          <div className={styles.menuItem1}>
-                            <p>CONTACT</p>
-                          </div>
-                          <div className={styles.menuItem2}>{">"}</div>
-                        </div>
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
-
-                <div className={styles.closeMenu}>
-                  <p>CLOSE MENU</p>
-                </div>
-              </div>
-            )}
-          </section>
-
-          <section
-            className={!open ? styles.logoContainer : styles.displayNone}
-          >
-            <div>
-              <Link href="/">
-                <h3 className={styles.title}>
-                  <span className={styles.rob}>ROB </span>
-                  <span className={styles.diamond}>DIAMOND</span>
-                </h3>
-              </Link>
-            </div>
-          </section>
-
-          {/* CartIcon */}
-          <section>
-            <div className={!open ? styles.cartIcon : styles.displayNone}>
-              <CartIcon />
-            </div>
-          </section>
-        </main>
-
-        {/* NavGrid */}
-        <div className={styles.navgrid}>
-          <Navgrid />
+    <>
+      <div className={styles.containerGrid}>
+        <div className={styles.imageItem}>
+          <Image src={"/hamburger.png"} width={32} height={32} />
         </div>
 
-        <div className={styles.container}>{children}</div>
+        {/* TITLE */}
+        <h1 className={styles.titleItem}>ROB DIAMOND</h1>
+
+        {/* MESSAGE ICON */}
+        <div className={styles.messageIconContainer}>
+          <div>
+            <Image src={"/phone_icon.png"} width={32} height={32} />
+          </div>
+        </div>
       </div>
-    </div>
+
+      {/* NAVIGATION */}
+      <nav className={styles.nav}>
+        <ul className={styles.unorderedList}>
+          {isOpen ? (
+            <div>
+              <div className={styles.categoriesListFlex}>
+                <li className={styles.listItem}>Categories</li>
+                <div className={styles.arrowListItem}>&gt;</div>
+              </div>
+              <div
+                onMouseLeave={handleToggle}
+                className={styles.mouseLeaveContainer}
+              >
+                <Link href={"/"}>
+                  <li className={styles.catModels}>DateJust</li>
+                </Link>
+                <Link href={"/"}>
+                  <li className={styles.catModels}>Submariner</li>
+                </Link>
+                <Link href={"/"}>
+                  <li className={styles.catModels}>GMT Master II</li>
+                </Link>
+                <Link href={"/"}>
+                  <li className={styles.catModels}>Sky Dweller</li>
+                </Link>
+                <Link href={"/"}>
+                  <li className={styles.catModels}>Daytona</li>
+                </Link>
+                <Link href={"/"}>
+                  <li className={styles.catModels}>DayDate</li>
+                </Link>
+              </div>
+            </div>
+          ) : (
+            <Link href={"/"}>
+              <div
+                className={styles.categoriesListFlex}
+                onMouseEnter={handleToggle}
+              >
+                <li className={styles.listItem}>Categories</li>
+                <div className={styles.arrowListItem}>&gt;</div>
+              </div>
+            </Link>
+          )}
+
+          <Link href={"/"}>
+            <li className={styles.listItem}>About Us</li>
+          </Link>
+          <Link href={"/"}>
+            <li className={styles.listItem}>Guides</li>
+          </Link>
+          <Link href={"/"}>
+            <li className={styles.listItem}>Blogs</li>
+          </Link>
+          <Link href={"/"}>
+            <li className={styles.listItem}>Contact</li>
+          </Link>
+        </ul>
+      </nav>
+
+      <div className={styles.container}>{children}</div>
+    </>
   );
 }
 
