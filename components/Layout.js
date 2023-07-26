@@ -19,7 +19,9 @@ function Layout({ children }) {
         </div>
 
         {/* TITLE */}
-        <h1 className={styles.titleItem}>ROB DIAMOND</h1>
+        <Link href={'/#'}>
+          <h1 className={styles.titleItem}>ROB DIAMOND</h1>
+        </Link>
 
         {/* MESSAGE ICON */}
         <div className={styles.messageIconContainer}>

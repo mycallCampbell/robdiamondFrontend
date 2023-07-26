@@ -8,6 +8,7 @@
   text-align: center;
   color: #323232;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .messageIconContainer {

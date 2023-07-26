@@ -24,9 +24,10 @@
 }
 
 .contactBTN {
-    background: #184D47;
+    background: #91c0dc;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
     text-align: center;
     padding: 13px;
     margin: 20px 110px;
@@ -38,20 +39,35 @@
 }
 
 .viewAllBTN {
-    background: #184D47;
+    background: #91c0dc;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
     text-align: center;
     padding: 13px;
-    margin: 20px 90px;
+    margin: 20px 90px 50px 90px;
     border-radius: 22px;
     cursor: pointer;
 }
 
 .readMoreBTN {
-    background: #184D47;
+    background: #91c0dc;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 13px;
+    margin: 20px 90px;
+    border-radius: 22px;
+    cursor: pointer;
+} 
+
+.readMoreBTNBlog {
+    display: block;
+    background: #91c0dc;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
     text-align: center;
     padding: 13px;
     margin: 20px 90px;
@@ -65,12 +81,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
-    border: 2px solid #184D47;
+    border: 5px solid #91c0dc;
     color: #323232;
-    font-size: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
     text-align: center;
     padding: 13px 40px;
-    margin: 20px 0px;
+    margin: 10px 0px;
     border-radius: 22px;
     cursor: pointer;
 }
@@ -106,26 +123,29 @@
 
 .categoryImage {
     display: block;
-    border-radius: 22px 22px 0 0;
+    /* border-radius: 22px 22px 0 0; */
+    border-radius: 11px 11px 11px 11px;
 }
 .contentBG {
-    background:#a09e9e;
+    /* background:#a09e9e; */
     text-align: center;
-    padding: 10px;
-    border-radius: 0 0 22px 22px;
+    /* padding: 10px; */
+
+
 }
 
 .contentRolexContainer {
-    margin: 3px;
+    /* margin: 3px; */
 }
 .rolex {
-    color: #fff;
-    font-size: 12px;
+    color: #323232;
+    font-size: 1rem;
 }
 
 .category {
-    color: #fff;
-    font-size: 16px;
+    color: #323232;
+    font-size: 1.2rem;
+
 }
 
 /* HIGHLIGHT SECTION */
@@ -135,7 +155,7 @@
     font-size: 24px;
     font-weight: 700;
     text-align: center;
-    margin: 40px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 .highlightTitleDesktop {
@@ -156,22 +176,22 @@
 }
 
 .highlightContentRolex {
-    font-size: 14px;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: center;
     color: #323232;
-    margin: 10px;
+    margin: 10px auto 0 auto;
 }
 
 .highlightContentModel {
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     color: #323232; 
 }
 
 .highlightContent {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: center;
     color: #323232;
@@ -189,11 +209,12 @@
 }
 
 .guidesImageContainerMobile {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     position: relative;
     z-index: -1000;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 0.4) 100%)
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 1) 100%)
 }
 
 .guidesTitle {
@@ -210,7 +231,7 @@
 .guidesContent1 {
     position: absolute;
     top: 30%;
-    font-size: 14px;
+    font-size: 1.1rem;
     font-weight: 700;
     text-align: center;
     color: #fff;
@@ -220,11 +241,11 @@
 .guidesContent2 {
     position: absolute;
     top: 40%;
-    font-size: 14px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
     color: #fff;
-    margin: 7px 20px;
+    margin: 20px 20px 0px 20px;
 }
 
 
@@ -235,7 +256,7 @@
     font-size: 24px;
     font-weight: 700;
     text-align: center;
-    margin: 40px 0 20px 0;
+    margin: 60px 0 20px 0;
 }
 .blogContainer {
     margin: 10px 22px;
@@ -291,14 +312,16 @@ opacity: 0.3;
     font-size: 24px;
     font-weight: 700;
     color: #000;
-    margin: 20px auto 10px auto;
+    margin: 60px auto 10px auto;
 }
 
 .subscriptionContent {
-    text-align: center;
-    font-size: 12px;
+    text-align: start;
+    font-size: 1rem;
     font-weight: 400;
     margin: 10px 20px;
+    color: #323232;
+    max-width: 400px;
 }
 
 .subscriptionContainer {
@@ -321,7 +344,7 @@ opacity: 0.3;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #184D47;
+    background: #91c0dc;
     margin: 15px 15px 15px 0;
     height: 47px;
     width: 70px;
@@ -332,7 +355,7 @@ opacity: 0.3;
 /* FOOTER SECTION */
 
 .footerContainer {
-    background: #323232;
+    background: #a09e9e;
 }
 
 .footerContentContainerColumn {
@@ -343,7 +366,7 @@ opacity: 0.3;
 .footerContentContainerRow {
     display: flex;
     color: #fff;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 .contentItemColumn {
@@ -362,6 +385,10 @@ opacity: 0.3;
 }
 
 @media (min-width: 768px) {
+
+    .readMoreBTNBlog {
+        display: none;
+    }
 
     .gridContainerContactBTN {
         display: grid;
@@ -390,6 +417,23 @@ opacity: 0.3;
         padding: 13px 25px;
         margin: 20px 15px;
         border-radius: 11px;
+    }
+
+    .seeGuidesBTNDesktop {
+        position: absolute;
+        top: 73%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border: 2px solid #184D47;
+        color: #323232;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 13px 40px;
+        margin: 10px 0px;
+        border-radius: 22px;
+        cursor: pointer;
     }
 
     .viewAllBTN {
@@ -498,7 +542,7 @@ opacity: 0.3;
         justify-content: center;
         position: relative;
         z-index: -1000;
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 0.4) 100%)
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 1) 100%)
     }
 
     .guidesTitleDesktop {
@@ -526,7 +570,7 @@ opacity: 0.3;
     .guidesContent1 {
         position: absolute;
         top: 30%;
-        font-size: 22px;
+        font-size: 1.7rem;
         font-weight: 700;
         text-align: center;
         color: #fff;
@@ -536,28 +580,13 @@ opacity: 0.3;
     .guidesContent2 {
         position: absolute;
         top: 40%;
-        font-size: 18px;
+        font-size: 2rem;
         font-weight: 400;
         text-align: center;
         color: #fff;
         margin: 7px 20px;
     }
 
-    .seeGuidesBTNDesktop {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #fff;
-        border: 2px solid #184D47;
-        color: #184D47;
-        font-size: 22px;
-        text-align: center;
-        padding: 13px 40px;
-        margin: 20px 0px;
-        border-radius: 22px;
-        cursor: pointer;
-    }
 
     .blogContainer {
         display: none;
@@ -633,7 +662,7 @@ opacity: 0.3;
 
     .subscriptionContent {
         text-align: start;
-        font-size: 14px;
+        font-size: 1.1rem;
         font-weight: 400;
         margin: 10px 20px;
         color: #323232;
@@ -643,5 +672,16 @@ opacity: 0.3;
     .subscriptionArrow {
         width: 120px;
         cursor: pointer;
+    }
+
+     /* FOOTER */
+     .footerContentContainerRow {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .footerContentContainerColumn {
+        font-size: 1.3rem;
+
     }
 }

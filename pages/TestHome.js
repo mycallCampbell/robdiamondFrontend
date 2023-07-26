@@ -25,7 +25,7 @@ export default function TestHome() {
 
       <div className={styles.topBar}>
         <div className={styles.topBarContent}>
-          UPDATED: 13TH JUNE 2023 - 03:10
+          UPDATED: 25th JULY 2023 - 01:13
         </div>
       </div>
 
@@ -71,7 +71,6 @@ export default function TestHome() {
 
         <div className={styles.gridContainerCategories}>
           <Link href={"/datejust"}>
-            <>
               <div className={styles.categoryGrid}>
                 <div className={styles.categoryImageContainer}>
                   <Image
@@ -88,7 +87,6 @@ export default function TestHome() {
                   </div>
                 </div>
               </div>
-            </>
           </Link>
 
           <Link href={"/daydate"}>
@@ -130,7 +128,6 @@ export default function TestHome() {
           </Link>
 
           <Link href={"/submariner"}>
-            <>
               <div className={styles.categoryGrid}>
                 <div className={styles.categoryImageContainer}>
                   <Image
@@ -149,11 +146,9 @@ export default function TestHome() {
                   </div>
                 </div>
               </div>
-            </>
           </Link>
 
           <Link href={"/skydweller"}>
-            <>
               <div className={styles.categoryGrid}>
                 <div className={styles.categoryImageContainer}>
                   <Image
@@ -170,11 +165,9 @@ export default function TestHome() {
                   </div>
                 </div>
               </div>
-            </>
           </Link>
 
           <Link href={"/daytona"}>
-            <>
               <div className={styles.categoryGrid}>
                 <div className={styles.categoryImageContainer}>
                   <Image
@@ -191,12 +184,13 @@ export default function TestHome() {
                   </div>
                 </div>
               </div>
-            </>
           </Link>
         </div>
 
         {/* CTA VIEW ALL */}
-        <div className={styles.viewAllBTN}>View All</div>
+        <Link href={'/watches'}>
+          <div className={styles.viewAllBTN}>View All</div>
+        </Link>
 
         {/* HIGHLIGHT SECTION */}
         <div className={styles.highlightTitleMobile}>HIGHLIGHTS</div>
@@ -205,10 +199,10 @@ export default function TestHome() {
         <div className={styles.highlightContainerMobile}>
           <div className={styles.highlightImageContainer}>
             <Image
-              src={"/sky_dweller_highlights.JPG"}
+              src={"/hero_image_template.jpg"}
               className={styles.highlightImage}
-              width={3320}
-              height={2240}
+              width={1200}
+              height={602}
             />
           </div>
           <div className={styles.highlightContentRolex}>Rolex</div>
@@ -217,7 +211,9 @@ export default function TestHome() {
             Introducing the Rolex Skydweller: where elegance meets precision.
             With its iconic design, dual time zones, and ....
           </div>
-          <div className={styles.readMoreBTN}>Read More</div>
+          <Link href={'/landingSkyDweller'}>
+            <div className={styles.readMoreBTN}>Read More</div>
+          </Link>
         </div>
 
         {/* HIGHLIGHT DESKTOP */}
@@ -273,10 +269,10 @@ export default function TestHome() {
           <div className={styles.guidesTitle}>Guides</div>
           <div className={styles.guidesContent1}>All You Need to Know....</div>
           <div className={styles.guidesContent2}>
-            With extensive knowledge and passion for luxury Rolex timepieces....
+          
             Checkout our Latest Guides{" "}
           </div>
-          <div className={styles.seeGuidesBTN}>See Guides</div>
+          <div className={styles.seeGuidesBTN}>View All</div>
         </div>
 
         {/* GUIDES DESKTOP */}
@@ -290,10 +286,9 @@ export default function TestHome() {
           <div className={styles.guidesTitleDesktop}>Guides</div>
           <div className={styles.guidesContent1}>All You Need to Know....</div>
           <div className={styles.guidesContent2}>
-            With extensive knowledge and passion for luxury Rolex timepieces....
             Checkout our Latest Guides{" "}
           </div>
-          <div className={styles.seeGuidesBTNDesktop}>See Guides</div>
+          <div className={styles.seeGuidesBTNDesktop}>View All</div>
         </div>
       </section>
 
@@ -310,6 +305,8 @@ export default function TestHome() {
             height={1333.5}
           />
         </div>
+        <div className={styles.readMoreBTNBlog}>Read More</div>
+
 
         {/* BLOGS DESKTOP */}
         <div className={styles.blogContainerDesktop}>
@@ -369,7 +366,7 @@ export default function TestHome() {
             </div>
             <div className={styles.subscriptionArrow}>
               <Image
-                src={"/right-arrow-white.PNG"}
+                src={"/right-arrow-white.png"}
                 className={styles.whiteArrow}
                 width={32}
                 height={32}
@@ -378,6 +375,8 @@ export default function TestHome() {
           </div>
         </div>
       </section>
+
+      {/* FOOTER SECTION */}
       <section className={styles.footerSection}>
         <div className={styles.footerContainer}>
           <div className={styles.footerContentContainerColumn}>

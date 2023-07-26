@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #184D47;
+    background: #91c0dc;
     color: #fff;
     font-size: 18px;
     text-align: center;
@@ -38,7 +38,7 @@
 
 .numbreContactBTN {
     margin: 20px 100px;
-    background: #184D47;
+    background: #91c0dc;
     color: #fff;
     font-weight: 700;
     border: 2px solid #fff;
@@ -120,7 +120,7 @@
     font-weight: 400;
     font-size: 1rem;
     margin: 20px;
-    color: #323232;
+    color: #777777;
 }
 
 .contentRobDiamond {
@@ -128,7 +128,7 @@
     font-weight: 400;
     font-size: 1rem;
     margin: 20px;
-    color: #323232;
+    color: #777777;
 }
 
 .contentRobDiamond span {
@@ -203,7 +203,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #184D47;
+    background: #91c0dc;
     margin: 15px 15px 15px 0;
     height: 47px;
     width: 70px;
@@ -229,20 +229,21 @@
 .specKey {
     margin: 20px;
     line-height: 2.5;
-    letter-spacing: 1.3px;
-    color: #747474;
+    letter-spacing: 1px;
+    color: #777777;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1rem;
     justify-self: center;
+    text-transform: uppercase;
 }
 
 .specValue {
     margin: 20px;
     line-height: 2.5;
-    letter-spacing: 1.3px;
-    color: #747474;
+    letter-spacing: 1px;
+    color: #777777;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1rem;
     justify-self: center;
 }
 
@@ -277,7 +278,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #184D47;
+        background: #91c0dc;
         color: #fff;
         font-size: 18px;
         text-align: center;

@@ -179,8 +179,8 @@ export default function landingSkyDweller() {
                 <div>Strap</div>
                 <div>Dial</div>
                 <div>Movement</div>
-                <div>Case Material</div>
-                <div>Bracelet Material</div>
+                <div>Case</div>
+                <div>Bracelet</div>
                 <div>Bezel</div>
               </div>
 
