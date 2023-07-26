@@ -38,21 +38,22 @@ export default function landingSkyDweller() {
       {/* TOP BAR SECTION*/}
       <div className={styles.topBar}>
         <div className={styles.topBarContent}>
-          UPDATED: 22nd JUNE 2023 - 03:17
+          UPDATED: 25th 2023 - 12:06
         </div>
       </div>
 
-      {/* HERO SECTION MOBILE */}
-      <section className={styles.heroMobile}>
-        <Image
-          src={"/sky_dweller_highlights_landing.JPG"}
-          width={3360}
-          height={1506}
-        />
-      </section>
+      <section className={styles.heroSection}>
 
-      {/* HERO SECTION DESKTOP */}
-      <section className={styles.heroContentSection}>
+        {/* HERO SECTION MOBILE */}
+        <div className={styles.heroMobile}>
+          <Image
+            src={"/hero_image_template.jpg"}
+            width={1200}
+            height={602}
+          />
+        </div>
+
+        {/* HERO SECTION DESKTOP */}
         <div className={styles.heroDesktop}>
           <Image
             src={"/sky_dweller_highlights_landing_trimmed.JPG"}
@@ -60,25 +61,21 @@ export default function landingSkyDweller() {
             height={1089}
           />
         </div>
+
         <div className={styles.contentMainHeroContainer}>
           <div className={styles.headlineContentMain}>
             Discover Time Mastery
           </div>
           <div className={styles.headlineContentSub}>
-            Whilst Unleashing The Extrodinary
+            Unleashing The Extrodinary
           </div>
         </div>
 
+      </section>
+
         <div className={styles.titleSkyDweller}>The Rolex SkyDweller</div>
         <div className={styles.refSkyDweller}>Reference: 326934</div>
-        {/* CONTACT BTN
-        <div className={styles.contactBTNContainer}>
-          <div></div>
-          <div className={styles.contactBTN}>
-            <a href="tel:07976753254">Contact</a>
-          </div>
-          <div></div>
-        </div> */}
+      
 
         <div className={styles.gridContainerContactBTN}>
           <div></div>
@@ -92,7 +89,7 @@ export default function landingSkyDweller() {
           </div>
           <div></div>
         </div>
-      </section>
+      
 
       {/* SWIPER */}
 
@@ -118,6 +115,7 @@ export default function landingSkyDweller() {
             </div>
           </Swiper>
         </div>
+
         <div className={styles.detailsContainer}>
           <div className={styles.contentContainer}>
             <div className={styles.titleSwiper}>
@@ -149,7 +147,7 @@ export default function landingSkyDweller() {
 
       <section>
         <div className={styles.contentRobDiamond}>
-          Rob Diamond is a renowned authority in the realm of luxury timepieces,
+          <span>Rob Diamond</span> is a renowned authority in the realm of luxury timepieces,
           with an exceptional focus on Rolex watches. Recognized as one of the
           leading experts in the field, his expertise and knowledge extend
           particularly to the iconic Rolex Sky-Dweller collection. With an
@@ -162,6 +160,8 @@ export default function landingSkyDweller() {
         </div>
       </section>
 
+
+      {/* SPEC SECTION */}
       <section>
         <div className={styles.imageSpecContainer}>
           <Image
@@ -171,7 +171,7 @@ export default function landingSkyDweller() {
             className={styles.imageSpecBanner}
           />
           <div className={styles.contentSpecContainer}>
-            <div className={styles.specTitle}>Check The Specification</div>
+            <div className={styles.specTitle}>Specification</div>
             <div className={styles.specContainer}>
               <div className={styles.specKey}>
                 <div>Model</div>
@@ -205,7 +205,7 @@ export default function landingSkyDweller() {
         <div className={styles.gridContainerSubscription}>
           <div className={styles.subscriptionContent}>
             <div className={styles.subscriptionTitle}>SUBSCRIPTION</div>
-            Enter Your Email address to recieve our latest updates on Guides and
+            Enter Your Email Address to recieve our latest updates on Guides and
             Blogs
           </div>
           <div className={styles.subscriptionContainer}>

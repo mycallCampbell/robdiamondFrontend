@@ -1,10 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import CartIcon from "./CartIcon";
 
 import styles from "./Layout.module.css";
-import Navgrid from "./Navgrid";
 
 function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +32,7 @@ function Layout({ children }) {
       {/* NAVIGATION */}
       <nav className={styles.nav}>
         <ul className={styles.unorderedList}>
-          {isOpen ? (
+          {/* {isOpen ? (
             <div>
               <div className={styles.categoriesListFlex}>
                 <li className={styles.listItem}>Categories</li>
@@ -74,7 +72,7 @@ function Layout({ children }) {
                 <div className={styles.arrowListItem}>&gt;</div>
               </div>
             </Link>
-          )}
+          )} */}
 
           <Link href={"/"}>
             <li className={styles.listItem}>About Us</li>
