@@ -46,7 +46,7 @@ export default function introBlog() {
     </div>
 
     <div>
-      <Image src={'/intro_blog_watch.jpg'} width={1680} height={1120} />
+      <Image src={'/intro_blog_watch.JPG'} width={1680} height={1120} />
     </div>
 
     
