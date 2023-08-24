@@ -8,3 +8,9 @@
     color: #717171;
     font-size: 0.9rem;
 }
+
+.quote {
+    font-style: italic;
+    margin: 20px;
+    color: #717171;
+}
