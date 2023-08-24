@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/introBlog.module.css';
 
 
-export default function() {
+export default function introBlog() {
   return (
     <>
     {/* HERO SECTION */}
