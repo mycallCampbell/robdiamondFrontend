@@ -72,7 +72,7 @@ export default function introBlog() {
     </div>
 
     <div>
-      <Image src={'/skydweller_flowers.JPG'} width={1024} height={682.5} />
+      <Image src={'/skydweller_flowers.jpg'} width={1024} height={682.5} />
     </div>
 
     <div className={styles.intro}>
@@ -100,7 +100,7 @@ export default function introBlog() {
     </div>
 
     <div>
-      <Image src={'/footer_image_canary_wharf.JPG'} width={1638} height={880} />
+      <Image src={'/footer_image_canary_wharf.jpg'} width={1638} height={880} />
     </div>
 
     <div className={styles.locationTitle}>LOCATION </div>
