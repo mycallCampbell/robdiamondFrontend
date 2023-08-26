@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/introBlog.module.css';
 
 
@@ -54,6 +55,58 @@ export default function introBlog() {
     This is certainly true from the outside looking in. If one was to visit Rob Diamond’s office you can immediately feel a sense of prestige and credibility given its specific location and attention to the finer details.
     </div>
 
+    <div className={styles.intro}>
+    It is worthy to note that Rob Diamond’s collection ranges from Rolex watches that are ‘hot off the press’ models to renowned vintage models. He brings to light some of the many reasons behind the designs of the Rolex models and their allining intrigue. As a teaser, Rob informs me of why the Submariner model comprises a unidirectional bezel (only rotates one way) and the specific direction of said rotation.
+    </div>
+
+    <div className={styles.intro}>
+    “Rolex are the masters of mechanical engineering and have accomplished the means by demonstrating this through artistic design”
+    </div>
+
+    <div>
+      <Image src={'/rolex_vintage_cropped.JPG'} width={1904} height={2118} />
+    </div>
+
+    <div className={styles.intro}>
+    The Submariner model’s bezel only rotates anti-clockwise and this is a safety feature for using the bezel to set a time limit during a diving session. Rob goes on to say that there are a myriad of features and specific design configurations that all serve a unique purpose. He notes that the SkyDweller model is the most complex of them all and would be a fitting time piece for ‘James Bond’.
+    </div>
+
+    <div>
+      <Image src={'/skydweller_flowers.JPG'} width={1024} height={682.5} />
+    </div>
+
+    <div className={styles.intro}>
+    Rolex has gained a huge wave of interest in recent times with the majority of celebrities adorning the iconic and recognisable models in public. Additionally, Rolex have been long time sponsors of the Formula 1 and the infamous Wimbledon Tennis tournament. Rob describes the Rolex brand as a dominant force in the horological market. 
+    </div>
+
+    <div className={styles.intro}>
+    “Rolex are here to stay and there is good reason as to the why investors across the globe have stocked up on their collection” 
+    </div>
+
+    <div className={styles.intro}>
+    Certainly, the financial data from the previous couple of years shows how dominant Rolex are in terms of an investment acquisition. In conclusion, one could safely assume that the Rolex brand has supplied the best of both worlds for their clients insofar as ensuring an investable timepiece that can be adorned all the while retaining its value.
+    </div>
+
+    <div className={styles.intro}>
+    Rob Diamond is available by appointment only. 
+    </div>
+
+    <div className={styles.contactBTN}>
+      <Link
+        href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
+      >
+        WHATSAPP
+      </Link>
+    </div>
+
+    <div>
+      <Image src={'/footer_image_canary_wharf.JPG'} width={1638} height={880} />
+    </div>
+
+    <div className={styles.locationTitle}>LOCATION </div>
+    <div className={styles.locationAddress}>Canary Wharf</div>
+    <div className={styles.locationUnited}>United Kingdom</div>
+    <div className={styles.space}></div>
     </>
   )
 }
