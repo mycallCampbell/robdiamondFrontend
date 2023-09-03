@@ -48,3 +48,41 @@
 .space {
   height: 30px;
 }
+
+@media (min-width: 768px) {
+    .tagTitle {
+        margin: 40px;
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 20px 80px
+    }
+
+    .quote {
+        text-align: center;
+        margin: 40px;
+        font-size: 1.1rem;
+    }
+
+    .introBlogWatch {
+        padding: 80px 80px 40px 80px;
+    }
+
+    .vintageCropped {
+        display: none;
+    }
+
+    .skydwellerFlowers {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .contactBTN {
+        margin: 50px 300px;
+        cursor: pointer;
+    }
+}

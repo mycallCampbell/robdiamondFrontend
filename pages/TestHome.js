@@ -1,8 +1,8 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import Image from "next/image";
-import styles from "../styles/TestHome.module.css";
 import Link from "next/link";
+import styles from "../styles/TestHome.module.css";
 
 export default function TestHome() {
   return (
@@ -305,7 +305,9 @@ export default function TestHome() {
             height={1333.5}
           />
         </div>
-        <div className={styles.readMoreBTNBlog}>Read More</div>
+        <Link href={'/introBlog'}>
+          <div className={styles.readMoreBTNBlog}>Read More</div>
+        </Link>
 
 
         {/* BLOGS DESKTOP */}
@@ -327,13 +329,15 @@ export default function TestHome() {
             />
             <div className={styles.blogsContentContainerDesktop}>
               <div className={styles.blogsContentTitleDesktop}>
-                The Story of the Wimbledon
+                The Time Keeper....
               </div>
 
               <div className={styles.blogsContentSubTitleDesktop}>
                 Why, How and What's Next....
               </div>
-              <div className={styles.readMoreBTNBlogsDesktop}>Read More</div>
+              <Link href={'/introBlog'}>
+                <div className={styles.readMoreBTNBlogsDesktop}>Read More</div>
+              </Link>
             </div>
           </div>
         </div>

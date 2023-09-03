@@ -23,7 +23,7 @@ export default function introBlog() {
 
     {/* HERO SECTION */}
     <div>
-      <Image src={'/intro_hero.jpg'} width={2048} height={1365} />
+      <Image src={'/intro_hero_cropped.jpg'} width={2048} height={1090} />
     </div>
     <div className={styles.tagTitle}>
       <h1>The Time Keeper</h1>
@@ -46,7 +46,7 @@ export default function introBlog() {
     “I’m not here for the short term or to make a quick buck, I’m here for the long run and to ensure a legacy of trust and quality that is associated with my name”.
     </div>
 
-    <div>
+    <div className={styles.introBlogWatch}>
       <Image src={'/intro_blog_watch.JPG'} width={1680} height={1120} />
     </div>
 
@@ -59,11 +59,11 @@ export default function introBlog() {
     It is worthy to note that Rob Diamond’s collection ranges from Rolex watches that are ‘hot off the press’ models to renowned vintage models. He brings to light some of the many reasons behind the designs of the Rolex models and their allining intrigue. As a teaser, Rob informs me of why the Submariner model comprises a unidirectional bezel (only rotates one way) and the specific direction of said rotation.
     </div>
 
-    <div className={styles.intro}>
+    <div className={styles.quote}>
     “Rolex are the masters of mechanical engineering and have accomplished the means by demonstrating this through artistic design”
     </div>
 
-    <div>
+    <div className={styles.vintageCropped}>
       <Image src={'/rolex_vintage_cropped.JPG'} width={1904} height={2118} />
     </div>
 
@@ -71,7 +71,7 @@ export default function introBlog() {
     The Submariner model’s bezel only rotates anti-clockwise and this is a safety feature for using the bezel to set a time limit during a diving session. Rob goes on to say that there are a myriad of features and specific design configurations that all serve a unique purpose. He notes that the SkyDweller model is the most complex of them all and would be a fitting time piece for ‘James Bond’.
     </div>
 
-    <div>
+    <div className={styles.skydwellerFlowers}>
       <Image src={'/skydweller_flowers.jpg'} width={1024} height={682.5} />
     </div>
 
