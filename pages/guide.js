@@ -38,7 +38,7 @@ export default function guide() {
         There are a myriad of Rolex models, all of which comprise different functional components and more obvious to the naked eye, the design features. However, for now we shall focus on the most important factor when making the purchase.... 
         </div>
         
-        <div className={styles.fitting}>The Fitting of the Rolex</div>
+        <div className={styles.subTitle}>The Fitting of the Rolex</div>
 
         <div>
         <Image src={'/wrist.JPG'} width={3360} height={2240} />
@@ -53,9 +53,21 @@ export default function guide() {
         It’s pertinent to note that in the older versions of Rolex models you needed to remove the bracelet links if you wanted to adjust the size to accommodate a smaller wrist. Times have moved on and Rolex first introduced a Glide Lock Clasp feature in 2008 to allow for a fitted timepiece without the requirement of missing links. Therefore, if you are purchasing a newer model Rolex, ensure that there are no missing links. 
         </div>
 
+        <div>
+        <Image src={'/bracelet_jubilee.jpeg'} width={1086} height={724} />
+        </div>
+
         <div className={styles.intro}>
         To summarise on the fitting of the bracelet and the size of the dial, it goes without saying that the larger the dial, the heavier the watch. Make sure the watch feels comfortable on the wrist in terms of weight, size of dial and fitting of the wrist bracelet.
         </div>
+
+        <div className={styles.subTitle}>The Fun Stuff</div>
+
+        <div>
+        <Image src={'/batman_gold.JPG'} width={3360} height={2240} />
+        </div>
+
+
 
         <div className={styles.intro}>
         With the most important factor covered we shall now move on to the fun stuff….
@@ -84,7 +96,7 @@ export default function guide() {
         The Rolex dial on particular models also boasts an array of differing colours. In fact, Rolex seems to have the most fun with their dial designs. There is also the bracelet to consider. Rolex takes advantage of several materials to build out and complement each model. And these materials are of high value:
         </div>
 
-        <ul>
+        <ul className={styles.listItem}>
             <li>18k Yellow Gold</li>
             <li>18k Rose Gold</li>
             <li>18k White Gold</li>
@@ -95,10 +107,35 @@ export default function guide() {
         On each or most Rolex models, you can find a design of 2 materials that complete the bracelet. I.e. Rose Gold and Oyster Steel.
         </div>
 
-        <div className={styles.intro}>
-        To summarise, I think it would be fair to give praise to Rolex for their engineering. They are truly the masters of their world. The automatic movement (72 hour power reserve) and all the intricate mechanical details such as the ‘ParaChrom Hairspring’, ‘Chronergy Escapement’, ‘Paraflex shock absorber’  that cohesively amalgamate to deliver a concept of time keeping that Rolex make look easy….
+        
+        <div>
+        <Image src={'/tri_watches_gold.JPG'} width={3360} height={2240} />
         </div>
 
+        <div className={styles.intro}>
+        To summarise, I think it would be fair to give praise to Rolex for their engineering. They are truly the masters of their world. The automatic movement (72 hour power reserve) and all the intricate mechanical details such as the ParaChrom Hairspring, Chronergy Escapement, Paraflex shock absorber that cohesively amalgamate to deliver a concept of time keeping that Rolex make look easy….
+        </div>
+
+        <div className={styles.intro}>
+    Rob Diamond is available by appointment only. 
+    </div>
+
+    <div className={styles.contactBTN}>
+      <Link
+        href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
+      >
+        WHATSAPP
+      </Link>
+    </div>
+
+    <div>
+      <Image src={'/footer_image_canary_wharf.jpg'} width={1638} height={880} />
+    </div>
+
+    <div className={styles.locationTitle}>LOCATION </div>
+    <div className={styles.locationAddress}>25 Cabot Square, Canary Wharf, London E144Q</div>
+    <div className={styles.locationUnited}>United Kingdom</div>
+    <div className={styles.space}></div>
 
     </main>
   )
