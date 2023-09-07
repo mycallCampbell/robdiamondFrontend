@@ -2,16 +2,16 @@ import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
-import styles from '../styles/guide.module.css';
+import styles from '../styles/chronoMasterpiece.module.css';
 
 
-export default function guide() {
+export default function chronoMasterpiece() {
   return (
     <main>
         {/*  META DATA */}
         <Head>
             <title>ROB DIAMOND</title>
-            <meta name="Intro for Rolex Blog" content="The Time Keeper" />
+            <meta name="Chronological Masterpiece" content="What to Know When Buying a Rolex" />
             <meta property="og:image" content="faviconRob.ico" />
             
             <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
