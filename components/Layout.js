@@ -14,7 +14,7 @@ function Layout({ children }) {
   return (
     <>
       <div className={styles.containerGrid}>
-        <div className={styles.imageItem}>
+        <div className={styles.burgerImage} onClick={() => handleToggle()}>
           <Image src={"/hamburger.png"} width={32} height={32} />
         </div>
 
@@ -32,62 +32,29 @@ function Layout({ children }) {
       </div>
 
       {/* NAVIGATION */}
-      <nav className={styles.nav}>
-        <ul className={styles.unorderedList}>
-          {/* {isOpen ? (
-            <div>
-              <div className={styles.categoriesListFlex}>
-                <li className={styles.listItem}>Categories</li>
-                <div className={styles.arrowListItem}>&gt;</div>
-              </div>
-              <div
-                onMouseLeave={handleToggle}
-                className={styles.mouseLeaveContainer}
-              >
-                <Link href={"/"}>
-                  <li className={styles.catModels}>DateJust</li>
-                </Link>
-                <Link href={"/"}>
-                  <li className={styles.catModels}>Submariner</li>
-                </Link>
-                <Link href={"/"}>
-                  <li className={styles.catModels}>GMT Master II</li>
-                </Link>
-                <Link href={"/"}>
-                  <li className={styles.catModels}>Sky Dweller</li>
-                </Link>
-                <Link href={"/"}>
-                  <li className={styles.catModels}>Daytona</li>
-                </Link>
-                <Link href={"/"}>
-                  <li className={styles.catModels}>DayDate</li>
-                </Link>
-              </div>
-            </div>
-          ) : (
-            <Link href={"/"}>
-              <div
-                className={styles.categoriesListFlex}
-                onMouseEnter={handleToggle}
-              >
-                <li className={styles.listItem}>Categories</li>
-                <div className={styles.arrowListItem}>&gt;</div>
-              </div>
-            </Link>
-          )} */}
+      
+      <nav className={isOpen ? styles.navOpen : styles.navClosed}>
+        <ul className={styles.mobileMenu}>
+          <Link href={'#'}>
+            <li className={styles.listItem} onClick={() => handleToggle()}>WATCH CATEGORIES</li>
+          </Link>
+          <Link href={'/landingSkyDweller'}>
+            <li className={styles.listItem} onClick={() => handleToggle()}>HIGHLIGHTS</li>
+          </Link>
+          <Link href={'/chronoMasterpiece'}>
+            <li className={styles.listItem} onClick={() => handleToggle()}>GUIDES</li>
+          </Link>
+          <Link href={'/introBlog'}>
+            <li className={styles.listItem} onClick={() => handleToggle()}>BLOGS</li>
+          </Link>
+          <Link href={'/contact'}>
+            <li className={styles.listItem} onClick={() => handleToggle()}>CONTACT</li>
+          </Link>
 
-          <Link href={"/"}>
-            <li className={styles.listItem}>About Us</li>
-          </Link>
-          <Link href={"/"}>
-            <li className={styles.listItem}>Guides</li>
-          </Link>
-          <Link href={"/"}>
-            <li className={styles.listItem}>Blogs</li>
-          </Link>
-          <Link href={"/"}>
-            <li className={styles.listItem}>Contact</li>
-          </Link>
+          <div className={styles.menuClose} onClick={() => handleToggle()}>Close Menu</div>
+
+
+          {/* <div className={styles.arrowListItem}>&gt;</div> */}
         </ul>
       </nav>
 

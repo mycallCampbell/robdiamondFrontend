@@ -104,8 +104,9 @@ export default function introBlog() {
     </div>
 
     <div className={styles.locationTitle}>LOCATION </div>
-    <div className={styles.locationAddress}>Canary Wharf</div>
+    <div className={styles.locationAddress}>25 Cabot Square, Canary Wharf, London E144Q</div>
     <div className={styles.locationUnited}>United Kingdom</div>
+
     <div className={styles.space}></div>
     </>
   )

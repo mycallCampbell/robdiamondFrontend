@@ -23,11 +23,11 @@ export default function TestHome() {
         </Head>
       </div>
 
-      <div className={styles.topBar}>
+      {/* <div className={styles.topBar}>
         <div className={styles.topBarContent}>
           UPDATED: 25th JULY 2023 - 01:13
         </div>
-      </div>
+      </div> */}
 
       {/* HERO SECTION MOBILE */}
       <div className={styles.heroMobile}>
