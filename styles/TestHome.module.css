@@ -399,7 +399,7 @@ opacity: 0.3;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #184D47;
+        background: #91c0dc;
         color: #fff;
         font-size: 18px;
         text-align: center;
@@ -410,7 +410,7 @@ opacity: 0.3;
     }
 
     .viewAllBTNDesktop {
-        background: #184D47;
+        background: #91c0dc;
         color: #fff;
         font-size: 16px;
         text-align: center;
@@ -425,7 +425,7 @@ opacity: 0.3;
         left: 50%;
         transform: translate(-50%, -50%);
         background: #fff;
-        border: 2px solid #184D47;
+        border: 2px solid #91c0dc;
         color: #323232;
         font-size: 1.6rem;
         font-weight: 700;

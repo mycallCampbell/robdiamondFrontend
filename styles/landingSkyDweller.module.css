@@ -267,6 +267,36 @@
     /* margin-bottom: 40px; */
 }
 
+.footerImage {
+    margin-top: 60px;
+  }
+  
+  .location {
+    margin: 3px 10px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .locationTitle {
+  margin: 20px auto 5px auto;
+  text-align: center;
+  font-size: 1.1rem;
+  }
+  
+  .locationAddress {
+  margin: 5px;
+  text-align: center;
+  color: #717171;
+  }
+  .locationUnited {
+  text-align: center;
+  color: #717171;
+  }
+  
+  .space {
+  height: 30px;
+  }
+
 @media (min-width: 768px) {
 
     .gridContainerContactBTN {

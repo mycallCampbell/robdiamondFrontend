@@ -38,7 +38,7 @@ function Footer({ src, width, height }) {
       </div>
 
       {/* SUBSCRIBE CONTAINER */}
-      <div className={styles.subscribeContainer}>
+      {/* <div className={styles.subscribeContainer}>
         <div className={styles.containerMailingList}>
           <h4>Enter your Email to Subscribe to our mailing list</h4>
         </div>
@@ -57,7 +57,7 @@ function Footer({ src, width, height }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* GRID CONTAINER */}
       <div className={styles.gridContainer}>
@@ -66,12 +66,12 @@ function Footer({ src, width, height }) {
         </div>
         <div className={styles.gridItem}>
           {/* Social Links */}
-          <div className={styles.socials}>
+          {/* <div className={styles.socials}>
             <a href={"https://www.instagram.com/robdiamond_official/?hl=en-gb"}>
               <Image src={"/instagramFooter.png"} width={60} height={60} />
             </a>
-          </div>
-          <div className={styles.linksFooter}>
+          </div> */}
+          {/* <div className={styles.linksFooter}>
             <Link href={"/contact"}>
               <div className={styles.menuItem}>
                 <div>Contact</div>
@@ -102,12 +102,12 @@ function Footer({ src, width, height }) {
                 <div className={styles.arrow}>{">"}</div>
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
       <div className={styles.locationTitle}>LOCATION </div>
-      <div className={styles.locationAddress}>Hatton Garden, London EC1N</div>
+      <div className={styles.locationAddress}>25 Cabot Square, Canary Wharf, London E1 44Q</div>
       <div className={styles.locationUnited}>United Kingdom</div>
       <div className={styles.space}></div>
     </section>

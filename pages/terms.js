@@ -83,7 +83,7 @@ function terms() {
           not to, and you will not permit others to:
         </p>
       </div>
-      <Footer src={"/rolexFooter.jpg"} width={1704} height={700} />
+      <Footer src={"/cFooter.JPG"} width={3360} height={2240} />
     </div>
   );
 }

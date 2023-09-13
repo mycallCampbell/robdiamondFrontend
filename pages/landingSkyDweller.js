@@ -25,10 +25,7 @@ export default function landingSkyDweller() {
           <title>ROB DIAMOND</title>
           <meta name="description" content="Rolex SkyDweller Landing Page" />
           <meta property="og:image" content="faviconRob.ico" />
-          <meta
-            name="facebook-domain-verification"
-            content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
-          />
+        
           <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
 
           <link rel="icon" href="/faviconRob.ico" />
@@ -36,11 +33,11 @@ export default function landingSkyDweller() {
       </div>
 
       {/* TOP BAR SECTION*/}
-      <div className={styles.topBar}>
+      {/* <div className={styles.topBar}>
         <div className={styles.topBarContent}>
           UPDATED: 25th 2023 - 12:06
         </div>
-      </div>
+      </div> */}
 
       <section className={styles.heroSection}>
 
@@ -201,7 +198,7 @@ export default function landingSkyDweller() {
       </section>
 
       {/* SUBSCRIPTION SECTION */}
-      <section>
+      {/* <section>
         <div className={styles.gridContainerSubscription}>
           <div className={styles.subscriptionContent}>
             <div className={styles.subscriptionTitle}>SUBSCRIPTION</div>
@@ -222,10 +219,10 @@ export default function landingSkyDweller() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FOOTER SECTION */}
-      <section className={styles.footerSection}>
+      {/* <section className={styles.footerSection}>
         <div className={styles.footerContainer}>
           <div className={styles.footerContentContainerColumn}>
             <Link href={"#"}>
@@ -255,7 +252,16 @@ export default function landingSkyDweller() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
+
+    <div className={styles.footerImage}>
+      <Image src={'/footer_image_canary_wharf.jpg'} width={1638} height={880} />
+    </div>
+
+    <div className={styles.locationTitle}>LOCATION </div>
+    <div className={styles.locationAddress}>25 Cabot Square, Canary Wharf, London E1 44Q</div>
+    <div className={styles.locationUnited}>United Kingdom</div>
+    <div className={styles.space}></div>
     </>
   );
 }

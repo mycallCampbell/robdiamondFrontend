@@ -238,7 +238,7 @@ export default function TestHome() {
             <div className={styles.readMoreBTN}>Read More</div>
           </div>
 
-          <div className={styles.highlightImageContainer}>
+          {/* <div className={styles.highlightImageContainer}>
             <Image
               src={"/daytona_highlights.JPG"}
               className={styles.highlightImage}
@@ -252,7 +252,7 @@ export default function TestHome() {
               With its iconic design, dual time zones, and ....
             </div>
             <div className={styles.readMoreBTN}>Read More</div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -357,7 +357,7 @@ export default function TestHome() {
       </section> */}
 
       {/* SUBSCRIPTION SECTION */}
-      <section>
+      {/* <section>
         <div className={styles.gridContainerSubscription}>
           <div className={styles.subscriptionContent}>
             <div className={styles.subscriptionTitle}>SUBSCRIPTION</div>
@@ -378,7 +378,7 @@ export default function TestHome() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FOOTER SECTION */}
       <section className={styles.footerSection}>

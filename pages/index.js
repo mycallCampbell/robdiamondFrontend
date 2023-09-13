@@ -20,168 +20,428 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      {/*  META DATA */}
-      <Head>
-        <title>ROB DIAMOND</title>
-        <meta name="description" content="Rolex Specialistss" />
-        <meta property="og:image" content="faviconRob.ico" />
-        <meta
-          name="facebook-domain-verification"
-          content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
-        />
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
+    <>
+      <div>
+        {/* META */}
+        <Head>
+          <title>ROB DIAMOND</title>
+          <meta name="description" content="Rolex Home Page" />
+          <meta property="og:image" content="faviconRob.ico" />
+          <meta
+            name="facebook-domain-verification"
+            content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
+          />
+          <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
 
-        <link rel="icon" href="/faviconRob.ico" />
-      </Head>
+          <link rel="icon" href="/faviconRob.ico" />
+        </Head>
+      </div>
 
-      <main className={styles.main}>
-        {/* HERO SECTION*/}
-        <div className={styles.heroImage}>
-          <Image src={"/hero_daytona.JPG"} width={3360} height={2240} />
+      {/* <div className={styles.topBar}>
+        <div className={styles.topBarContent}>
+          UPDATED: 25th JULY 2023 - 01:13
         </div>
+      </div> */}
 
-        {/* DESKTOP */}
-        <div className={styles.heroImageDesktop}>
-          <Image src={"/hero_daytona_desktop.png"} width={3348} height={1017} />
+      {/* HERO SECTION MOBILE */}
+      <div className={styles.heroMobile}>
+        <Image src={"/hero_daytona.JPG"} width={3360} height={2240} />
+      </div>
+
+      {/* HERO SECTION DESKTOP */}
+      <div className={styles.heroDesktop}>
+        <Image src={"/hero_daytona_desktop.png"} width={3246} height={1014} />
+      </div>
+
+      {/* CTA CONTACT MOBILE*/}
+      <div className={styles.contactBTN}>
+        <a href="tel:07976753254">Contact</a>
+      </div>
+
+      {/* CTA CONTACT DESKTOP*/}
+      <div className={styles.gridContainerContactBTN}>
+        <div></div>
+        <div className={styles.contactBTNDesktop}>
+          <div className={styles.contactImage}>
+            <Image src={"/call.png"} width={25} height={25} />
+          </div>
+          <div>
+            <a href="tel:07976753254">Contact</a>
+          </div>
         </div>
+        <div></div>
+      </div>
 
-        <div className={styles.caption}>
-          <p className={styles.readyFor}>Ready for Your Perfect</p>
-          <h2>ROLEX</h2>
-        </div>
+      <section className={styles.mainContainer}>
+        {/* TTILE LAYOUT MOBILE */}
+        <div className={styles.categoryTitleMobile}>CATEGORIES</div>
 
-        {/* CTA */}
-        <div className={styles.heroBtn}>
-          <Link
-            href={"https://wa.me/447976753254?text=Welcome%20to%20RobDiamond"}
-          >
-            WHATSAPP
+        {/* TITLE LAYOUT DESKTOP */}
+
+        <div className={styles.containerTitleDesktop}>
+          <div className={styles.categoryTitleDesktop}>CATEGORIES</div>
+          <Link href={'/watches'}>
+            <div className={styles.viewAllBTNDesktop}>View All</div>
           </Link>
         </div>
-        <div className={styles.heroBtnDesktop}>
-          <a href="tel:07976753254">07976753254</a>
-        </div>
 
-        {/* CATEGORIES SECTION */}
-
-        <p className={styles.collectionTitle}>CATEGORIES</p>
-
-        <div className={styles.gridContainer}>
+        <div className={styles.gridContainerCategories}>
           <Link href={"/datejust"}>
-            <div className={styles.grid}>
-              <Image
-                src={`/watches/datejust126231jubileewimbledon/126231datejust1.JPG`}
-                width={840}
-                height={560}
-              />
-              <div className={styles.gridContent}>
-                <p className={styles.gridTitleRolex}>ROLEX</p>
-                <p>DATEJUST</p>
+              <div className={styles.categoryGrid}>
+                <div className={styles.categoryImageContainer}>
+                  <Image
+                    src={`/watches/datejust126231jubileewimbledon/126231datejust1.JPG`}
+                    width={840}
+                    height={560}
+                    className={styles.categoryImage}
+                  />
+                </div>
+                <div className={styles.contentBG}>
+                  <div className={styles.contentRolexContainer}>
+                    <p className={styles.rolex}>Rolex</p>
+                    <p className={styles.category}>DateJust</p>
+                  </div>
+                </div>
+              </div>
+          </Link>
+
+          <Link href={"/daydate"}>
+            <div className={styles.categoryGrid}>
+              <div className={styles.categoryImageContainer}>
+                <Image
+                  src={`/watches/daydate228349RBRpresidentialolive/228349RBRdaydate1.JPG`}
+                  width={840}
+                  height={560}
+                  className={styles.categoryImage}
+                />
+              </div>
+              <div className={styles.contentBG}>
+                <div className={styles.contentRolexContainer}>
+                  <p className={styles.rolex}>Rolex</p>
+                  <p className={styles.category}>DayDate</p>
+                </div>
               </div>
             </div>
           </Link>
 
           <Link href={"/GMT-MasterII"}>
-            <div className={styles.grid}>
-              <Image
-                src={`/watches/GMT-MasterII126711CHNRoysterblack/126711CHNRGMT-MasterII1.JPG`}
-                width={840}
-                height={560}
-              />
-              <div className={styles.gridContent}>
-                <p className={styles.gridTitleRolex}>ROLEX</p>
-                <p>GMT-MASTER II</p>
+            <div className={styles.categoryGrid}>
+              <div className={styles.categoryImageContainer}>
+                <Image
+                  src={`/watches/GMT-MasterII126711CHNRoysterblack/126711CHNRGMT-MasterII1.JPG`}
+                  width={840}
+                  height={560}
+                  className={styles.categoryImage}
+                />
               </div>
-            </div>
-          </Link>
-
-          <Link href={"/daytona"}>
-            <div className={styles.grid}>
-              <Image
-                src={`/watches/daytona116506oysterplatona/116506daytona1.JPG`}
-                width={840}
-                height={560}
-              />
-              <div className={styles.gridContent}>
-                <p className={styles.gridTitleRolex}>ROLEX</p>
-                <p>DAYTONA</p>
+              <div className={styles.contentBG}>
+                <div className={styles.contentRolexContainer}>
+                  <p className={styles.rolex}>Rolex</p>
+                  <p className={styles.category}>GMT-Master II</p>
+                </div>
               </div>
             </div>
           </Link>
 
           <Link href={"/submariner"}>
-            <div className={styles.grid}>
-              <Image
-                src={
-                  "/watches/submariner116611LVoystergreen/116611LVsubmariner1.JPG"
-                }
-                width={840}
-                height={560}
-              />
-              <div className={styles.gridContent}>
-                <p className={styles.gridTitleRolex}>ROLEX</p>
-                <p>SUBMARINER</p>
+              <div className={styles.categoryGrid}>
+                <div className={styles.categoryImageContainer}>
+                  <Image
+                    src={
+                      "/watches/submariner116611LVoystergreen/116611LVsubmariner1.JPG"
+                    }
+                    width={840}
+                    height={560}
+                    className={styles.categoryImage}
+                  />
+                </div>
+                <div className={styles.contentBG}>
+                  <div className={styles.contentRolexContainer}>
+                    <p className={styles.rolex}>Rolex</p>
+                    <p className={styles.category}>Submariner</p>
+                  </div>
+                </div>
               </div>
-            </div>
           </Link>
 
           <Link href={"/skydweller"}>
-            <div className={styles.grid}>
-              <Image
-                src={`/watches/skydweller326933oysterchampagne/326933skydweller1.JPG`}
-                width={840}
-                height={560}
-              />
-              <div className={styles.gridContent}>
-                <p className={styles.gridTitleRolex}>ROLEX</p>
-                <p>SKYDWELLER</p>
+              <div className={styles.categoryGrid}>
+                <div className={styles.categoryImageContainer}>
+                  <Image
+                    src={`/watches/skydweller326933oysterchampagne/326933skydweller1.JPG`}
+                    width={840}
+                    height={560}
+                    className={styles.categoryImage}
+                  />
+                </div>
+                <div className={styles.contentBG}>
+                  <div className={styles.contentRolexContainer}>
+                    <p className={styles.rolex}>Rolex</p>
+                    <p className={styles.category}>SkyDweller</p>
+                  </div>
+                </div>
               </div>
-            </div>
           </Link>
 
-          <Link href={"/daydate"}>
-            <div className={styles.grid}>
-              <Image
-                src={`/watches/daydate228349RBRpresidentialolive/228349RBRdaydate1.JPG`}
-                width={840}
-                height={560}
-              />
-              <div className={styles.gridContent}>
-                <p className={styles.gridTitleRolex}>ROLEX</p>
-                <p>DAYDATE</p>
+          <Link href={"/daytona"}>
+              <div className={styles.categoryGrid}>
+                <div className={styles.categoryImageContainer}>
+                  <Image
+                    src={`/watches/daytona116506oysterplatona/116506daytona1.JPG`}
+                    width={840}
+                    height={560}
+                    className={styles.categoryImage}
+                  />
+                </div>
+                <div className={styles.contentBG}>
+                  <div className={styles.contentRolexContainer}>
+                    <p className={styles.rolex}>Rolex</p>
+                    <p className={styles.category}>Daytona</p>
+                  </div>
+                </div>
               </div>
-            </div>
           </Link>
         </div>
-        <Link href={"/watches"}>
-          <div className={styles.heroBtn}>VIEW ALL</div>
+
+        {/* CTA VIEW ALL */}
+        <Link href={'/watches'}>
+          <div className={styles.viewAllBTN}>View All</div>
         </Link>
 
-        {/* <div className={styles.space}></div> */}
-
         {/* HIGHLIGHT SECTION */}
-        <div className={styles.blogContainer}>
-          <div className={styles.blog}>
+        <div className={styles.highlightTitleMobile}>HIGHLIGHTS</div>
+
+        {/* HGIHLIGHT MOBILE */}
+        <div className={styles.highlightContainerMobile}>
+          <div className={styles.highlightImageContainer}>
             <Image
-              className={styles.blogImage}
-              src={"/highlight_image.jpg"}
-              width={3360}
+              src={"/hero_image_template.jpg"}
+              className={styles.highlightImage}
+              width={1200}
+              height={602}
+            />
+          </div>
+          <div className={styles.highlightContentRolex}>Rolex</div>
+          <div className={styles.highlightContentModel}>Sky Dweller</div>
+          <div className={styles.highlightContent}>
+            Introducing the Rolex Skydweller: where elegance meets precision.
+            With its iconic design, dual time zones, and ....
+          </div>
+          <Link href={'/landingSkyDweller'}>
+            <div className={styles.readMoreBTN}>Read More</div>
+          </Link>
+        </div>
+
+        {/* HIGHLIGHT DESKTOP */}
+        <div className={styles.highlightTitleDesktop}>HIGHLIGHTS</div>
+
+        <div className={styles.highlightContainerDesktop}>
+          <div className={styles.highlightImageContainer}>
+            <Image
+              src={"/sky_dweller_highlights.JPG"}
+              className={styles.highlightImage}
+              width={3320}
               height={2240}
             />
-            <div className={styles.blogCaption}>
-              <p>THE SOPHISTICATED SKY DWELLER</p>
+            <div className={styles.highlightContentRolexDesktop}>Rolex</div>
+            <div className={styles.highlightContentModelDesktop}>
+              Sky Dweller
+            </div>
+            <div className={styles.highlightContentDesktop}>
+              Introducing the Rolex Skydweller: where elegance meets precision.
+              With its iconic design, dual time zones, and ....
+            </div>
+            <Link href={'landingSkyDweller'}>
+            <div className={styles.readMoreBTN}>Read More</div>
+            </Link>
+          </div>
+
+          {/* <div className={styles.highlightImageContainer}>
+            <Image
+              src={"/daytona_highlights.JPG"}
+              className={styles.highlightImage}
+              width={3320}
+              height={2240}
+            />
+            <div className={styles.highlightContentRolexDesktop}>Rolex</div>
+            <div className={styles.highlightContentModelDesktop}>Daytona</div>
+            <div className={styles.highlightContentDesktop}>
+              Introducing the Rolex Daytona: where elegance meets precision.
+              With its iconic design, dual time zones, and ....
+            </div>
+            <div className={styles.readMoreBTN}>Read More</div>
+          </div> */}
+        </div>
+      </section>
+
+      {/* GUIDES SECTION */}
+      <section>
+        {/* GUIDES MOBILE */}
+        <div className={styles.guidesImageContainerMobile}>
+          <Image
+            src={"/rotatedRolex.JPG"}
+            className={styles.guidesImage}
+            width={3320}
+            height={2240}
+          />
+          <div className={styles.guidesTitle}>Guides</div>
+          <div className={styles.guidesContent1}>All You Need to Know....</div>
+          <div className={styles.guidesContent2}>
+          
+            Checkout our Latest Guides{" "}
+          </div>
+          <Link href={'/chronoMasterpiece'}>
+            <div className={styles.seeGuidesBTN}>View All</div>
+          </Link>
+        </div>
+
+        {/* GUIDES DESKTOP */}
+        <div className={styles.guidesImageContainerDesktop}>
+          <Image
+            src={"/rotated_rolex_desktop.JPG"}
+            className={styles.guidesImage}
+            width={3357}
+            height={1392}
+          />
+          <div className={styles.guidesTitleDesktop}>Guides</div>
+          <div className={styles.guidesContent1}>All You Need to Know....</div>
+          <div className={styles.guidesContent2}>
+            Checkout our Latest Guides
+          </div>
+          <Link href={'/chronoMasterpiece'}>
+            <div className={styles.seeGuidesBTNDesktop}>View All</div>
+          </Link>
+        </div>
+      </section>
+
+      {/* BLOGS SECTION */}
+      <section>
+        <div className={styles.blogsTitle}>BLOGS</div>
+
+        {/* BLOGS MOBILE */}
+        <div className={styles.blogContainer}>
+          <Image
+            src={"/blog_image_wimbledon.JPG"}
+            className={styles.blogImage}
+            width={2000}
+            height={1333.5}
+          />
+        </div>
+        <Link href={'/introBlog'}>
+          <div className={styles.readMoreBTNBlog}>Read More</div>
+        </Link>
+
+
+        {/* BLOGS DESKTOP */}
+        <div className={styles.blogContainerDesktop}>
+          <div className={styles.blogImageContainer}>
+            <Image
+              src={"/blog_image_wimbledon.JPG"}
+              className={styles.blogImage}
+              width={2000}
+              height={1333.5}
+            />
+          </div>
+          <div className={styles.blogBGContainer}>
+            <Image
+              src={"/blog_bg_desktop.png"}
+              className={styles.blogBG}
+              width={2000}
+              height={1333.5}
+            />
+            <div className={styles.blogsContentContainerDesktop}>
+              <div className={styles.blogsContentTitleDesktop}>
+                The Time Keeper....
+              </div>
+
+              <div className={styles.blogsContentSubTitleDesktop}>
+                Why, How and What's Next....
+              </div>
+              <Link href={'/introBlog'}>
+                <div className={styles.readMoreBTNBlogsDesktop}>Read More</div>
+              </Link>
             </div>
           </div>
-          <div className={styles.readMoreBTN}>
-            <Link href={"/#"}>READ MORE</Link>
-          </div>
-
-          {/* DESKTOP ONLY */}
         </div>
-      </main>
+      </section>
 
-      <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
+      {/* REVIEW SECTION */}
+      {/* <section>
+        <div className={styles.reviewImageContainer}>
+          <Image
+            src={"/rolexBlueClose.JPEG"}
+            className={styles.reviewImage}
+            width={816}
+            height={693}
+          />
+          <div className={styles.reviewsTitle}>REVIEWS</div>
+        </div>
+      </section> */}
+
+      {/* SUBSCRIPTION SECTION */}
+      {/* <section>
+        <div className={styles.gridContainerSubscription}>
+          <div className={styles.subscriptionContent}>
+            <div className={styles.subscriptionTitle}>SUBSCRIPTION</div>
+            Enter Your Email address to recieve our latest updates on Guides and
+            Blogs
+          </div>
+          <div className={styles.subscriptionContainer}>
+            <div className={styles.subscriptionEmailContent}>
+              Enter Your Email Address
+            </div>
+            <div className={styles.subscriptionArrow}>
+              <Image
+                src={"/right-arrow-white.png"}
+                className={styles.whiteArrow}
+                width={32}
+                height={32}
+              />
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* FOOTER SECTION */}
+      {/* <section className={styles.footerSection}>
+        <div className={styles.footerContainer}>
+          <div className={styles.footerContentContainerColumn}>
+            <Link href={"contact"}>
+              <div className={styles.contentItemColumn}>Contact</div>
+            </Link>
+            <Link href={"#"}>
+              <div className={styles.contentItemColumn}>Returns</div>
+            </Link>
+            <Link href={"#"}>
+              <div className={styles.contentItemColumn}>Reviews</div>
+            </Link>
+          </div>
+          <div className={styles.instagramIcon}>
+            <Link href={"#"}>
+              <Image src={"/instagram-white.png"} width={32} height={32} />
+            </Link>
+          </div>
+          <div className={styles.footerContentContainerRow}>
+            <Link href={"#"}>
+              <div className={styles.contentItemRow}>Terms and Conditions</div>
+            </Link>
+            <Link href={"#"}>
+              <div className={styles.contentItemRow}>FAQs</div>
+            </Link>
+            <Link href={"#"}>
+              <div className={styles.contentItemRow}>Privacy Policy</div>
+            </Link>
+          </div>
+        </div>
+      </section> */}
+    <div className={styles.footerImage}>
+      <Image src={'/footer_image_canary_wharf.jpg'} width={1638} height={880} />
     </div>
+
+    <div className={styles.locationTitle}>LOCATION </div>
+    <div className={styles.locationAddress}>25 Cabot Square, Canary Wharf, London E1 44Q</div>
+    <div className={styles.locationUnited}>United Kingdom</div>
+    <div className={styles.space}></div>
+    </>
   );
 }

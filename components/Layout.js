@@ -58,6 +58,46 @@ function Layout({ children }) {
         </ul>
       </nav>
 
+      {/* DESKTOP VERSION */}
+
+      <div className={styles.containerGridDesktop}>
+        <div>
+        </div>
+
+        {/* TITLE */}
+        <Link href={'/#'}>
+          <h1 className={styles.titleItem}>ROB DIAMOND</h1>
+        </Link>
+
+        {/* MESSAGE ICON */}
+        <div className={styles.messageIconContainer}>
+          <div>
+            <Image src={"/phone_icon.png"} width={32} height={32} />
+          </div>
+        </div>
+      </div>
+
+      <nav className={styles.desktopNavContainer}>
+        <ul className={styles.desktopNav}>
+         <Link href={'watches'}>
+            <li className={styles.listItem}>WATCHES</li>
+          </Link>
+          <Link href={'/landingSkyDweller'}>
+            <li className={styles.listItem}>HIGHLIGHTS</li>
+          </Link>
+          <Link href={'/chronoMasterpiece'}>
+            <li className={styles.listItem}>GUIDES</li>
+          </Link>
+          <Link href={'/introBlog'}>
+            <li className={styles.listItem}>BLOGS</li>
+          </Link>
+          <Link href={'/contact'}>
+            <li className={styles.listItem}>CONTACT</li>
+          </Link>
+        </ul>
+
+      </nav>
+
       <div className={styles.container}>{children}</div>
     </>
   );

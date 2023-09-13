@@ -40,7 +40,7 @@ export default function chronoMasterpiece() {
         
         <div className={styles.subTitle}>The Fitting of the Rolex</div>
 
-        <div>
+        <div className={styles.wrist}>
         <Image src={'/wrist.JPG'} width={3360} height={2240} />
         </div>
 
@@ -53,7 +53,7 @@ export default function chronoMasterpiece() {
         It’s pertinent to note that in the older versions of Rolex models you needed to remove the bracelet links if you wanted to adjust the size to accommodate a smaller wrist. Times have moved on and Rolex first introduced a Glide Lock Clasp feature in 2008 to allow for a fitted timepiece without the requirement of missing links. Therefore, if you are purchasing a newer model Rolex, ensure that there are no missing links. 
         </div>
 
-        <div>
+        <div className={styles.braceletJubilee}>
         <Image src={'/bracelet_jubilee.jpeg'} width={1086} height={724} />
         </div>
 
@@ -63,7 +63,7 @@ export default function chronoMasterpiece() {
 
         <div className={styles.subTitle}>The Fun Stuff</div>
 
-        <div>
+        <div className={styles.batmanGold}>
         <Image src={'/batman_gold.JPG'} width={3360} height={2240} />
         </div>
 
@@ -108,7 +108,7 @@ export default function chronoMasterpiece() {
         </div>
 
         
-        <div>
+        <div className={styles.watchesGold}>
         <Image src={'/tri_watches_gold.JPG'} width={3360} height={2240} />
         </div>
 

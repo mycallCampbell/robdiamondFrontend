@@ -1,372 +1,720 @@
 /* color for 'Rob' on the title: #a37e2c */
 
-/* BTN */
-.heroBtn {
-  margin: 10px auto 20px auto;
-  padding: 10px 80px;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 2px;
+.mainContainer {
+  margin: 10px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #a09e9e;
+  
+}
+
+.topBarContent {
+  color: #fff;
+}
+
+.heroDesktop {
+  display: none;
+}
+
+.containerTitleDesktop {
+  display: none;
+}
+
+.contactBTN {
   background: #91c0dc;
-  border: 2px solid #91c0dc;
+  color: #fff;
+  font-size: 1.1rem;
   font-weight: 700;
-  font-size: 0.9rem;
+  text-align: center;
+  padding: 13px;
+  margin: 20px 110px;
+  border-radius: 22px;
+}
+
+.contactBTNDesktop {
+  display: none;
+}
+
+.viewAllBTN {
+  background: #91c0dc;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 13px;
+  margin: 20px 90px 50px 90px;
+  border-radius: 22px;
   cursor: pointer;
 }
 
-.heroBtnDesktop {
-  display: none;
-}
 .readMoreBTN {
-  margin: 10px 20px;
-  padding: 10px 80px;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 2px;
   background: #91c0dc;
-  border: 2px solid #91c0dc;
+  color: #fff;
+  font-size: 1.1rem;
   font-weight: 700;
-  font-size: 0.9rem;
+  text-align: center;
+  padding: 13px;
+  margin: 20px 90px;
+  border-radius: 22px;
+  cursor: pointer;
+} 
+
+.readMoreBTNBlog {
+  display: block;
+  background: #91c0dc;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 13px;
+  margin: 20px 90px;
+  border-radius: 22px;
   cursor: pointer;
 }
-.heroImageDesktop{
-  display: none;
-}
-.readyFor {
-  margin-bottom: 5px;
-  text-transform: uppercase;
+
+.seeGuidesBTN {
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 5px solid #91c0dc;
+  color: #323232;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 13px 40px;
+  margin: 10px 0px;
+  border-radius: 22px;
+  cursor: pointer;
 }
 
-.gridContainer {
+
+/* CATEGORIES SECTION  */
+.categoryTitleMobile {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.gridContainerCategories {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.collectionTitle {
-  font-size: 1.4rem;
-  margin: 15px;
-}
-
-.grid {
-  -webkit-filter: brightness(100%);
+.categoryGrid {
   margin: 10px;
-  text-align: center;
   cursor: pointer;
 }
 
-.grid:hover {
-  -webkit-filter: brightness(70%);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+.categoryTitleMobile {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0 20px 0;
 }
 
-.gridContent {
+
+.categoryImage {
+  display: block;
+  /* border-radius: 22px 22px 0 0; */
+  border-radius: 11px 11px 11px 11px;
+}
+.contentBG {
+  /* background:#a09e9e; */
+  text-align: center;
+  /* padding: 10px; */
+
+
+}
+
+.contentRolexContainer {
+  /* margin: 3px; */
+}
+.rolex {
+  color: #323232;
+  font-size: 1rem;
+}
+
+.category {
+  color: #323232;
+  font-size: 1.2rem;
+
+}
+
+/* HIGHLIGHT SECTION */
+
+.highlightTitleMobile {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.highlightTitleDesktop {
+  display: none;
+}
+
+.highlightContainerDesktop {
+  display: none;
+}
+
+.highlightImageContainer {
+  margin: 13px;
+  border-radius: 24px;
+}
+
+.highlightImage {
+  border-radius: 24px;
+}
+
+.highlightContentRolex {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #323232;
+  margin: 10px auto 0 auto;
+}
+
+.highlightContentModel {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #323232; 
+}
+
+.highlightContent {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #323232;
+  margin: 10px 30px;
+}
+
+
+/* GUIDES SECTION */
+
+.guidesImageContainerDesktop {
+  display: none;
+}
+.guidesImage {
+  opacity: 0.3;
+}
+
+.guidesImageContainerMobile {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1000;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 1) 100%)
+}
+
+.guidesTitle {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1000;
+}
+
+.guidesContent1 {
+  position: absolute;
+  top: 30%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin: 7px 20px;
+}
+
+.guidesContent2 {
+  position: absolute;
+  top: 40%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  margin: 20px 20px 0px 20px;
+}
+
+
+/* BLOGS */
+
+.blogsTitle {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 60px 0 20px 0;
+}
+.blogContainer {
+  margin: 10px 22px;
+  cursor: pointer;
+}
+
+.blogContainerDesktop {
+  display: none;
+}
+.blogImage {
+  border-radius: 22px;
+}
+.blogsContentTitle {
+text-align: center;
+font-size: 19px;
+font-weight: 700;
+color: #323232;
+}
+.blogsContentSubTitle {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #323232;
   margin: 5px;
 }
 
-.gridTitleRolex {
-  font-size: 0.8rem;
-  margin: 2px;
+/* REVIEWS SECTION */
+
+.reviewImageContainer {
+  position: relative;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 
-/* BLOG SECTION */
-
-.blogContent{
-  display: none;
+.reviewImage {
+opacity: 0.3;
 }
-.blog {
-  color: #2e2e2e;
-  letter-spacing: 3px;
-  font-weight: 500;
+
+.reviewsTitle {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
   text-align: center;
-  cursor: pointer;
-  -webkit-filter: brightness(100%);
 }
 
+/* SUBSCRIPTION TITLE */
 
-.blogImage {
-  z-index: -1000;
-}
-
-.blogCaption p {
-  letter-spacing: 3px;
-  font-weight: 500;
+.subscriptionTitle {
   text-align: center;
-  margin: 20px 10px 0 10px; 
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 60px auto 10px auto;
 }
 
-.bannerBottom {
-  min-height: 100px;
+.subscriptionContent {
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 10px 20px;
+  color: #323232;
+  max-width: 400px;
+}
+
+.subscriptionContainer {
+  display: flex;
+  align-items: center;
+}
+
+.subscriptionEmailContent {
+  margin: 15px 0 15px 15px;
+  color: #323232;
   width: 100vw;
-  background: #a37e2c;
-  padding-top: 13px;
+  border-radius: 9px 0 0 9px;
+  padding: 13px;
+  font-style: italic;
+  font-size: 14px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
 }
 
-.main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
+.subscriptionArrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  background: #91c0dc;
+  margin: 15px 15px 15px 0;
+  height: 47px;
+  width: 70px;
+  border-radius: 0 9px 9px 0;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
 }
 
-.title a {
-  color: #2e2e2e;
-  text-decoration: none;
+/* FOOTER SECTION */
+
+.footerContainer {
+  background: #a09e9e;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.footerContentContainerColumn {
+  color: #fff;
+  padding: 50px 50px 20px 50px;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.footerContentContainerRow {
+  display: flex;
+  color: #fff;
+  font-size: 1rem;
 }
 
-.title,
-.description {
+.contentItemColumn {
+  margin: 0 auto 20px auto;
+  cursor: pointer;
+}
+
+.contentItemRow {
+  margin: 0 auto 20px auto;
+  cursor: pointer;
+}
+
+.instagramIcon {
+  padding: 0 0 20px 50px;
+  cursor: pointer;
+}
+
+.footerImage {
+  margin-top: 60px;
+}
+
+.location {
+  margin: 3px 10px;
+  font-weight: 700;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.locationTitle {
+margin: 20px auto 5px auto;
+text-align: center;
+font-size: 1.1rem;
+}
+
+.locationAddress {
+margin: 5px;
+text-align: center;
+color: #717171;
+}
+.locationUnited {
+text-align: center;
+color: #717171;
 }
 
 .space {
-  margin-top: 80px;
-}
-
-.heroContent{
-  z-index: 1;
-}
-
-.caption {
-  text-align: center;
-  font-size: 1.3rem;
-  margin: 40px 20px 20px 20px;
-  color: #1f1f1f;
-}
-  
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: #006039;
-  text-decoration: none;
-  border: 1px solid #a37e2c;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-  cursor: pointer;
-}
-
-.card h2{
-  text-align: center;
-}
-
-.card:focus,
-.card:active {
-  color: #006039;
-  border-color: #a37e2c;
-}
-
-.card:hover{
-  color: #fff;
-  background-color: #006039;
-}
-
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-.viewDetailsBTN{
-  border: solid 2px #a37e2c;
-  border-radius: 15px;
-  padding: 10px 30px;
-  margin: 14px 60px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  cursor: pointer;
-  background:#91c0dc;
-  color: #fff;
-}
-
-.viewDetailsBTN:hover{
-  color: #fff;
+height: 30px;
 }
 
 @media (min-width: 768px) {
 
-.heroBtn {
-  display: none;
-}
-
-.heroBtnDesktop {
-  display: block;
-  margin: 10px auto 10px auto;
-  padding: 10px 80px;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 2px;
-  background: #91c0dc;
-  border: 2px solid #91c0dc;
-  font-weight: 700;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-  .heroImage{
-    display: none;
+  .readMoreBTNBlog {
+      display: none;
   }
 
-  .heroImageDesktop{
-    display: block;
-  }
-
-  .collectionTitle{
-    font-size: 2rem;
-    margin-top: 50px;
-  }
-
-  .gridContainer{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    margin: 0 20px;
-  }
-  .grid {
-    margin: 30px 40px;
-    cursor: pointer;
-    border: solid 1px #afaeae;
-
-  }
-
-  .gridContent{
-    font-size: 1rem;
-  }
-
-  .blogContainer{
-    display: grid;
-    grid-template-columns: 65% 35%;
-    align-items: center;
-    margin: 20px;
-  }
-
-  .blogContent{
-    display: block; 
-    text-align: start;
-  }
-
-  .blogContainer p{
-    margin-top: 30px;
-    font-size: 2rem;
-  }
-
-  .blog p{
-    margin-top: -40px;
-    z-index: 100;
-  }
-
-  .blogCaption{
-    display: none;
-  }
-
-  .theLatest{
-    display: none;
-  }
-  .theLatestTitle{
-    display: block;
-    text-align: start;
-    font-size: 1.5rem;
-    margin: 0 0 0 20px; 
-  }
-
-  .blogLatestConten{
-    font-size: 0.9rem !important;
-    color: #2e2e2e;
-    letter-spacing: 3px;
-    line-height: 1.5;
-    font-weight: 500;
-    margin: 20px;
-  }
-  .card {
-    min-height: 200px;
-  }
-
-  .middleCard {
-    text-align: center;
-    font-size: 1.3rem;
-  }
-    
-    .imageBanner {
+  .gridContainerContactBTN {
       display: grid;
-      grid-template-columns: 33% 33% 33%;
-    }
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+  }
+  .contactBTNDesktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #91c0dc;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      padding: 13px;
+      margin: 30px 30px 20px 30px;
+      border-radius: 11px;
+      cursor: pointer;
+  }
 
-    .bluezyTitle {
+  .viewAllBTNDesktop {
+      background: #91c0dc;
+      color: #fff;
+      font-size: 16px;
       text-align: center;
-      margin: 20px;
-    }
-    
-    .contentBluezy {
-      margin: 20px;
-    }
-    
-    .blueRolexImage {
+      padding: 13px 25px;
+      margin: 20px 15px;
+      border-radius: 11px;
+      cursor: pointer;
+  }
+
+  .seeGuidesBTNDesktop {
+      position: absolute;
+      top: 73%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border: 2px solid #91c0dc;
+      color: #323232;
+      font-size: 1.6rem;
+      font-weight: 700;
       text-align: center;
-      margin-top: 20px;
-    }
+      padding: 13px 40px;
+      margin: 10px 0px;
+      border-radius: 22px;
+      cursor: pointer;
+  }
+
+  .viewAllBTN {
+      display: none;
+  }
   
-    .imageGrid {
+  .heroMobile {
+      display: none;
+  }
+
+  .heroDesktop {
+      display: block;
+  }
+
+  .containerTitleDesktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0 0 0;
+  }
+
+  .contactImage {
+      margin-right: 10px;
+  }
+
+  .contactBTN {
+      display: none;
+  }
+
+  .categoryTitleMobile {
+      display: none;
+  }
+
+  .categoryTitleDesktop {
+      color: #000;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin: 10px 15px;
+  }
+
+  .mainContainer {
+      margin: 50px;
+  }
+
+  .gridContainerCategories {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+  .highlightTitleDesktop {
+      display: block;
+      color: #000;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin: 70px auto 40px auto;
+  }
+
+  .highlightTitleMobile {
+      display: none;
+  }
+  .highlightContainerDesktop {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .highlightImageContainer {
+      margin: 0 5px;
+  }
+
+  .highlightContainerMobile {
+      display: none;
+  }
+
+  .highlightContentDesktop {
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      color: #323232;
+      margin: 10px 70px;
+  }
+  .highlightContentRolexDesktop {
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      color: #323232;
+      margin: 10px auto 0 auto;
+  }
+
+  .highlightContentModelDesktop {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      color: #323232;
+      margin: 0 30px 15px 30px;
+  }
+
+  .guidesImageContainerMobile {
+      display: none;
+  }
+
+  .guidesImageContainerDesktop {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: -1000;
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 1) 100%)
+  }
+
+  .guidesTitleDesktop {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      font-weight: 700;
+      color: #fff;
+      z-index: 1000;
+  }
+
+  .guidesContentDesktop {
+      position: absolute;
+      display: block;
+      top: 30%;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      color: #fff;
+      margin: 7px 300px;
+  }
+
+  .guidesContent1 {
+      position: absolute;
+      top: 30%;
+      font-size: 1.7rem;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+      margin: 7px 20px;
+  }
+
+  .guidesContent2 {
+      position: absolute;
+      top: 40%;
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center;
+      color: #fff;
+      margin: 7px 20px;
+  }
+
+
+  .blogContainer {
+      display: none;
+  }
+
+  .blogContainerDesktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      margin: 20px 50px;
+  }
+
+  .blogImageContainer {
+      display: block;
+  }
+
+  .blogImage {
+      border-radius: 22px 0 0 22px;
+
+  }
+  .blogBGContainer {
+      position: relative;
+  }
+
+  .blogBG {
+      border-radius: 0 22px 22px 0;
+  }
+
+  .blogsContentContainerDesktop {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 400px;
+  }
+
+  .blogsContentTitleDesktop {
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      margin: 5px;
+  }
+
+  .blogsContentSubTitleDesktop {
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      margin: 0 auto 30px auto;
+  }
+
+  .readMoreBTNBlogsDesktop {
+      text-align: center;
+      align-items: center;
+      padding: 7px 70px; 
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 11px;
+      cursor: pointer;
+  }
+
+  .gridContainerSubscription {
       display: grid;
       grid-template-columns: 50% 50%;
-      justify-items: center;
-    }
-
-    .viewDetailsBTN {
-      margin: 0 300px;
-    }
-
-    .bannerBottom {
-      padding: 25px;
-      margin-bottom: 50px;
-    }
+      justify-content: space-around;
+      align-items: center;
+      margin: 50px 40px;
   }
+
+  .subscriptionTitle {
+      text-align: start;
+  }
+
+  .subscriptionContent {
+      text-align: start;
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin: 10px 20px;
+      color: #323232;
+      max-width: 400px;
+  }
+
+  .subscriptionArrow {
+      width: 120px;
+      cursor: pointer;
+  }
+
+   /* FOOTER */
+   .footerContentContainerRow {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+  }
+
+  .footerContentContainerColumn {
+      font-size: 1.3rem;
+
+  }
+}
