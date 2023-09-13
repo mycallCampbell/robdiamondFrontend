@@ -84,7 +84,7 @@ function Contact() {
         </Link>
       </div>
       <div className={styles.heroBtnDesktop}>07976753254</div>
-      <div className={styles.contactInfo}>
+      {/* <div className={styles.contactInfo}>
         <p>
           Please Fill out the form and we will respond within the first 24
           hours. All enquiries are handled by our in-house customer support
@@ -158,7 +158,7 @@ function Contact() {
             <a>Your Message Has been Sent</a>
           </div>
         )}
-      </form>
+      </form> */}
       <Footer src={"/cFooter.JPG"} width={3360} height={2240} />
     </section>
   );

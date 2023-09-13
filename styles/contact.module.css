@@ -29,17 +29,12 @@
     margin: 10px 20px;
   }
   
-  /* .label {
-    margin: 20px 20px 0 20px;
-    font-size: 1.1rem;
-  } */
   
   .message {
     margin: 20px 20px 0 20px;
   }
   
   .inputMessage {
-    /* min-height: 200px; */
     outline: none;
     padding: 10px;
     width: 90%;
@@ -80,7 +75,7 @@
     padding: 10px 60px;
     text-align: center;
     color: #ffffff;
-    border-radius: 2px;
+    border-radius: 22px;
     background: #91c0dc;
     border: 2px solid #91c0dc;
     font-weight: 700;
@@ -113,7 +108,7 @@
       padding: 10px 20px;
       text-align: center;
       color: #ffffff;
-      border-radius: 2px;
+      border-radius: 22px;
       background: #91c0dc;
       border: 2px solid #91c0dc;
       font-weight: 700;
