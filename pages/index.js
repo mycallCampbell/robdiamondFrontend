@@ -333,36 +333,26 @@ export default function Home() {
 
 
         {/* BLOGS DESKTOP */}
-        <div className={styles.blogContainerDesktop}>
-          <div className={styles.blogImageContainer}>
-            <Image
-              src={"/blog_image_wimbledon.JPG"}
-              className={styles.blogImage}
-              width={2000}
-              height={1333.5}
-            />
-          </div>
-          <div className={styles.blogBGContainer}>
-            <Image
-              src={"/blog_bg_desktop.png"}
-              className={styles.blogBG}
-              width={2000}
-              height={1333.5}
-            />
-            <div className={styles.blogsContentContainerDesktop}>
-              <div className={styles.blogsContentTitleDesktop}>
-                The Time Keeper....
-              </div>
 
-              <div className={styles.blogsContentSubTitleDesktop}>
-                Why, How and What's Next....
+          <div className={styles.blogGridDesktop}>
+            <div className={styles.blogImageContainerDesktop}>
+              <Image
+                src={"/blog_image_wimbledon.JPG"}
+                className={styles.blogImageDesktop}
+                width={2000}
+                height={1333.5}
+              />
+            </div>
+            <div className={styles.blogContentContainerDesktop}>
+              <div className={styles.blogContentDesktop}>
+                <div className={styles.blogContentTitleDesktop}>The Time Keeper....</div>
+                <div className={styles.blogContentSubTitleDesktop}>Renowned Trusted Deeler</div>
+                <Link href={'/introBlog'}>
+                <div className={styles.readMoreBTNBlogDesktop}>Read More</div>
+                </Link>
               </div>
-              <Link href={'/introBlog'}>
-                <div className={styles.readMoreBTNBlogsDesktop}>Read More</div>
-              </Link>
             </div>
           </div>
-        </div>
       </section>
 
       {/* REVIEW SECTION */}
@@ -435,10 +425,6 @@ export default function Home() {
         </div>
       </section> */}
     <Footer src={'/footer_image_canary_wharf.jpg'} width={3276} height={1760} />
-     
-      
-    
-
     
     </>
   );

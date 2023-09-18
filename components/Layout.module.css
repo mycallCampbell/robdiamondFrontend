@@ -100,11 +100,11 @@
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   justify-content: center;
-  margin: 0 200px;
+  margin: 0 110px;
 }
 
 .listItem {
-  margin: 20px 0;
+  margin: 20px 10px;
   text-decoration: none;
   color: #000000;
   list-style: none;

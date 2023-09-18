@@ -179,7 +179,8 @@ function WatchProductPage({ product }) {
         <div className={styles.labelDescription}>{product.dial}</div>
       </div>
 
-      <Footer src={"/rolexGoldFooter.JPG"} width={3360} height={2240} />
+    <Footer src={'/footer_image_canary_wharf.jpg'} width={3276} height={1760} />
+      
     </div>
   );
 }

@@ -67,7 +67,7 @@ function datejust({ products }) {
       {/* CTA Desktop */}
       
           <div className={styles.contactDetailsBTNDesktop}>
-            <div>07976 753 254</div>    
+            07976 753 254    
           </div>
             
       {/* MAIN  */}
