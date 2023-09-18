@@ -381,7 +381,7 @@ export default function TestHome() {
       </section> */}
 
       {/* FOOTER SECTION */}
-      <section className={styles.footerSection}>
+      {/* <section className={styles.footerSection}>
         <div className={styles.footerContainer}>
           <div className={styles.footerContentContainerColumn}>
             <Link href={"#"}>
@@ -411,7 +411,7 @@ export default function TestHome() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

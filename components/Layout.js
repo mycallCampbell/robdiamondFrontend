@@ -73,6 +73,7 @@ function Layout({ children }) {
         <div className={styles.messageIconContainer}>
           <div>
             <Image src={"/phone_icon.png"} width={32} height={32} />
+            <a href="tel:07976753254"></a>
           </div>
         </div>
       </div>

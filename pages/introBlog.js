@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/introBlog.module.css';
-
+import Footer from '../components/Footer';
 
 
 export default function introBlog() {
@@ -99,15 +99,8 @@ export default function introBlog() {
       </Link>
     </div>
 
-    <div>
-      <Image src={'/footer_image_canary_wharf.jpg'} width={1638} height={880} />
-    </div>
-
-    <div className={styles.locationTitle}>LOCATION </div>
-    <div className={styles.locationAddress}>25 Cabot Square, Canary Wharf, London E144Q</div>
-    <div className={styles.locationUnited}>United Kingdom</div>
-
-    <div className={styles.space}></div>
+    <Footer src={'/footer_image_canary_wharf.jpg'} width={3276} height={1760} />
+    
     </>
   )
 }

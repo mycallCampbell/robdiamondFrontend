@@ -356,7 +356,7 @@ opacity: 0.3;
 
 /* FOOTER SECTION */
 
-.footerContainer {
+/* .footerContainer {
   background: #a09e9e;
 }
 
@@ -374,9 +374,9 @@ opacity: 0.3;
 .contentItemColumn {
   margin: 0 auto 20px auto;
   cursor: pointer;
-}
+} */
 
-.contentItemRow {
+/* .contentItemRow {
   margin: 0 auto 20px auto;
   cursor: pointer;
 }
@@ -384,7 +384,7 @@ opacity: 0.3;
 .instagramIcon {
   padding: 0 0 20px 50px;
   cursor: pointer;
-}
+} */
 
 .footerImage {
   margin-top: 60px;

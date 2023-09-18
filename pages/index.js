@@ -434,14 +434,12 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-    <div className={styles.footerImage}>
-      <Image src={'/footer_image_canary_wharf.jpg'} width={1638} height={880} />
-    </div>
+    <Footer src={'/footer_image_canary_wharf.jpg'} width={3276} height={1760} />
+     
+      
+    
 
-    <div className={styles.locationTitle}>LOCATION </div>
-    <div className={styles.locationAddress}>25 Cabot Square, Canary Wharf, London E1 44Q</div>
-    <div className={styles.locationUnited}>United Kingdom</div>
-    <div className={styles.space}></div>
+    
     </>
   );
 }

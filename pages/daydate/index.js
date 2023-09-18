@@ -26,10 +26,10 @@ function daydate({ products }) {
         <title>ROB DIAMOND</title>
         <meta name="description" content="Rolex DayDate" />
         <meta property="og:image" content="rob_diamond_logo.png" />
-        <meta
+        {/* <meta
           name="facebook-domain-verification"
           content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
-        />
+        /> */}
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
 
         <link rel="icon" href="/rob_diamond_logo.png" />
@@ -56,10 +56,17 @@ function daydate({ products }) {
         </p>
 
         {/* CTA  */}
-        <div className={styles.viewDetailsBTN}>
+        <div className={styles.contactDetailsBTN}>
           <a href="tel:07976753254">CALL NOW</a>
         </div>
       </div>
+
+      {/* CTA Desktop */}
+      
+      <div className={styles.contactDetailsBTNDesktop}>
+        <div>07976 753 254</div>    
+      </div>
+      
 
       {/* MAIN */}
       <main className={styles.mainContainer}>
@@ -90,7 +97,8 @@ function daydate({ products }) {
           </div>
         ))}
       </main>
-      <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
+      <Footer src={"/footer_image_canary_wharf.jpg"} width={3360} height={2240} />
+       
     </div>
   );
 }

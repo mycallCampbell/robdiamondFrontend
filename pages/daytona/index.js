@@ -60,9 +60,15 @@ function daytona({ products }) {
         </p>
 
         {/* CTA  */}
-        <div className={styles.viewDetailsBTN}>
+        <div className={styles.contactDetailsBTN}>
           <a href="tel:07976753254">CALL NOW</a>
         </div>
+      </div>
+
+      {/* CTA Desktop */}
+      
+      <div className={styles.contactDetailsBTNDesktop}>
+        <div>07976 753 254</div>    
       </div>
 
       {/* MAIN */}
@@ -94,7 +100,8 @@ function daytona({ products }) {
           </div>
         ))}
       </main>
-      <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
+    <Footer src={'/footer_image_canary_wharf.jpg'} width={3276} height={1760} />
+      
     </div>
   );
 }

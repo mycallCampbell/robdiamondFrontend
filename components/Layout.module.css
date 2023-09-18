@@ -22,6 +22,7 @@
 
 .messageIconContainer {
   text-align: end;
+  cursor: pointer;
 }
 
 .messageIconContainerDesktop {
@@ -115,4 +116,7 @@
   display: none;
 }
 
+.messageIconContainer {
+  display: none;
+ }
 }

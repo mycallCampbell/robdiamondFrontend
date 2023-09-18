@@ -69,6 +69,11 @@
 }
 
 @media (min-width: 768px) {
+
+    .heroImage {
+        display: flex;
+        justify-content: center;
+    }
     .tagTitle {
         margin: 40px;
         font-size: 1.5rem;
@@ -99,6 +104,8 @@
     }
 
     .braceletJubilee {
+        display: flex;
+        justify-content: center;
         padding: 40px 80px 40px 80px;
     }
 

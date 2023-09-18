@@ -57,12 +57,19 @@ function datejust({ products }) {
           Available with both Oyster and Jubilee bracelets and renowned for its
           popularity among watch enthusiasts and collectors.
         </p>
+        
         {/* CTA  */}
-        <div className={styles.viewDetailsBTN}>
+        <div className={styles.contactDetailsBTN}>
           <a href="tel:07976753254">CALL NOW</a>
         </div>
       </div>
 
+      {/* CTA Desktop */}
+      
+          <div className={styles.contactDetailsBTNDesktop}>
+            <div>07976 753 254</div>    
+          </div>
+            
       {/* MAIN  */}
       <main className={styles.mainContainer}>
         {products.map((product) => (
@@ -92,7 +99,7 @@ function datejust({ products }) {
           </div>
         ))}
       </main>
-      <Footer src={"/footer_rose.JPG"} width={3360} height={2240} />
+    <Footer src={'/footer_image_canary_wharf.jpg'} width={3276} height={1760} />
     </div>
   );
 }

@@ -39,10 +39,6 @@ text-align: center;
   font-size: 0.9rem;
   text-align: center;
 }
-/* .imageContainer {
-    cursor: pointer;
-} */
-
 
 
 .productContainer{
@@ -55,14 +51,46 @@ text-align: center;
     margin: 30px 0;
 }
 
-.viewDetailsBTN{
+.contactDetailsBTNDesktop {
+    display: none;
+}
+
+.contactDetailsBTN {
     border: solid 2px #91c0dc;
-    border-radius: 2px;
+    border-radius: 22px;
     padding: 10px 30px;
-    margin: 10px 30px;
+    margin: 10px 30px 40px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #91c0dc;
+}
+
+.contactDetailsBTN h4 {
     font-size: 1rem;
     font-weight: 500;
     color: #2e2e2e;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.contactDetailsBTN:hover{
+    color: #fff;
+    background-color: #91c0dc;
+}
+
+.viewDetailsBTN{
+    border: solid 2px #91c0dc;
+    border-radius: 22px;
+    padding: 10px 30px;
+    margin: 20px 70px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #91c0dc;
     letter-spacing: 3px;
     text-align: center;
     cursor: pointer;
@@ -71,7 +99,6 @@ text-align: center;
 .viewDetailsBTN h4 {
     font-size: 1rem;
     font-weight: 500;
-    color: #2e2e2e;
     letter-spacing: 3px;
     text-align: center;
 }
@@ -108,6 +135,25 @@ text-align: center;
 }
 
 @media (min-width: 768px) {
+
+    .contactDetailsBTNDesktop {
+        display: block;
+        border: solid 2px #91c0dc;
+        border-radius: 22px;
+        padding: 10px 30px;
+        margin: 10px 700px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+        background-color: #91c0dc;
+        letter-spacing: 3px;
+        cursor: pointer;
+    }
+
+    .contactDetailsBTN {
+        display: none;
+    }
 
     .mainContainer {
         display: grid;
