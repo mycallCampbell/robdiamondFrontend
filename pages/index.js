@@ -215,10 +215,10 @@ export default function Home() {
         <div className={styles.highlightContainerMobile}>
           <div className={styles.highlightImageContainer}>
             <Image
-              src={"/hero_image_template.jpg"}
+              src={"/sky_dweller_highlights.JPG"}
               className={styles.highlightImage}
-              width={1200}
-              height={602}
+              width={1660}
+              height={1120}
             />
           </div>
           <div className={styles.highlightContentRolex}>Rolex</div>
@@ -279,12 +279,12 @@ export default function Home() {
         {/* GUIDES MOBILE */}
         <div className={styles.guidesImageContainerMobile}>
           <Image
-            src={"/rotatedRolex.JPG"}
+            src={"/filler/dayDate_guides_bg.JPG"}
             className={styles.guidesImage}
             width={3320}
             height={2240}
           />
-          <div className={styles.guidesTitle}>Guides</div>
+          {/* <div className={styles.guidesTitle}>Guides</div> */}
           <div className={styles.guidesContent1}>All You Need to Know....</div>
           <div className={styles.guidesContent2}>
           
