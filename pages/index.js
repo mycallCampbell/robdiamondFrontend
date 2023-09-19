@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
@@ -22,10 +22,22 @@ import Footer from "../components/Footer";
 export default function Home() {
 
   const [cookie, setCookie] = useState(true)
+  let cookieCount = 0
+
 
   const handleCookie = () => {
-    setCookie(false)
+    if (cookieCount === 0) {
+      setCookie(false)
+    }
+
+    cookieCount++
   }
+
+
+  useEffect(() => {
+  const cookie = document.cookie
+  })
+
   return (
     <>
       <div>
