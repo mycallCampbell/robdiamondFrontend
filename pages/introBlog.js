@@ -12,7 +12,7 @@ export default function introBlog() {
 
     {/*  META DATA */}
     <Head>
-        <title>ROB DIAMOND</title>
+        <title>The Time Keeper</title>
         <meta name="Intro for Rolex Blog" content="The Time Keeper" />
         <meta property="og:image" content="faviconRob.ico" />
         
