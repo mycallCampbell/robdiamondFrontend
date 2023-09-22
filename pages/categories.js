@@ -19,8 +19,10 @@ export default function categories() {
           <link rel="icon" href="/faviconRob.ico" />
         </Head>
     <div className={styles.titleHeader}>CATEGORIES</div>
+
+    {/* DATEJUST */}
     
-    <Link href={'/datejust'}>
+    <Link href={'/datejust'}> 
         <div>
             <Image
                 src={`/watches/datejust126231jubileewimbledon/126231datejust1.JPG`}
@@ -30,10 +32,17 @@ export default function categories() {
             />
         </div>
     </Link>
-    <div className={styles.contentContainer}>
-        <div className={styles.rolexTitle}>Rolex</div>
-        <div className={styles.modelTitle}>DateJust</div>
-    </div>
+        <div className={styles.contentContainer}>
+            <div className={styles.rolexTitle}>Rolex</div>
+            <div className={styles.modelTitle}>DateJust</div>
+        </div>
+    <Link href={'/datejust'}> 
+        <div className={styles.viewDetailsBTN}>
+            <h4>VIEW</h4>
+        </div>
+    </Link>
+    
+    {/* DAYDATE */}
     
     <Link href={'/daydate'}>
         <div>
@@ -49,6 +58,13 @@ export default function categories() {
         <div className={styles.rolexTitle}>Rolex</div>
         <div className={styles.modelTitle}>DayDate</div>
     </div>
+    <Link href={'/daydate'}> 
+        <div className={styles.viewDetailsBTN}>
+            <h4>VIEW</h4>
+        </div>
+    </Link>
+
+    {/* GMT-MASTER II */}
 
     <Link href={"/GMT-MasterII"}>
         <div>
@@ -64,6 +80,13 @@ export default function categories() {
         <div className={styles.rolexTitle}>Rolex</div>
         <div className={styles.modelTitle}>GMT-Master II</div>
     </div>
+    <Link href={'/GMT-MasterII'}> 
+        <div className={styles.viewDetailsBTN}>
+            <h4>VIEW</h4>
+        </div>
+    </Link>
+
+    {/* SUBMARINER */}
 
     <Link href={'/submariner'}>
         <div>
@@ -79,6 +102,13 @@ export default function categories() {
         <div className={styles.rolexTitle}>Rolex</div>
         <div className={styles.modelTitle}>Submariner</div>
     </div>
+    <Link href={'/submariner'}> 
+        <div className={styles.viewDetailsBTN}>
+            <h4>VIEW</h4>
+        </div>
+    </Link>
+
+    {/* SKYDWELLER */}
 
     <Link href={'/skydweller'}>
         <div>
@@ -94,6 +124,13 @@ export default function categories() {
         <div className={styles.rolexTitle}>Rolex</div>
         <div className={styles.modelTitle}>SkyDweller</div>
     </div>
+    <Link href={'/skydweller'}> 
+        <div className={styles.viewDetailsBTN}>
+            <h4>VIEW</h4>
+        </div>
+    </Link>
+
+    {/* DAYTONA */}
 
     <Link href={'/daytona'}>
         <div>
@@ -109,6 +146,11 @@ export default function categories() {
         <div className={styles.rolexTitle}>Rolex</div>
         <div className={styles.modelTitle}>Daytona</div>
     </div>
+    <Link href={'/daytona'}> 
+        <div className={styles.viewDetailsBTN}>
+            <h4>VIEW</h4>
+        </div>
+    </Link>
 
     <div className={styles.footerContainer}>
         <Footer src={'/footer_image_canary_wharf.jpg'} width={3276} height={1760} />

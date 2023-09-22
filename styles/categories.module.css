@@ -2,6 +2,21 @@
     margin: 20px;
 }
 
+.viewDetailsBTN{
+    border: solid 2px #91c0dc;
+    border-radius: 22px;
+    padding: 10px 30px;
+    margin: 10px 70px 40px 70px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #91c0dc;
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
 .imageCat {
     border-radius: 22px;
     cursor: pointer;
@@ -16,7 +31,7 @@
 
 .contentContainer {
     text-align: center;
-    margin: 10px auto 40px auto;
+    margin: 10px auto 0 auto;
 }
 
 .rolexTitle {
