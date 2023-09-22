@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import CookieConsent from "react-cookie-consent";
 import Footer from "../components/Footer";
 // import Search from "../components/Search";
 
@@ -21,22 +20,9 @@ import Footer from "../components/Footer";
 
 export default function Home() {
 
-  const [cookie, setCookie] = useState(true)
-  let cookieCount = 0
-
-
-  const handleCookie = () => {
-    if (cookieCount === 0) {
-      setCookie(false)
-    }
-
-    cookieCount++
-  }
-
-
-  useEffect(() => {
-  const cookie = document.cookie
-  })
+  // useEffect(() => {
+  // const cookie = document.cookie
+  // })
 
   return (
     <>
@@ -61,20 +47,6 @@ export default function Home() {
           UPDATED: 25th JULY 2023 - 01:13
         </div>
       </div> */}
-
-      { cookie ?
-        <div className={styles.cookieContainer}>
-          <div className={styles.cookieContent}>We use Cookies on this website to enhance user experience. Please Accept or Decline</div>
-          <div className={styles.btnGrid}>
-            <div className={styles.btnAccept} onClick={() => handleCookie()}>Accept</div>
-            <div className={styles.btnDecline} onClick={() => handleCookie()}>Decline</div>
-          </div>
-        </div>
-        :
-        <div></div>
-      }
-      
-
       
       {/* HERO SECTION MOBILE */}
       <div className={styles.heroMobile}>
@@ -85,20 +57,7 @@ export default function Home() {
       <div className={styles.heroDesktop}>
         <Image src={"/hero_daytona_desktop.png"} width={3246} height={1014} />
       </div>
-
-      {/* 
-      <CookieConsent
-        location="bottom"
-        buttonText="Accept"
-        enableDeclineButton
-        cookieName="myAwesomeCookieName2"
-        style={{ background: "lightgrey" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "16px" }}
-        expires={150}
-       >
-        This website uses cookies to enhance the user experience.{" "}
-         <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span> 
-      </CookieConsent> */}
+    
 
       {/* CTA CONTACT MOBILE*/}
       <div className={styles.contactBTN}>

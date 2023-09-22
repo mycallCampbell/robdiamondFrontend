@@ -6,6 +6,11 @@ import styles from "./Layout.module.css";
 
 function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [cookie, setCookie] = useState(true)
+
+  const handleCookie = () => {
+    setCookie(false)
+  }
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -13,6 +18,17 @@ function Layout({ children }) {
 
   return (
     <>
+    { cookie ?
+        <div className={styles.cookieContainer}>
+          <div className={styles.cookieContent}>We use Cookies on this website to enhance user experience. Please Accept or Decline</div>
+          <div className={styles.btnGrid}>
+            <div className={styles.btnAccept} onClick={() => handleCookie()}>Accept</div>
+            <div className={styles.btnDecline} onClick={() => handleCookie()}>Decline</div>
+          </div>
+        </div>
+        :
+        <div></div>
+      }
       <div className={styles.containerGrid}>
         <div className={styles.burgerImage} onClick={() => handleToggle()}>
           <Image src={"/hamburger.png"} width={32} height={32} />
