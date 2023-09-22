@@ -35,6 +35,9 @@ function Layout({ children }) {
       
       <nav className={isOpen ? styles.navOpen : styles.navClosed}>
         <ul className={styles.mobileMenu}>
+        <Link href={'/categories'}>
+            <li className={styles.listItem} onClick={() => handleToggle()}>CATEGORIES</li>
+          </Link>
           <Link href={'/watches'}>
             <li className={styles.listItem} onClick={() => handleToggle()}>WATCHES</li>
           </Link>
