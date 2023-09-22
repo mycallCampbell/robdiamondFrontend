@@ -298,7 +298,7 @@ export default function Home() {
               Introducing the Rolex Skydweller: where elegance meets precision.
               With its iconic design, dual time zones, and ....
             </div>
-            <Link href={'landingSkyDweller'}>
+            <Link href={'/landingSkyDweller'}>
             <div className={styles.readMoreBTN}>Read More</div>
             </Link>
           </div>
@@ -331,16 +331,14 @@ export default function Home() {
             width={3320}
             height={2240}
           />
-          {/* <div className={styles.guidesTitle}>Guides</div> */}
-          <div className={styles.guidesContent1}>All You Need to Know....</div>
-          <div className={styles.guidesContent2}>
           
-            Checkout our Latest Guides{" "}
-          </div>
-          <Link href={'/chronoMasterpiece'}>
-            <div className={styles.seeGuidesBTN}>View All</div>
-          </Link>
+        <div className={styles.guidesContent1}>All You Need to Know....</div>
+        <div className={styles.guidesContent2}>Checkout our Latest Guides</div>
+        <Link href={'/chronoMasterpiece'}>
+          <div className={styles.seeGuidesBTN}>View All</div>
+        </Link>
         </div>
+      
 
         {/* GUIDES DESKTOP */}
         <div className={styles.guidesImageContainerDesktop}>
