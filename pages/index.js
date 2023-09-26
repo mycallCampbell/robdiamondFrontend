@@ -31,7 +31,7 @@ export default function Home() {
         <Head>
           <title>ROB DIAMOND</title>
           <meta name="description" content="Rolex Home Page" />
-          <meta property="og:image" content="faviconRob.ico" />
+          <meta property="og:image" content="/filler/dayDate_guides_bg" />
           <meta
             name="facebook-domain-verification"
             content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
