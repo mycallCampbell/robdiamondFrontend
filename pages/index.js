@@ -31,11 +31,15 @@ export default function Home() {
         <Head>
           <title>ROB DIAMOND</title>
           <meta name="description" content="Rolex Home Page" />
-          <meta property="og:url" content="https://www.robdiamond.co.uk/" />
-          <meta property="og:image" content="https://www.robdiamond.co.uk/robdiamond_og.jpg" />
           <meta property="og:type" content="website" />
-          <meta property="og:image:width" content="274" />
-          <meta property="og:image:height" content="185" />
+          <meta property="og:title" content="Rob Diamond" />
+          <meta property="og:description" content="The Time Keeper and Trusted Dealer" />
+          <meta property="og:url" content="https://www.robdiamond.co.uk/" />
+          <meta property="og:site_name" content="ROB DIAMOND" />
+
+          <meta property="og:image" content="https://www.robdiamond.co.uk/robdiamond_logo300.jpg" />
+          <meta property="og:image:width" content="300" />
+          <meta property="og:image:height" content="300" />
           {/* <meta property="og:image:type" content="image/jpg" /> */}
           {/* <meta
             name="facebook-domain-verification"
