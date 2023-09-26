@@ -31,7 +31,9 @@ export default function Home() {
         <Head>
           <title>ROB DIAMOND</title>
           <meta name="description" content="Rolex Home Page" />
-          <meta property="og:image" content="https://www.robdiamond.co.uk/rob_diamond_logo.png" />
+          <meta property="og:url" content="https://www.robdiamond.co.uk/rob_diamond_logo.png" />
+          <meta property="og:image" content="/rob_diamond_logo.png" />
+
           {/* <meta property="og:image:width" content="526" />
           <meta property="og:image:height" content="275" /> */}
           <meta
