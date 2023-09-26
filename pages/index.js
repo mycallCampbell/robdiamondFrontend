@@ -36,9 +36,9 @@ export default function Home() {
           <meta property="og:description" content="The Time Keeper and Trusted Dealer" />
           <meta property="og:url" content="https://www.robdiamond.co.uk/" />
           <meta property="og:site_name" content="ROB DIAMOND" />
-          <meta property="og:image" content="https://www.robdiamond.co.uk/homepage_og.jpg" />
-          <meta property="og:image:width" content="300" />
-          <meta property="og:image:height" content="200" />
+          <meta property="og:image" content="https://www.robdiamond.co.uk/homepage_og_large.jpg" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="800" />
           {/* <meta property="og:image:type" content="image/jpg" /> */}
           {/* <meta
             name="facebook-domain-verification"
