@@ -80,7 +80,7 @@
   display: flex;
   justify-content: center;
   background: #ffffff;
-  
+  outline: none;
 }
 
 .displayNone {
@@ -108,10 +108,12 @@
 
 .arrowToggle {
   cursor: pointer;
+  outline: none;
 }
 
 .listItemCategory {
   list-style: none;
+  outline: none;
   cursor: pointer;
 
 }
@@ -123,6 +125,7 @@
   list-style: none;
   justify-self: center;
   cursor: pointer;
+  outline: none;
 }
 
 .displayCategories {
@@ -135,6 +138,7 @@
 
 .categoryListItem {
   margin: 12px;
+  outline: none;
 }
 
 .desktopNav {
