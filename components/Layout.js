@@ -48,10 +48,10 @@ function Layout({ children }) {
 
         {/* MESSAGE ICON */}
         <div className={styles.messageIconContainer}>
-          <div>
+          <a href="tel:07976753254">
             <Image src={"/phone_icon.png"} width={32} height={32} />
-          </div>
-        </div>
+          </a>
+        </div> 
       </div>
 
       {/* NAVIGATION */}
@@ -95,11 +95,6 @@ function Layout({ children }) {
           
           }
           
-
-
-          <Link href={'/watches'}>
-            <li className={styles.listItem} onClick={() => handleMenuToggle()}>WATCHES</li>
-          </Link>
           <Link href={'/landingSkyDweller'}>
             <li className={styles.listItem} onClick={() => handleMenuToggle()}>HIGHLIGHTS</li>
           </Link>
@@ -119,16 +114,6 @@ function Layout({ children }) {
         </ul>
         <div className={styles.menuClose} onClick={() => handleMenuToggle()}>Close Menu</div>
       </nav>
-
-      {/* {catToggle ? 
-      <div>
-        <Link href={'/datejust'}>
-            <li className={styles.CategoryListItem}>DATEJUST</li>
-        </Link>
-      </div> 
-      :
-      <div></div>
-      } */}
 
       {/* DESKTOP VERSION */}
 
