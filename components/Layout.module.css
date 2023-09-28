@@ -77,8 +77,10 @@
 }
 
 .navOpen {
+  display: flex;
+  justify-content: center;
   background: #ffffff;
-  display: block;
+  
 }
 
 .displayNone {

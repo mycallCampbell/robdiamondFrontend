@@ -122,8 +122,8 @@ function Layout({ children }) {
 
           {/* <div className={styles.arrowListItem}>&gt;</div> */}
         </ul>
-        <div className={styles.menuClose} onClick={() => handleMenuToggle()}>Close Menu</div>
       </nav>
+      <div className={styles.menuClose} onClick={() => handleMenuToggle()}>Close Menu</div>
 
       {/* DESKTOP VERSION */}
 
