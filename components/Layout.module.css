@@ -102,11 +102,12 @@
 
 .categoriesDropDown {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 4fr;
   align-items: center;
 }
 
-.arrowDown {
+.arrowToggle {
+  margin-left: 100px;
   cursor: pointer;
 }
 
