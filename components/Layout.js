@@ -72,6 +72,7 @@ function Layout({ children }) {
         <Link href={'/categories'}>
             <li className={styles.listItemCategory} onClick={() => handleMenuToggle()}>CATEGORIES</li>
         </Link>
+            <div></div>
             <div className={styles.arrowToggle} onClick={() => handleCatToggle()}>
               <Image src={"/toggle.png"} width={24} height={24} />
             </div>
