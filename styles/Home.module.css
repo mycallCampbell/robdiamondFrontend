@@ -1,7 +1,9 @@
 /* color for 'Rob' on the title: #a37e2c */
 
 
-
+:focus {
+  outline: none !important;
+}
 
 
 .mainContainer {

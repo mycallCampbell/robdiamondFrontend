@@ -80,7 +80,17 @@
   display: flex;
   justify-content: center;
   background: #ffffff;
-  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.navOpen:focus {
+  outline: none !important;
 }
 
 .displayNone {
@@ -123,9 +133,18 @@
 
 .listItemCategory {
   list-style: none;
-  outline: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+.listItemCategory:focus {
+  outline: none !important;
 }
 
 .listItem {
@@ -135,7 +154,17 @@
   list-style: none;
   justify-self: center;
   cursor: pointer;
-  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.listItem:focus {
+  outline: none !important;
 }
 
 .displayCategories {
