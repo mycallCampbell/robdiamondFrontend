@@ -48,7 +48,7 @@ function Layout({ children }) {
       {/* MOBILE VERSION  */}
       <div className={styles.containerGrid}>
         <div className={styles.burgerImage} onClick={() => handleMenuToggle()}>
-          <Image src={"/hamburger.png"} width={32} height={32} />
+          <Image src={"/hamburger.png"} width={32} height={32} className={styles.burgerImageMobile}/>
         </div>
 
         {/* TITLE */}
