@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head"
 
 import styles from "./Layout.module.css";
 
@@ -23,6 +24,15 @@ function Layout({ children }) {
 
   return (
     <>
+
+    {/* META */}
+    <Head>
+        <title>ROB DIAMOND</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
+        <link rel="icon" href="/faviconRob.ico" />
+    </Head>
+
+    {/* COOKIE POPUP */}
     { cookie ?
         <div className={styles.cookieContainer}>
           <div className={styles.cookieContent}>We use Cookies on this website to enhance user experience. Please Accept or Decline</div>

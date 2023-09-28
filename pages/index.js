@@ -45,7 +45,6 @@ export default function Home() {
             content="anh6svr8eyppmiyhj82z4tp7nqbxqa"
           /> */}
           <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0" />
-
           <link rel="icon" href="/faviconRob.ico" />
         </Head>
       </div>
