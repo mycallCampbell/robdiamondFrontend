@@ -60,6 +60,10 @@
   cursor: pointer;
 }
 
+.burgerImage:focus {
+  outline: none !important;
+}
+
 .titleItem {
   text-align: center;
   color: #323232;
@@ -78,7 +82,7 @@
 
 .navOpen {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   background: #ffffff;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -220,6 +224,7 @@
 
 .burgerImage {
   display: none;
+
 }
 
 .messageIconContainer {
