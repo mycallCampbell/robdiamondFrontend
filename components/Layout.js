@@ -5,16 +5,21 @@ import Link from "next/link";
 import styles from "./Layout.module.css";
 
 function Layout({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuToggle, setMenuToggle] = useState(false);
   const [cookie, setCookie] = useState(true)
+  const [catToggle, setCatToggle] = useState(false)
 
   const handleCookie = () => {
     setCookie(false)
   }
 
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
+  const handleMenuToggle = () => {
+    setMenuToggle(!menuToggle);
   };
+
+  const handleCatToggle = () => {
+    setCatToggle(!catToggle)
+  }
 
   return (
     <>
@@ -29,8 +34,10 @@ function Layout({ children }) {
         :
         <div></div>
       }
+
+      {/* MOBILE VERSION  */}
       <div className={styles.containerGrid}>
-        <div className={styles.burgerImage} onClick={() => handleToggle()}>
+        <div className={styles.burgerImage} onClick={() => handleMenuToggle()}>
           <Image src={"/hamburger.png"} width={32} height={32} />
         </div>
 
@@ -49,33 +56,79 @@ function Layout({ children }) {
 
       {/* NAVIGATION */}
       
-      <nav className={isOpen ? styles.navOpen : styles.navClosed}>
+      <nav className={menuToggle ? styles.navOpen : styles.displayNone}>
         <ul className={styles.mobileMenu}>
+        <div className={styles.categoriesDropDown} >
         <Link href={'/categories'}>
-            <li className={styles.listItem} onClick={() => handleToggle()}>CATEGORIES</li>
-          </Link>
+            <li className={styles.listItemCategory} onClick={() => handleMenuToggle()}>CATEGORIES</li>
+        </Link>
+            <div className={styles.arrowDown} onClick={() => handleCatToggle()}>
+              <Image src={"/toggle.png"} width={24} height={24} />
+            </div>
+        </div>  
+            {catToggle ?
+              <div className={styles.displayCategories}>
+              <Link href={'/watches'}>
+                  <li className={styles.categoryListItem} onClick={() => handleMenuToggle()}>ALL WATCHES</li>
+              </Link>
+              <Link href={'/datejust'}>
+                  <li className={styles.categoryListItem} onClick={() => handleMenuToggle()}>DATEJUST</li>
+              </Link>
+              <Link href={'/daydate'}>
+                  <li className={styles.categoryListItem} onClick={() => handleMenuToggle()}>DAYDATE</li>
+              </Link>
+              <Link href={'/GMT-MasterII'}>
+                  <li className={styles.categoryListItem} onClick={() => handleMenuToggle()}>GMT MASTER II</li>
+              </Link>
+              <Link href={'/submariner'}>
+                  <li className={styles.categoryListItem} onClick={() => handleMenuToggle()}>SUBMARINER</li>
+              </Link>
+              <Link href={'/skydweller'}>
+                  <li className={styles.categoryListItem} onClick={() => handleMenuToggle()}>SKY DWELLER</li>
+              </Link>
+              <Link href={'/daytona'}>
+                  <li className={styles.categoryListItem} onClick={() => handleMenuToggle()}>DAYTONA</li>
+              </Link> 
+            </div>
+            :
+            <div></div>
+          
+          }
+          
+
+
           <Link href={'/watches'}>
-            <li className={styles.listItem} onClick={() => handleToggle()}>WATCHES</li>
+            <li className={styles.listItem} onClick={() => handleMenuToggle()}>WATCHES</li>
           </Link>
           <Link href={'/landingSkyDweller'}>
-            <li className={styles.listItem} onClick={() => handleToggle()}>HIGHLIGHTS</li>
+            <li className={styles.listItem} onClick={() => handleMenuToggle()}>HIGHLIGHTS</li>
           </Link>
           <Link href={'/chronoMasterpiece'}>
-            <li className={styles.listItem} onClick={() => handleToggle()}>GUIDES</li>
+            <li className={styles.listItem} onClick={() => handleMenuToggle()}>GUIDES</li>
           </Link>
           <Link href={'/introBlog'}>
-            <li className={styles.listItem} onClick={() => handleToggle()}>BLOGS</li>
+            <li className={styles.listItem} onClick={() => handleMenuToggle()}>BLOGS</li>
           </Link>
           <Link href={'/contact'}>
-            <li className={styles.listItem} onClick={() => handleToggle()}>CONTACT</li>
+            <li className={styles.listItem} onClick={() => handleMenuToggle()}>CONTACT</li>
           </Link>
 
-          <div className={styles.menuClose} onClick={() => handleToggle()}>Close Menu</div>
 
 
           {/* <div className={styles.arrowListItem}>&gt;</div> */}
         </ul>
+        <div className={styles.menuClose} onClick={() => handleMenuToggle()}>Close Menu</div>
       </nav>
+
+      {/* {catToggle ? 
+      <div>
+        <Link href={'/datejust'}>
+            <li className={styles.CategoryListItem}>DATEJUST</li>
+        </Link>
+      </div> 
+      :
+      <div></div>
+      } */}
 
       {/* DESKTOP VERSION */}
 
