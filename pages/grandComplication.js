@@ -17,7 +17,7 @@ export default function grandComplication() {
           <meta property="og:description" content="5207P - GRAND COMPLICATION" />
           <meta property="og:url" content="https://www.robdiamond.co.uk/" />
           <meta property="og:site_name" content="ROB DIAMOND" />
-          <meta property="og:image" content="https://www.robdiamond.co.uk/grand_complication_hero" />
+          <meta property="og:image" content="https://www.robdiamond.co.uk/grand_complication_hero.JPG" />
           <meta property="og:image:width" content="840" />
           <meta property="og:image:height" content="560" />
           {/* <meta property="og:image:type" content="image/jpg" /> */}
