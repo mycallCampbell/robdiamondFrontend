@@ -1,5 +1,7 @@
 /* color for 'Rob' on the title: #a37e2c */
-
+.space {
+  display: none;
+}
 .mainContainer {
   margin: 10px;
 }
@@ -63,6 +65,18 @@
   border-radius: 22px;
   cursor: pointer;
 } 
+
+.readMoreBTNExtra {
+  background: #91c0dc;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 13px;
+  margin: 20px 90px 60px 90px;
+  border-radius: 22px;
+  cursor: pointer;
+}
 
 .readMoreBTNBlog {
   display: block;
@@ -142,6 +156,12 @@
   font-size: 1.2rem;
 
 }
+.grandComplicationContainer {
+  margin: 15px;
+}
+.grandComplicationImage {
+  border-radius: 22px;
+}
 
 /* HIGHLIGHT SECTION */
 
@@ -150,7 +170,7 @@
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 10px 0;
 }
 
 .highlightTitleDesktop {
@@ -208,7 +228,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 1) 100%);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0.61%, rgba(0, 0, 0, 0.3) 100%);
   cursor: pointer;
 }
 
@@ -350,9 +370,39 @@ opacity: 0.3;
 
 
 @media (min-width: 768px) {
+  .space {
+    display: block;
+    height: 30px;
+  }
 
   .readMoreBTNBlog {
       display: none;
+  }
+
+  .readMoreBTNExtra {
+    width: 50%;
+    background: #91c0dc;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 13px;
+    margin: 30px auto;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+
+  .readMoreBTN {
+    width: 50%;
+    background: #91c0dc;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 13px;
+    margin: 20px auto;
+    border-radius: 22px;
+    cursor: pointer;
   }
 
   .gridContainerContactBTN {
@@ -450,6 +500,9 @@ opacity: 0.3;
       grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .grandComplicationContainer {
+    margin: 20px 50px 20px 50px;
+  }
 
   .highlightTitleDesktop {
       display: block;
@@ -460,16 +513,18 @@ opacity: 0.3;
       margin: 70px auto 40px auto;
   }
 
-  .highlightTitleMobile {
+  /* .highlightTitleMobile {
       display: none;
-  }
+  } */
   .highlightContainerDesktop {
       display: flex;
       justify-content: space-between;
   }
 
   .highlightImageContainer {
-      margin: 0 5px;
+      /* margin: 0 5px; */
+    margin: 50px 50px 20px 50px;
+
   }
 
   .highlightContainerMobile {

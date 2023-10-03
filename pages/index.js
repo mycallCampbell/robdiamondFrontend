@@ -214,10 +214,24 @@ export default function Home() {
         <Link href={'/watches'}>
           <div className={styles.viewAllBTN}>View All</div>
         </Link>
+                    
+        <div className={styles.space}></div>
+         {/* HIGHLIGHT SECTION */}
+         <div className={styles.highlightTitleMobile}>Patek Philippe</div>
+
+        <div className={styles.grandComplicationContainer}>
+          <Image src={"/grand_complication_hero.jpg"} width={3360} height={2240} className={styles.grandComplicationImage}/>
+        </div>
+
+        <Link href={'/grandComplication'}>
+            <div className={styles.readMoreBTNExtra}>Read More</div>
+        </Link>
+
 
         {/* HIGHLIGHT SECTION */}
+        <div className={styles.space}></div>
         <div className={styles.highlightTitleMobile}>HIGHLIGHTS</div>
-
+        
         {/* HGIHLIGHT MOBILE */}
         <div className={styles.highlightContainerMobile}>
           <div className={styles.highlightImageContainer}>
@@ -240,7 +254,7 @@ export default function Home() {
         </div>
 
         {/* HIGHLIGHT DESKTOP */}
-        <div className={styles.highlightTitleDesktop}>HIGHLIGHTS</div>
+        {/* <div className={styles.highlightTitleDesktop}>HIGHLIGHTS</div> */}
 
         <div className={styles.highlightContainerDesktop}>
           <div className={styles.highlightImageContainer}>
@@ -262,22 +276,6 @@ export default function Home() {
             <div className={styles.readMoreBTN}>Read More</div>
             </Link>
           </div>
-
-          {/* <div className={styles.highlightImageContainer}>
-            <Image
-              src={"/daytona_highlights.JPG"}
-              className={styles.highlightImage}
-              width={3320}
-              height={2240}
-            />
-            <div className={styles.highlightContentRolexDesktop}>Rolex</div>
-            <div className={styles.highlightContentModelDesktop}>Daytona</div>
-            <div className={styles.highlightContentDesktop}>
-              Introducing the Rolex Daytona: where elegance meets precision.
-              With its iconic design, dual time zones, and ....
-            </div>
-            <div className={styles.readMoreBTN}>Read More</div>
-          </div> */}
         </div>
       </section>
 
