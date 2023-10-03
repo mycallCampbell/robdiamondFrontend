@@ -18,8 +18,8 @@ export default function grandComplication() {
           <meta property="og:url" content="https://www.robdiamond.co.uk/" />
           <meta property="og:site_name" content="ROB DIAMOND" />
           <meta property="og:image" content="https://www.robdiamond.co.uk/grand_complication_hero.jpg" />
-          <meta property="og:image:width" content="420" />
-          <meta property="og:image:height" content="280" />
+          <meta property="og:image:width" content="840" />
+          <meta property="og:image:height" content="560" />
           {/* <meta property="og:image:type" content="image/jpg" /> */}
           {/* <meta
             name="facebook-domain-verification"
