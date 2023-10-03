@@ -48,12 +48,6 @@ export default function Home() {
           <link rel="icon" href="/faviconRob.ico" />
         </Head>
       </div>
-
-      {/* <div className={styles.topBar}>
-        <div className={styles.topBarContent}>
-          UPDATED: 25th JULY 2023 - 01:13
-        </div>
-      </div> */}
       
       {/* HERO SECTION MOBILE */}
       <div className={styles.heroMobile}>

@@ -1,0 +1,125 @@
+.contactBTN {
+    background: #91c0dc;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 13px;
+    margin: 20px 110px;
+    border-radius: 22px;
+  }
+
+.displayNone {
+    display: none;
+}
+
+.heroDesktop {
+    display: none;
+}
+
+.titleMain {
+    margin: 20px 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.titleMain span {
+    color: #717171;
+}
+
+.tagLine {
+    text-align: center;
+    color: #414141;
+}
+
+.contentMain {
+    margin: 30px;
+    color: #717171;
+    line-height: 1.3
+}
+
+.subTitle {
+    margin: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #717171;
+    text-align: center;
+}
+
+.breifOverview {
+    margin: 30px;
+    color: #717171;
+    line-height: 1.3
+}
+.breifOverview span {
+    color: #414141;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.listItem {
+    margin: 20px 20px 20px 10px;
+    text-align: start;
+    color: #717171;
+}
+
+.listItem span {
+    color: #414141;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media(min-width:768px) {
+    .heroMobile {
+        display: none;
+    }
+
+    .heroDesktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titleMain {
+        margin-top: 60px;
+        font-size: 2rem;
+    }
+
+    .tagLine {
+        font-size: 1.5rem;
+    }
+
+    .contentMain {
+        margin: 20px auto;
+        max-width: 1000px;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    .contactBTN {
+        display: none;
+    }
+
+    .breifOverview {
+        margin: 40px auto;
+        max-width: 1000px;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    
+    .listItem {
+        margin: 20px auto;
+        max-width: 1000px;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    
+
+    .leatherStrapImage {
+        margin: 50px;
+    }
+
+    .winder {
+        margin: 50px;
+    }
+}
