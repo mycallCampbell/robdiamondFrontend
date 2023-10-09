@@ -4,25 +4,20 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Footer from "../components/Footer";
-// import Search from "../components/Search";
 
-// export const getStaticProps = async () => {
-//   const data = await fetch("https://www.robdiamond-be.co.uk/api/blogs");
-//   const blogs = await data.json();
+export const getStaticProps = async () => {
+  const data = await fetch("https://www.robdiamond-be.co.uk/api/reviews")
+  const products = await data.json();
 
-//   return {
-//     props: {
-//       blogs: blogs,
-//     },
-//     revalidate: 60,
-//   };
-// };
+  return {
+      props: {
+          products: products
+      },
+      revalidate: 60,
+  };
+}
 
 export default function Home() {
-
-  // useEffect(() => {
-  // const cookie = document.cookie
-  // })
 
   return (
     <>
@@ -217,7 +212,7 @@ export default function Home() {
                     
         <div className={styles.space}></div>
          {/* HIGHLIGHT SECTION */}
-         <div className={styles.highlightTitleMobile}>Patek Philippe</div>
+         <div className={styles.highlightTitle}>PATEK PHILLIPPE</div>
 
         <div className={styles.grandComplicationContainer}>
           <Image src={"/grand_complication_hero.jpg"} width={3360} height={2240} className={styles.grandComplicationImage}/>
@@ -230,7 +225,7 @@ export default function Home() {
 
         {/* HIGHLIGHT SECTION */}
         <div className={styles.space}></div>
-        <div className={styles.highlightTitleMobile}>HIGHLIGHTS</div>
+        <div className={styles.highlightTitle}>HIGHLIGHTS</div>
         
         {/* HGIHLIGHT MOBILE */}
         <div className={styles.highlightContainerMobile}>
@@ -254,7 +249,6 @@ export default function Home() {
         </div>
 
         {/* HIGHLIGHT DESKTOP */}
-        {/* <div className={styles.highlightTitleDesktop}>HIGHLIGHTS</div> */}
 
         <div className={styles.highlightContainerDesktop}>
           <div className={styles.highlightImageContainer}>
@@ -359,17 +353,11 @@ export default function Home() {
       </section>
 
       {/* REVIEW SECTION */}
-      {/* <section>
-        <div className={styles.reviewImageContainer}>
-          <Image
-            src={"/rolexBlueClose.JPEG"}
-            className={styles.reviewImage}
-            width={816}
-            height={693}
-          />
-          <div className={styles.reviewsTitle}>REVIEWS</div>
+      <div className={styles.reviewContainer}>
+        <div className={styles.reviewsTitle}>
+              REVIEWS
         </div>
-      </section> */}
+      </div>
 
       {/* SUBSCRIPTION SECTION */}
       {/* <section>
