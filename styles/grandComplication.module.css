@@ -84,7 +84,11 @@
         margin-top: 60px;
         font-size: 2rem;
     }
-
+    .subTitle {
+        
+        font-size: 1.7rem;
+       
+    }
     .tagLine {
         font-size: 1.5rem;
     }
@@ -92,8 +96,8 @@
     .contentMain {
         margin: 20px auto;
         max-width: 1000px;
-        font-size: 1.1rem;
-        line-height: 1.3;
+        font-size: 1.3rem;
+        line-height: 1.5;
     }
 
     .contactBTN {
@@ -103,15 +107,23 @@
     .breifOverview {
         margin: 40px auto;
         max-width: 1000px;
-        font-size: 1.1rem;
-        line-height: 1.3;
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .breifOverview span {
+        font-size: 1.4rem;
     }
     
     .listItem {
         margin: 20px auto;
         max-width: 1000px;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         line-height: 1.3;
+    }
+
+    .listItem span {
+        font-size: 1.4rem;
     }
     
 
