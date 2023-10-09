@@ -4,6 +4,11 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export const getStaticProps = async () => {
   const data = await fetch("https://www.robdiamond-be.co.uk/api/reviews")
@@ -17,7 +22,7 @@ export const getStaticProps = async () => {
   };
 }
 
-export default function Home() {
+export default function Home({ products }) {
 
   return (
     <>
@@ -357,6 +362,23 @@ export default function Home() {
         <div className={styles.reviewsTitle}>
               REVIEWS
         </div>
+        <div className={styles.swiperContainer}>
+        <Swiper
+            pagination={true}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className={styles.swiper}
+          >
+            <div className={styles.swiperWrapper}>
+              {products.map((product, index) => (
+                <SwiperSlide className={styles.swiperSlide} key={index}>
+                  <div className={styles.comment}>{product.comment}</div>
+                </SwiperSlide>
+              ))}
+            </div>
+          </Swiper>
+        </div>
+        
       </div>
 
       {/* SUBSCRIPTION SECTION */}
